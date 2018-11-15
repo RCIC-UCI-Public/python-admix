@@ -1,0 +1,12 @@
+---
+## Defaults for python 3.x
+pkg_defaults:
+  app_path: /data/apps
+  foundation: /opt/software
+  python_version: "3.6.7"
+  python_family: "3.6"
+  python_major: "3"
+  pyversion: !include pyversions.yaml
+  system_python_base: /usr/lib64/python2.7/ 
+  system_python_pkgs: "{{ pkg_defaults.system_python_base }}/site-packages"
+  module: !include modules-default.yaml

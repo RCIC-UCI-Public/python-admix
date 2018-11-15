@@ -1,0 +1,41 @@
+---
+- package: Python Programming Language 
+  name: Python 
+  common_name: python
+  version: "{{ pkg_defaults.python_version }}"
+  family_version: "{{ pkg_defaults.python_family }}"
+  major_version: "{{ pkg_defaults.python_major }}"
+  extension: tgz
+  pkgname: "{{ common_name }}_{{ version }}"
+  vendor_source: https://www.python.org/ftp/python/{{ version }}/Python-{{ version }}.tgz
+  description: >
+    Python version {{ version }}. 
+  root: "{{ pkg_defaults.app_path }}/{{ name }}/{{ version }}"
+
+  build:
+    configure_args: --enable-shared  --enable-loadable-sqlite-extensions --enable-ipv6
+    modules: 
+    target: 
+  install:
+    makeinstall: $(MAKE) DESTDIR=$(ROOT) altinstall 
+    installextra: >
+      $(INSTALL) -m 644  README* COPYING AUTHORS $(ROOT)/{{ root }};
+      cd $(ROOT)/{{ root }}/bin;
+      ln -s python{{ family_version }} python{{ major_version }};
+      ln -s python{{ family_version }}-config python{{ major_version }}-config
+
+  # Some Items specific to RPM packaging. Use just-compiled python to compile
+  # python files.  No Automatic dependency provides
+  rpm:
+    extras:
+      - "AutoReqProv: no\\nProvides: libpython{{ family_version }}m.so.1.0()(64bit)"
+      - "%define _python_bytecompile_errors_terminate_build 0"
+      - "%define __python %{buildroot}/$(PKGROOT)/bin/python{{ major_version }}"
+  files:
+   - "{{ root }}"
+   -  "{{ module.path }}/{{ module.name }}"
+  module:
+    name: "{{ version }}"
+    path: "{{ pkg_defaults.module.path }}/{{ common_name }}" 
+    prepend_path: 
+      - "{{ pkg_defaults.module.prepend_path }}"

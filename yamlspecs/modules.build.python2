@@ -1,0 +1,7 @@
+# Modules to build. Order is NOT important
+python
+setuptools
+pip
+virtualenv
+numpy
+scipy

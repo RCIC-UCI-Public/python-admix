@@ -1,0 +1,6 @@
+# Modules to build AND install locally. Order IS important
+# pycogent
+python
+setuptools
+pip
+numpy

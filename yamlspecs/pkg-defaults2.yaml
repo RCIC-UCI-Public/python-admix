@@ -1,0 +1,11 @@
+---
+pkg_defaults:
+  app_path: /data/apps
+  foundation: /opt/software
+  python_version: "2.7.15"
+  python_family: "2.7"
+  python_major: "2"
+  pyversion: !include pyversions.yaml
+  system_python_base: /usr/lib64/python2.7/ 
+  system_python_pkgs: "{{ pkg_defaults.system_python_base }}/site-packages"
+  module: !include modules-default.yaml
