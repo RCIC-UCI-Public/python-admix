@@ -9,4 +9,4 @@ pkg_defaults:
   pyversion: !include pyversions.yaml
   system_python_base: /usr/lib64/python2.7/ 
   system_python_pkgs: "{{ pkg_defaults.system_python_base }}/site-packages"
-  module: !include modules-default.yaml
+  module: !include envmodules-default.yaml

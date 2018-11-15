@@ -1,3 +1,0 @@
-bootstrap:
-	MODULES_BOOTSTRAP=modules.bootstrap.python2 DEFAULTS=pkg-defaults2.yaml make -e bootstrap
-	make bootstrap
