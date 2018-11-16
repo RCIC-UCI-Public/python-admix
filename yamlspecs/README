@@ -1,0 +1,35 @@
+This builds python2, python3 and some python packages.
+One of the goals is to reduce redundancy (not all of it can be eliminated).
+
+There are some differences between 2 and 3
+     *  Python3 has pip and setuptools as part of the standard build
+     *  Python2 does not have pip and setuptools and must be built as part of the bootstrap
+
+Whenever possible 2 and 3 build the same set of subordinate packages (versions, too).
+
+- Bootstrapping for build
+  modules.bootstrap -  packages to build and install for python3
+  modules.bootstrap.python2 - packages to build and install for python2
+
+- modules.build - packages to build for python3
+  modules.build.python2 - pacakges to build for python2
+
+
+Parameterization of yaml files
+  - most yaml files are parameterized to build either version
+  - Makefile.generic is the generic Makefile from the yaml2rpm package samples directory
+  - Makefile takes any target and invokes Makefile.generic TWICE.  
+       -- make for python2
+       -- clean for python2
+       -- make for python3
+
+Versions:
+    common versions of python modules are defined in pyversions.yaml 
+
+
+RPM specifics:
+   the rpm-brp-python-bytecompile script is called by default by rpmbuild. In the case of python3, the
+   lib directory of python version needs to be in LD_LIBRARY_PATH.
+   There is a bit of "voodoo" of redefining the __spec_install_post macro to include the lib path 
+   for building python itself, or loading the appropriate module for python packages. The macros
+   is identical to the one used by rpm itself, but loads modules appropriately

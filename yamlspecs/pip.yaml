@@ -22,6 +22,4 @@
     - "{{ root }}/lib/python{{ pyfamily }}/site-packages/*"
   requires:
     - python_{{ pyversion }}  
-  rpm:
-    extras:
-      - "%define __python %(module load {{ build.modules }}; which python{{ pymajor }}; module unload {{ build.modules }})"
+  rpm: !include rpm.extras.yaml

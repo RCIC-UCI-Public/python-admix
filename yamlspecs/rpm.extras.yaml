@@ -1,0 +1,11 @@
+---
+## redefine the __spec_install_post macro to load the correct modules so that 
+## brp-python-bytecompile can access libraries and correct version of python
+extras: | 
+  %define __spec_install_post \
+  %{?__debug_package:%{__debug_install_post}}\
+  module load {{ build.modules }};\
+  %{__arch_install_post}\
+  %{__os_install_post}\
+  module unload {{ build.modules }}\
+  %{nil} 
