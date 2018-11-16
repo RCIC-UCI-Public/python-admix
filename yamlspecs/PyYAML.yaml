@@ -11,7 +11,7 @@
   pkgname: "{{ name }}_python_{{ pyversion }}"
   description: >
     PyYAML support for python {{ pyversion }}.
-  vendor_source: https://github.com/numpy/numpy/releases/download/v1.15.4/numpy-1.15.4.tar.gz
+  vendor_source: http://pyyaml.org/download/pyyaml/PyYAML-{{ version }}.tar.gz
   root: "{{ pkg_defaults.app_path }}/Python/{{ pyversion }}"
   build:
     configure: echo
