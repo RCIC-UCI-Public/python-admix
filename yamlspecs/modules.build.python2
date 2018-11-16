@@ -5,3 +5,4 @@ pip
 virtualenv
 numpy
 scipy
+PyYAML
