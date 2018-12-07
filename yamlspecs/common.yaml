@@ -1,0 +1,15 @@
+---
+- pyversion: "{{ pkg_defaults.python_version }}"
+  pyfamily: "{{ pkg_defaults.python_family }}"
+  pymajor: "{{ pkg_defaults.python_major }}"
+  pkgname: "{{ name }}_python_{{ pyversion }}"
+  root: "{{ pkg_defaults.app_path }}/Python/{{ pyversion }}"
+  build:
+    configure: echo
+    modules: python/{{ pyversion }} 
+    target: 
+  install:
+    makeinstall: python{{ pymajor }} setup.py install --root $(ROOT) 
+  requires:
+    - python_{{ pyversion }}  
+  rpm: !include rpm.extras.yaml
