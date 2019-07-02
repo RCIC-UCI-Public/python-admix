@@ -1,26 +1,17 @@
+!include common.yaml
 ---
 - package: setuptools for python 
   name: setuptools 
   version: "{{ pkg_defaults.pyversion.setuptools }}" 
-  pyversion: "{{ pkg_defaults.python_version }}" 
-  pyfamily: "{{ pkg_defaults.python_family }}" 
-  pymajor: "{{ pkg_defaults.python_major }}" 
   extension: tar.gz
-  pkgname: "{{ name }}_python_{{ pyversion }}"
   description: >
     setuptools support for python {{ pyversion }}.
   vendor_source: https://github.com/pypa/setuptools/archive/v{{ version }}.tar.gz 
-  root: "{{ pkg_defaults.app_path }}/Python/{{ pyversion }}"
   build:
     configure: echo
     modules: python/{{ pyversion }} 
     target: 
     pkgmake: python{{ pymajor }} bootstrap.py --root $(ROOT) 
-  install:
-    makeinstall: python{{ pymajor }} setup.py install --root $(ROOT) 
   files:
     - "{{ root }}/bin/*"
     - "{{ root }}/lib/python{{ pyfamily }}/site-packages/*"
-  requires:
-    - python_{{ pyversion }}  
-  rpm: !include rpm.extras.yaml

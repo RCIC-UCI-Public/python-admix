@@ -1,26 +1,14 @@
+!include common.yaml
 ---
 - package: scipy for python 
   name: scipy 
 
   version: "{{ pkg_defaults.pyversion.scipy}}"
-  pyversion: "{{ pkg_defaults.python_version }}"
-  pyfamily: "{{ pkg_defaults.python_family }}"
-  pymajor: "{{ pkg_defaults.python_major }}"
   extension: tar.gz
 
   pkgname: "{{ name }}_python_{{ pyversion }}"
   description: >
     scipy support for python {{ pyversion }}.
-  vendor_source: https://github.com/numpy/numpy/releases/download/v1.15.4/numpy-1.15.4.tar.gz
-  root: "{{ pkg_defaults.app_path }}/Python/{{ pyversion }}"
-  build:
-    configure: echo
-    modules: python/{{ pyversion }} 
-    target: 
-  install:
-    makeinstall: python{{ pymajor }} setup.py install --root $(ROOT) 
+  vendor_source: https://github.com/scipy/scipy/releases/download/v{{ version }}/scipy-{{ version }}.tar.gz
   files:
     - "{{ root }}/lib/python{{ pyfamily }}/site-packages/*"
-  requires:
-    - python_{{ pyversion }}  
-  rpm: !include rpm.extras.yaml

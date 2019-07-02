@@ -1,26 +1,11 @@
+!include common.yaml
 ---
 - package: SQLAlchemy for python 
   name: SQLAlchemy 
-
   version: "{{ pkg_defaults.pyversion.SQLAlchemy}}"
-  pyversion: "{{ pkg_defaults.python_version }}"
-  pyfamily: "{{ pkg_defaults.python_family }}"
-  pymajor: "{{ pkg_defaults.python_major }}"
   extension: tar.gz
-
-  pkgname: "{{ name }}_python_{{ pyversion }}"
   description: >
     SQLAlchemy support for python {{ pyversion }}.
   vendor_source: https://files.pythonhosted.org/packages/e2/0a/05b7d13618ad41c108a6c2b886af83bf9bb7e35f8951227abb18b1330745/SQLAlchemy-{{ version }}.tar.gz
-  root: "{{ pkg_defaults.app_path }}/Python/{{ pyversion }}"
-  build:
-    configure: echo
-    modules: python/{{ pyversion }} 
-    target: 
-  install:
-    makeinstall: python{{ pymajor }} setup.py install --root $(ROOT) 
   files:
     - "{{ root }}/lib/python{{ pyfamily }}/site-packages/*"
-  requires:
-    - python_{{ pyversion }}  
-  rpm: !include rpm.extras.yaml

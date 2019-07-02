@@ -1,25 +1,14 @@
+!include common.yaml
 ---
 - package: numpy for python 
   name: numpy
   version: "{{ pkg_defaults.pyversion.numpy }}"
-  pyversion: "{{ pkg_defaults.python_version }}"
-  pyfamily: "{{ pkg_defaults.python_family }}"
-  pymajor: "{{ pkg_defaults.python_major }}"
   extension: tar.gz
-  pkgname: "{{ name }}_python_{{ pyversion }}"
   description: >
-    virtualenv support for python {{ pyversion }}.
-  vendor_source: https://github.com/numpy/numpy/releases/download/{{ version }}/numpy-{{ version }}.tar.gz
-  root: "{{ pkg_defaults.app_path }}/Python/{{ pyversion }}"
-  build:
-    configure: echo
-    modules: python/{{ pyversion }} 
-    target: 
-  install:
-    makeinstall: python{{ pymajor }} setup.py install --root $(ROOT) 
+    numpy support for python {{ pyversion }}.
+  vendor_source: https://github.com/numpy/numpy/releases/download/v{{ version }}/{{ name }}-{{ version }}.{{ extension }}
   files:
     - "{{ root }}/bin/*"
     - "{{ root }}/lib/python{{ pyfamily }}/site-packages/*"
   requires:
-    - python_{{ pyversion }}  
-  rpm: !include rpm.extras.yaml
+    - libgfortran

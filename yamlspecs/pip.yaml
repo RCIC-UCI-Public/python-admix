@@ -1,25 +1,12 @@
+!include common.yaml
 ---
 - package: pip for python 
   name: pip 
   version: "{{ pkg_defaults.pyversion.pip }}"
-  pyversion: "{{ pkg_defaults.python_version }}"
-  pyfamily: "{{ pkg_defaults.python_family }}"
-  pymajor: "{{ pkg_defaults.python_major }}"
   extension: tar.gz
-  pkgname: "{{ name }}_python_{{ pyversion }}"
   description: >
     pip support for python {{ pyversion }}.
   vendor_source: https://github.com/pypa/pip/archive/{{ version }}.tar.gz
-  root: "{{ pkg_defaults.app_path }}/Python/{{ pyversion }}"
-  build:
-    configure: echo
-    modules: python/{{ pyversion }} 
-    target: 
-  install:
-    makeinstall: python{{ pymajor }} setup.py install --root $(ROOT) 
   files:
     - "{{ root }}/bin/*"
     - "{{ root }}/lib/python{{ pyfamily }}/site-packages/*"
-  requires:
-    - python_{{ pyversion }}  
-  rpm: !include rpm.extras.yaml

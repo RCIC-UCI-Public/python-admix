@@ -1,26 +1,13 @@
+!include common.yaml
 ---
 - package: PyYAML for python 
   name: PyYAML 
 
   version: "{{ pkg_defaults.pyversion.PyYAML}}"
-  pyversion: "{{ pkg_defaults.python_version }}"
-  pyfamily: "{{ pkg_defaults.python_family }}"
-  pymajor: "{{ pkg_defaults.python_major }}"
   extension: tar.gz
 
-  pkgname: "{{ name }}_python_{{ pyversion }}"
   description: >
     PyYAML support for python {{ pyversion }}.
   vendor_source: http://pyyaml.org/download/pyyaml/PyYAML-{{ version }}.tar.gz
-  root: "{{ pkg_defaults.app_path }}/Python/{{ pyversion }}"
-  build:
-    configure: echo
-    modules: python/{{ pyversion }} 
-    target: 
-  install:
-    makeinstall: python{{ pymajor }} setup.py install --root $(ROOT) 
   files:
     - "{{ root }}/lib/python{{ pyfamily }}/site-packages/*"
-  requires:
-    - python_{{ pyversion }}  
-  rpm: !include rpm.extras.yaml
