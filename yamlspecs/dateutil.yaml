@@ -1,0 +1,11 @@
+!include common.yaml
+---
+- package: Python date utilities 
+  name: python-dateutil 
+  version: "{{ pkg_defaults.pyversion.dateutil}}"
+  extension: tar.gz
+  description: >
+    python-dateutil for  python {{ pyversion }}.
+  vendor_source: https://github.com/dateutil/dateutil/releases/download/{{version}}/python-dateutil-{{version}}.tar.gz 
+  files:
+    - "{{ root }}/lib/python{{ pyfamily }}/site-packages/*"

@@ -6,3 +6,8 @@ virtualenv
 numpy
 scipy
 PyYAML
+SQLAlchemy
+pandas
+pytz
+dateutil
+six
