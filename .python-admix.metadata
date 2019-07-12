@@ -1,4 +1,13 @@
-2e3334c5affcc04aa422fc7b40554cd778fa4675  sources/numpy-1.15.4.tar.gz
-2bcd522d613c24d2a6cd6100c4e1682d83306798  sources/Python-3.6.7.tgz
-965e7ac23ac1bc2809a1fa13d429aea352bdd124  sources/scipy-1.1.0.tar.gz
-eedfca8e351a6328ea05eb241560c8a26f99dca1  sources/virtualenv-16.1.0.tar.gz
+2e3334c5affcc04aa422fc7b40554cd778fa4675  sources/numpy-1.15.4.tar.gz 11TomEHHgP6dHgV7jEiMPvUSDzyKcG-Zg
+1176ac84c67d0f7b7bda0dc029968b73a675b9f7  sources/pandas-0.24.2.tar.gz 1PF-ZSRxiaowAdXjQR8wgKKpg7EMmqE41
+72f004c193f4cb04645d9bca3cdbc8f33ede530e  sources/pip-18.1.tar.gz 186k9TPpKciXPWR-QfDwUbhYZAyel_AOU
+c9750707d127d39a6868e1e55f7cd8c7be006b89  sources/Python-2.7.15.tgz 1GIm-hBwY9MYmBCbfETyKyo5PZdgr8dEQ
+2bcd522d613c24d2a6cd6100c4e1682d83306798  sources/Python-3.6.7.tgz 1mXV1bQhlDd1iadDL9ueBsU0k_suOh6js
+c99d3a05d0ac220bc736e5e6c169be0ab4a75298  sources/python-dateutil-2.7.5.tar.gz 1K51QmQj6_eQjGLZkAkXIs0qaTMrE5Abt
+f7b3214b23138286fb3860ec83852231b54d692c  sources/pytz-2019.1.tar.gz 1nWM510IIVRuhG72y1zyrUnNEGcANP_8t
+22f95fe2f5ef29ab17110f92c7186e2cfde6b419  sources/PyYAML-3.13.tar.gz 1vLh8vLbc4DIGWFCHptioJ-cd9Cj2UMIv
+965e7ac23ac1bc2809a1fa13d429aea352bdd124  sources/scipy-1.1.0.tar.gz 1_VSKrUMBZMpA-p37Y2s4V6bWDVzOFu3f
+2e9ebc865d7df6d7644a28662fb619f176b0f94c  sources/setuptools-40.6.2.tar.gz 1ymNfHLOaeDCTPGRUHGhD-752zFI1MQ6P
+1957b44942be21822414f4dde936e6c40b687565  sources/six-1.12.0.tar.gz 1BiiItdO18MtCNXJiZDRjgivowbOnFsCI
+7e7260c3886ff633bbf6ffbcee3a394a7e520145  sources/SQLAlchemy-1.2.14.tar.gz 1hTjLiwsCqrUHr7evNkNPUwf766ikKmWf
+eedfca8e351a6328ea05eb241560c8a26f99dca1  sources/virtualenv-16.1.0.tar.gz 13iD3tO-m5xkcE7okgpLMzCSxBKj7e3fa
