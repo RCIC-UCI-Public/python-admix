@@ -1,10 +1,11 @@
 !include common.yaml
 ---
-- package: 
-  name:  graphviz 
+- package: Graphviz for python
+  name: graphviz 
+  category: python module 
   version: "{{ pkg_defaults.pyversion.graphviz }}"
   extension: zip
-  description: >
+  description: |
     Graphviz for  python {{ pyversion }}. This package facilitates the creation and rendering 
     of graph descriptions in the DOT language of the Graphviz graph drawing software.
   vendor_source: https://files.pythonhosted.org/packages/9a/00/481ad02701f952c59671a574a808d9d34d200103f0c7396db75f2e3df717/{{ name }}-{{ version  }}.{{ extension }}
