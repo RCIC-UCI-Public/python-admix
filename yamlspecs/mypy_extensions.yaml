@@ -1,0 +1,13 @@
+!include common.yaml
+---
+- package: Optional static typing for python
+  name:  mypy_extensions
+  category: python module
+  version: "{{ pkg_defaults.pyversion3.mypy_extensions }}"
+  extension: tar.gz
+  description: |
+    Experimental type system extensions for programs checked with the mypy typechecker.
+    Required for mypy  {{ pkg_defaults.pyversion3.mypy }}.
+  vendor_source: https://files.pythonhosted.org/packages/c2/92/3cc05d1206237d54db7b2565a58080a909445330b4f90a6436302a49f0f8/{{ name }}-{{ version }}.{{ extension }}
+  files:
+    - "{{ root }}/lib/python{{ pyfamily }}/site-packages/*"
