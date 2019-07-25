@@ -2,7 +2,8 @@
 ---
 - package: pip for python 
   name: pip 
-  version: "{{ pkg_defaults.pyversion.pip }}"
+  category: python module
+  version: "{{ pkg_defaults.pyversion2.pip }}"
   extension: tar.gz
   description: >
     pip support for python {{ pyversion }}.

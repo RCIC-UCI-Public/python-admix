@@ -2,7 +2,8 @@
 ---
 - package: setuptools for python 
   name: setuptools 
-  version: "{{ pkg_defaults.pyversion.setuptools }}" 
+  category: python module
+  version: "{{ pkg_defaults.pyversion2.setuptools }}" 
   extension: tar.gz
   description: >
     setuptools support for python {{ pyversion }}.
