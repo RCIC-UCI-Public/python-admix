@@ -4,6 +4,7 @@
   pymajor: "{{ pkg_defaults.python_major }}"
   pkgname: "{{ name }}_python_{{ pyversion }}"
   root: "{{ pkg_defaults.app_path }}/Python/{{ pyversion }}"
+  category: python module
   build:
     configure: echo
     modules: python/{{ pyversion }} 

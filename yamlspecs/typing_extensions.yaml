@@ -2,7 +2,6 @@
 ---
 - package: Backported and Experimental Type Hints for Python
   name:  typing_extensions
-  category: python module
   version: "{{ pkg_defaults.pyversion3.typing_extensions }}"
   extension: tar.gz
   description: |

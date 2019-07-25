@@ -2,7 +2,6 @@
 ---
 - package: compatibility layer between Python 2 and Python 3
   name:  future 
-  category: python module
   version: "{{ pkg_defaults.pyversion.future }}"
   extension: tar.gz
   description: |

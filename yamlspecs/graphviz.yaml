@@ -2,7 +2,6 @@
 ---
 - package: Graphviz for python
   name: graphviz 
-  category: python module 
   version: "{{ pkg_defaults.pyversion.graphviz }}"
   extension: zip
   description: |

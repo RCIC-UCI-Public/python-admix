@@ -2,7 +2,6 @@
 ---
 - package: Optional static typing for python
   name:  mypy_extensions
-  category: python module
   version: "{{ pkg_defaults.pyversion3.mypy_extensions }}"
   extension: tar.gz
   description: |
