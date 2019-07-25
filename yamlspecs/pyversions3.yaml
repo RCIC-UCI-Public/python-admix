@@ -1,0 +1,5 @@
+---
+mypy: "0.720"
+mypy_extensions: "0.4.1"
+typing_extensions: "3.7.4"
+typed_ast: "1.4.0"
