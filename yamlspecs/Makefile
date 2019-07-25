@@ -1,40 +1,19 @@
-PYTHON2_ENV = BOOTSTRAP_MODULES_FILE=modules.bootstrap.python2
-PYTHON2_ENV += MODULES_FILE=modules.build.python2
-PYTHON2_ENV += DEFAULTS=pkg-defaults2.yaml
+# Copyright (c) 2000 - 2019 The Regents of the University of California.
+# # All rights reserved.	
+# # This includes the Generic yaml2rpm Makefile - most packaging should
+# # be able to use this.
+#
 
-PYTHON3_ENV = BOOTSTRAP_MODULES_FILE=modules.bootstrap
-PYTHON3_ENV += MODULES_FILE=modules.build
-PYTHON3_ENV += DEFAULTS=pkg-defaults.yaml
+SUBMAKES = Makefile2 Makefile3
+.DEFAULT_GOAL = default
 
-MAKEFILE_GENERIC = Makefile.generic
-
-
-default:
-	$(PYTHON2_ENV) make -e -f $(MAKEFILE_GENERIC) 
-	$(PYTHON2_ENV) make -e -f $(MAKEFILE_GENERIC) clean
-	$(PYTHON3_ENV) make -e -f $(MAKEFILE_GENERIC) 
-
-%:
-	$(PYTHON2_ENV) make -e -f $(MAKEFILE_GENERIC) $@ 
-	$(PYTHON2_ENV) make -e -f $(MAKEFILE_GENERIC) clean
-	$(PYTHON3_ENV) make -e -f $(MAKEFILE_GENERIC) $@
-
-%.pkg: FORCE
-	$(PYTHON2_ENV) make -e -f $(MAKEFILE_GENERIC) $@ 
-	- /bin/rm $@
-	$(PYTHON3_ENV) make -e -f $(MAKEFILE_GENERIC) $@
+%.pkg:
+	for f in $(SUBMAKES); do \
+		if [ -f $@ ] ; then /bin/rm $@; fi; \
+		$(MAKE) -f $$f $@; \
+        done
 	
-FORCE:
-
-
-#bootstrap:
-#	$(PYTHON2_ENV) make -e -f $(MAKEFILE_GENERIC) bootstrap
-#	$(PYTHON3_ENV) make -e -f $(MAKEFILE_GENERIC) bootstrap
-#
-#unbootstrap:
-#	$(PYTHON2_ENV) make -e -f $(MAKEFILE_GENERIC) unbootstrap
-#	$(PYTHON3_ENV) make -e -f $(MAKEFILE_GENERIC) unbootstrap
-#
-#clean:
-#	$(PYTHON2_ENV) make -e -f $(MAKEFILE_GENERIC) clean
-#	$(PYTHON3_ENV) make -e -f $(MAKEFILE_GENERIC) clean 
+%: 	
+	$(MAKE) -f Makefile2 $*
+	$(MAKE) -f Makefile2 clean
+	$(MAKE) -f Makefile3 $*
