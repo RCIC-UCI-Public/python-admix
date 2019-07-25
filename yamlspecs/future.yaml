@@ -1,0 +1,14 @@
+!include common.yaml
+---
+- package: compatibility layer between Python 2 and Python 3
+  name:  future 
+  category: python module
+  version: "{{ pkg_defaults.pyversion.future }}"
+  extension: tar.gz
+  description: |
+    Future is is the missing compatibility layer between Python 2 and Python 3. It allows you to use a single, 
+    clean Python 3.x-compatible codebase to support both Python 2 and Python 3 with minimal overhead.
+  vendor_source: https://files.pythonhosted.org/packages/90/52/e20466b85000a181e1e144fd8305caf2cf475e2f9674e797b222f8105f5f/{{ name }}-{{ version  }}.{{ extension }}
+  files:
+    - "{{ root }}/bin/*"
+    - "{{ root }}/lib/python{{ pyfamily }}/site-packages/*"
