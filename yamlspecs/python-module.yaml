@@ -1,0 +1,14 @@
+!include python.yaml
+!include /opt/rcic/include/rcic-module.yaml
+---
+- package: Python module
+  pkgname: "{{ common_name }}_{{ version }}-module"
+  module:
+    name: "{{ version }}"
+    path: "{{ pkg_defaults.module.path }}/{{ common_name }}" 
+    prepend_path: 
+      - "{{ pkg_defaults.module.prepend_path }}"
+
+  requires:
+    - "{{ common_name }}_{{ version }}"
+    - rcic-module-support

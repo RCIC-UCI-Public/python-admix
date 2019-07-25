@@ -1,6 +1,7 @@
 ---
 - package: Python Programming Language 
   name: Python 
+  category: programming language
   common_name: python
   version: "{{ pkg_defaults.python_version }}"
   family_version: "{{ pkg_defaults.python_family }}"
@@ -40,9 +41,3 @@
         %{nil} 
   files:
    - "{{ root }}"
-   -  "{{ module.path }}/{{ module.name }}"
-  module:
-    name: "{{ version }}"
-    path: "{{ pkg_defaults.module.path }}/{{ common_name }}" 
-    prepend_path: 
-      - "{{ pkg_defaults.module.prepend_path }}"
