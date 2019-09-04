@@ -5,3 +5,4 @@ blas64-devel
 lapack-devel
 lapack64-devel
 zlib-devel
+openssl-devel
