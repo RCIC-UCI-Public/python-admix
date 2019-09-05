@@ -10,10 +10,10 @@ include $(YAML2RPM_HOME)/sys/Makefile
 BOOTSTRAP_MODULES_FILE=modules.bootstrap.python2
 #MODULES_FILE=modules.build.python2
 DEFAULTS=pkg-defaults2.yaml
-EXTRAMODS=pyversions2.yaml
+EXTRAMODS=versions2.yaml
 
 # Modules are common plus python2-specific
-MODULES=$(shell sed '1d' pyversions.yaml  | awk -F: '{print $$1}' | sed 's/$$/.yaml/') \
+MODULES=$(shell sed '1d' versions.yaml  | awk -F: '{print $$1}' | sed 's/$$/.yaml/') \
         $(shell sed '1d' $(EXTRAMODS) | awk -F: '{print $$1}' | sed 's/$$/.yaml/')
 
 PKGS = $(MODULES:.yaml=.pkg)

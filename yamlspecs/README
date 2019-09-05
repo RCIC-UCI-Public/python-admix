@@ -24,7 +24,9 @@ Parameterization of yaml files
        -- make for python3
 
 Versions:
-    common versions of python modules are defined in pyversions.yaml 
+    common versions of python modules are defined in versions.yaml 
+    python modules for python2 are defined in versions2.yaml
+    python modules for python3 are defined in versions3.yaml
 
 
 RPM specifics:

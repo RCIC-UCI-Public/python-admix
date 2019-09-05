@@ -32,10 +32,9 @@ Environment modules are build  for python2/3
 To build additional packages, create yaml files and add definitions of 
 the packages to one of 3 files:
 
-- pyversions.yaml  if want to buld this package for python 2 and python 3
-- pyversions2.yaml if want to buld this package for python 2 
-- pyversions3.yaml if want to buld this package for python 3
-
+- versions.yaml if want to buld this package for python 2 and python 3
+- versions2.yaml if want to buld this package only for python 2 
+- versions3.yaml if want to buld this package only for python 3
 
 1. Download sources, for example
    ```bash
