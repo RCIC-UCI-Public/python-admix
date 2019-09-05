@@ -1,13 +1,8 @@
 !include common.yaml
 ---
-- package: virtualenv for python 
+- package: Virtual Python Environment builder
   name: virtualenv 
-
   version: "{{ pkg_defaults.pyversion.virtualenv }}"
-  extension: tar.gz
+  vendor_source: https://github.com/pypa/virtualenv/archive/{{ version }}.{{ extension }}
   description: >
-    virtualenv support for python {{ pyversion }}.
-  vendor_source: https://github.com/pypa/virtualenv/archive/{{ version }}.tar.gz
-  files:
-    - "{{ root }}/bin/*"
-    - "{{ root }}/lib/python{{ pyfamily }}/site-packages/*"
+    Virtualenv for python {{ pyversion }} is a tool for creating isolated ‘virtual’ python environments.

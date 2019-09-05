@@ -25,8 +25,8 @@
       ln -s python{{ family_version }} python{{ major_version }};
       ln -s python{{ family_version }}-config python{{ major_version }}-config
 
-  # Some Items specific to RPM packaging. Use just-compiled python to compile
-  # python files.  No Automatic dependency provides
+  # Some items specific to RPM packaging. Use just-compiled python to compile
+  # python files. No automatic dependency and provides
   rpm:
     extras:
       - "AutoReqProv: no\\nProvides: libpython{{ family_version }}m.so.1.0()(64bit)"

@@ -3,15 +3,11 @@
 - package: setuptools for python 
   name: setuptools 
   version: "{{ pkg_defaults.pyversion2.setuptools }}" 
-  extension: tar.gz
+  vendor_source: https://github.com/pypa/setuptools/archive/v{{ version }}.{{ extension }}
   description: >
-    setuptools support for python {{ pyversion }}.
-  vendor_source: https://github.com/pypa/setuptools/archive/v{{ version }}.tar.gz 
+    Setuptools support for python {{ pyversion }}.
   build:
     configure: echo
     modules: python/{{ pyversion }} 
     target: 
     pkgmake: python{{ pymajor }} bootstrap.py --root $(ROOT) 
-  files:
-    - "{{ root }}/bin/*"
-    - "{{ root }}/lib/python{{ pyfamily }}/site-packages/*"

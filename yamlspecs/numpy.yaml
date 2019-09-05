@@ -3,12 +3,8 @@
 - package: numpy for python 
   name: numpy
   version: "{{ pkg_defaults.pyversion.numpy }}"
-  extension: tar.gz
+  vendor_source: https://github.com/numpy/numpy/releases/download/v{{ version }}/{{ name }}-{{ version }}.{{ extension }}
   description: >
     numpy support for python {{ pyversion }}.
-  vendor_source: https://github.com/numpy/numpy/releases/download/v{{ version }}/{{ name }}-{{ version }}.{{ extension }}
-  files:
-    - "{{ root }}/bin/*"
-    - "{{ root }}/lib/python{{ pyfamily }}/site-packages/*"
   requires:
     - libgfortran

@@ -2,10 +2,9 @@
 ---
 - package: pandas 
   name: pandas 
-  version: "{{ pkg_defaults.pyversion.pandas}}"
-  extension: tar.gz
+  version: "{{ pkg_defaults.pyversion.pandas }}"
+  vendor_source: https://files.pythonhosted.org/packages/b2/4c/b6f966ac91c5670ba4ef0b0b5613b5379e3c7abdfad4e7b89a87d73bae13/{{ name }}-{{ version }}.{{ extension }}
   description: >
     SQLAlchemy support for python {{ pyversion }}.
-  vendor_source: https://files.pythonhosted.org/packages/b2/4c/b6f966ac91c5670ba4ef0b0b5613b5379e3c7abdfad4e7b89a87d73bae13/pandas-{{ version }}.tar.gz 
   files:
     - "{{ root }}/lib/python{{ pyfamily }}/site-packages/*"

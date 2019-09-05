@@ -3,10 +3,6 @@
 - package: pip for python 
   name: pip 
   version: "{{ pkg_defaults.pyversion2.pip }}"
-  extension: tar.gz
+  vendor_source: https://github.com/pypa/pip/archive/{{ version }}.{{ extension }}
   description: >
     pip support for python {{ pyversion }}.
-  vendor_source: https://github.com/pypa/pip/archive/{{ version }}.tar.gz
-  files:
-    - "{{ root }}/bin/*"
-    - "{{ root }}/lib/python{{ pyfamily }}/site-packages/*"

@@ -3,10 +3,9 @@
 - package: provides a Python 2.7 and Python 3 parser similar to the standard ast library
   name:  typed_ast
   version: "{{ pkg_defaults.pyversion3.typed_ast }}"
-  extension: tar.gz
+  vendor_source: https://files.pythonhosted.org/packages/34/de/d0cfe2ea7ddfd8b2b8374ed2e04eeb08b6ee6e1e84081d151341bba596e5/{{ name }}-{{ version }}.{{ extension }}
   description: |
     The typed_ast parsers produce the standard Python AST (plus type comments), and are both fast and correct, 
     as they are based on the CPython 2.7 and 3.6 parsers. Required for mypy  {{ pkg_defaults.pyversion3.mypy }}.
-  vendor_source: https://files.pythonhosted.org/packages/34/de/d0cfe2ea7ddfd8b2b8374ed2e04eeb08b6ee6e1e84081d151341bba596e5/{{ name }}-{{ version }}.{{ extension }}
   files:
     - "{{ root }}/lib/python{{ pyfamily }}/site-packages/*"

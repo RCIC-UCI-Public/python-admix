@@ -1,13 +1,13 @@
 !include common.yaml
 ---
-- package: PyYAML for python 
+- package: YAML parser and emitter for Python
   name: PyYAML 
-
   version: "{{ pkg_defaults.pyversion.PyYAML}}"
-  extension: tar.gz
-
-  description: >
-    PyYAML support for python {{ pyversion }}.
-  vendor_source: http://pyyaml.org/download/pyyaml/PyYAML-{{ version }}.tar.gz
+  vendor_source: http://pyyaml.org/download/pyyaml/{{ name }}-{{ version }}.{{ extension }}
+  description: |
+    PyYAML support for python {{ pyversion }}, features a complete YAML 1.1 parser, 
+    Unicode support, pickle support, capable extension API, and sensible error messages. 
+    PyYAML supports standard YAML tags and provides Python-specific tags that allow 
+    to represent an arbitrary Python object.
   files:
     - "{{ root }}/lib/python{{ pyfamily }}/site-packages/*"
