@@ -1,5 +1,4 @@
 ---
-numpy: "1.15.4"
 scipy: "1.1.0"
 virtualenv: "16.1.0"
 PyYAML: "3.13"
