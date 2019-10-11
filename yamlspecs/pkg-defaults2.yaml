@@ -6,7 +6,7 @@ pkg_defaults:
   python_family: "2.7"
   python_major: "2"
   pyversion: !include versions.yaml
-  pyversion2: !include versions2.yaml
+  pyversionadd: !include versions2.yaml
   system_python_base: /usr/lib64/python2.7/ 
   system_python_pkgs: "{{ pkg_defaults.system_python_base }}/site-packages"
   module: !include envmodules-default.yaml

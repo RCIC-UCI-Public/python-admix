@@ -2,7 +2,7 @@
 ---
 - package: setuptools for python 
   name: setuptools 
-  version: "{{ pkg_defaults.pyversion2.setuptools }}" 
+  version: "{{ pkg_defaults.pyversionadd.setuptools }}" 
   vendor_source: https://github.com/pypa/setuptools/archive/v{{ version }}.{{ extension }}
   description: >
     Setuptools support for python {{ pyversion }}.
