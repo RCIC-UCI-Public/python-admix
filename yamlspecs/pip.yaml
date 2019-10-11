@@ -2,7 +2,7 @@
 ---
 - package: pip for python 
   name: pip 
-  version: "{{ pkg_defaults.pyversionadd.pip }}"
+  version: "{{ pkg_defaults.pyversion.pip }}"
   vendor_source: https://github.com/pypa/pip/archive/{{ version }}.{{ extension }}
   description: >
     pip support for python {{ pyversion }}.
