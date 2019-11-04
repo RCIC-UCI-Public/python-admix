@@ -2,9 +2,9 @@
 ---
 - package: Python date utilities 
   name: python-dateutil 
-  version: "{{pkg_defaults.pyversion.dateutil}}"
+  version: "{{pyversion.dateutil}}"
   vendor_source: https://github.com/dateutil/dateutil/releases/download/{{version}}/{{name}}-{{version}}.{{extension}}
   description: >
     python-dateutil for  python {{pyversion }}.
   files:
-    - "{{root}}/lib/python{{ pyfamily }}/site-packages/*"
+    - "{{root}}/lib/python{{ python_family }}/site-packages/*"

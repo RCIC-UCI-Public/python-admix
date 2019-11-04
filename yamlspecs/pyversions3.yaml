@@ -1,0 +1,9 @@
+---
+  python_version: "3.6.7"
+  python_family: "3.6"
+  python_major: "3"
+  pyversion: !include versions.yaml
+  pyversionadd: !include versions3.yaml
+  system_python_base: "{{pkg_defaults.python_base}}"
+  system_python_pkgs: "{{system_python_base }}/site-packages"
+  pipopts: --without-ensurepip

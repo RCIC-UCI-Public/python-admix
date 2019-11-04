@@ -2,11 +2,11 @@
 ---
 - package: Graphviz for python
   name: graphviz 
-  version: "{{ pkg_defaults.pyversion.graphviz }}"
+  version: "{{ pyversion.graphviz }}"
   vendor_source: https://files.pythonhosted.org/packages/9a/00/481ad02701f952c59671a574a808d9d34d200103f0c7396db75f2e3df717/{{ name }}-{{ version }}.{{ extension }}
   extension: zip
   description: |
-    Graphviz for  python {{ pyversion }}. This package facilitates the creation and rendering 
+    Graphviz {{ version }} for  python {{ python_version }}. This package facilitates the creation and rendering 
     of graph descriptions in the DOT language of the Graphviz graph drawing software.
   files:
-    - "{{ root }}/lib/python{{ pyfamily }}/site-packages/*"
+    - "{{ root }}/lib/python{{ python_family }}/site-packages/*"

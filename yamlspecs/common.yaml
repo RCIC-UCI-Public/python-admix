@@ -1,20 +1,18 @@
+!include pyversions.yaml
 ---
-- pyversion: "{{ pkg_defaults.python_version }}"
-  pyfamily: "{{ pkg_defaults.python_family }}"
-  pymajor: "{{ pkg_defaults.python_major }}"
-  pkgname: "python_{{ pyversion }}_{{ name }}"
-  root: "{{ pkg_defaults.app_path }}/Python/{{ pyversion }}"
+- pkgname: "python_{{ python_version }}-{{ name }}"
+  root: "{{ pkg_defaults.app_path }}/Python/{{ python_version }}"
   extension: tar.gz
   category: python module
   build:
     configure: echo
-    modules: python/{{ pyversion }} 
+    modules: python/{{ python_version }} 
     target: 
   install:
-    makeinstall: python{{ pymajor }} setup.py install --root $(ROOT) 
+    makeinstall: python{{ python_major }} setup.py install --root $(ROOT) 
   requires:
-    - python_{{ pyversion }}  
+    - python_{{ python_version }}  
   files:
     - "{{ root }}/bin/*"
-    - "{{ root }}/lib/python{{ pyfamily }}/site-packages/*"
+    - "{{ root }}/lib/python{{ python_family }}/site-packages/*"
   rpm: !include rpm.extras.yaml

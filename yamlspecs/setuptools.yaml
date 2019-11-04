@@ -2,12 +2,12 @@
 ---
 - package: setuptools for python 
   name: setuptools 
-  version: "{{ pkg_defaults.pyversion.setuptools }}" 
+  version: "{{ pyversion.setuptools }}" 
   vendor_source: https://github.com/pypa/setuptools/archive/v{{ version }}.{{ extension }}
   description: >
-    Setuptools support for python {{ pyversion }}.
+    Setuptools support for python {{ python_version }}.
   build:
     configure: echo
-    modules: python/{{ pyversion }} 
+    modules: python/{{ python_version }} 
     target: 
-    pkgmake: python{{ pymajor }} bootstrap.py --root $(ROOT) 
+    pkgmake: python{{ python_major }} bootstrap.py --root $(ROOT) 

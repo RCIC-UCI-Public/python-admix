@@ -2,12 +2,12 @@
 ---
 - package: numpy for python 
   name: numpy
-  version: "{{ pkg_defaults.pyversionadd.numpy }}"
+  version: "{{ pyversionadd.numpy }}"
 #  vendor_source: https://github.com/numpy/numpy/releases/download/v{{ version }}/{{ name }}-{{ version }}.{{ extension }}
   vendor_source: https://github.com/numpy/numpy/archive/v{{version}}.{{extension}}
   description: >
-    numpy support for python {{ pyversion }}.
+    numpy support for python {{ python_version }}.
   install:
-    makeinstall: export CFLAGS='-std=c99'; python{{ pymajor }} setup.py install --root $(ROOT) 
+    makeinstall: export CFLAGS='-std=c99'; python{{ python_major }} setup.py install --root $(ROOT) 
   requires:
     - libgfortran

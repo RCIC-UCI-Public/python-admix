@@ -2,10 +2,11 @@
 !include /opt/rcic/include/rcic-module.yaml
 ---
 - package: Python module
+  category: LANGUAGES
   pkgname: "{{ common_name }}_{{ version }}-module"
   module:
     name: "{{ version }}"
-    path: "{{ pkg_defaults.module.path }}/{{ common_name }}" 
+    path: "{{ pkg_defaults.module.RCICmpath }}/{{ category }}/{{ common_name }}" 
     prepend_path: 
       - "{{ pkg_defaults.module.prepend_path }}"
 

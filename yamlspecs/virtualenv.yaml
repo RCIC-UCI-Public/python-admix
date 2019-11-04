@@ -2,7 +2,7 @@
 ---
 - package: Virtual Python Environment builder
   name: virtualenv 
-  version: "{{ pkg_defaults.pyversion.virtualenv }}"
+  version: "{{ pyversion.virtualenv }}"
   vendor_source: https://github.com/pypa/virtualenv/archive/{{ version }}.{{ extension }}
   description: >
-    Virtualenv for python {{ pyversion }} is a tool for creating isolated virtual python environments.
+    Virtualenv for python {{ python_version }} is a tool for creating isolated virtual python environments.

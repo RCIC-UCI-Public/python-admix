@@ -2,11 +2,11 @@
 ---
 - package: Python 2 and 3 compatibility utilities
   name: six 
-  version: "{{ pkg_defaults.pyversion.six}}"
+  version: "{{ pyversion.six}}"
   vendor_source: https://files.pythonhosted.org/packages/dd/bf/4138e7bfb757de47d1f4b6994648ec67a51efe58fa907c1e11e350cddfca/{{ name }}-{{ version }}.{{ extension }}
   description: |
-    six for  python {{ pyversion }}.  Six is a Python 2 and 3 compatibility library. It provides utility functions 
+    six {{version}} for  python {{ python_version }}.  Six is a Python 2 and 3 compatibility library. It provides utility functions 
     for smoothing over the differences between the Python versions with the goal of writing Python code that is 
     compatible on both Python versions. See the documentation for more information on what is provided.
   files:
-    - "{{ root }}/lib/python{{ pyfamily }}/site-packages/*"
+    - "{{ root }}/lib/python{{ python_family }}/site-packages/*"

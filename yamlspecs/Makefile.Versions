@@ -1,0 +1,42 @@
+# Copyright (c) 2000 - 2019 The Regents of the University of California.
+# All rights reserved.	
+#
+# This makefile includes the generic yaml2rpm Makefile 
+# building packages for python 3
+#
+
+.PHONY:  modules.build 
+
+include $(YAML2RPM_HOME)/sys/Makefile
+
+BOOTSTRAP_MODULES_FILE=modules.bootstrap.python3
+MODULES_FILE = modules.build.python3
+PYVERSIONS = pyversions3.yaml
+EXTRAMODS=versions3.yaml
+MANIFEST_FILE = $(MODULES_FILE)
+
+GENEXTRAS +=  --map="{'pyversions.yaml':'$(PYVERSIONS)'}" 
+
+# Modules are common plus python3-specific
+MODULES = $(shell sed '1d' versions.yaml  | awk -F: '{print $$1}' | sed 's/$$/.yaml/') \
+          $(shell sed '1d' $(EXTRAMODS) | awk -F: '{print $$1}' | sed 's/$$/.yaml/')
+
+PKGS = $(MODULES:.yaml=.pkg)
+
+default: $(PKGS) $(MODULES_FILE)
+
+modules.build: 
+	/bin/rm $(MODULES_FILE)
+	$(MAKE) -f $(THISMAKE) $(MODULES_FILE)
+
+
+$(MODULES_FILE):
+	echo $(MODULES) | sed -e 's/ //g' -e 's/\.yaml/\n/g' > $(MODULES_FILE)
+
+clean:
+	- /bin/rm $(MODULES_FILE)
+
+diag2: diag
+	echo $(GENERATE)
+	echo $(MODULES_FILE)
+	cat $(BOOTSTRAP_MODULES_FILE)

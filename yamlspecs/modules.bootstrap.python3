@@ -2,4 +2,7 @@
 # pycogent
 python
 python-module
+setuptools
+pip
+cython
 numpy

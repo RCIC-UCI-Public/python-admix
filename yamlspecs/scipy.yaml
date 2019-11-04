@@ -2,12 +2,12 @@
 ---
 - package: SciPy is a Scientific Library for Python
   name: scipy 
-  version: "{{ pkg_defaults.pyversion.scipy}}"
+  version: "{{ pyversion.scipy}}"
   vendor_source: https://github.com/scipy/scipy/releases/download/v{{ version }}/{ name }}-{{ version }}.{{ extension }}
   description: |
-    Scipy support for python {{ pyversion }}. The SciPy library depends on NumPy, 
+    Scipy version {{ version }} support for python {{ python_version }}. The SciPy library depends on NumPy, 
     which provides convenient and fast N-dimensional array manipulation. 
   files:
-    - "{{ root }}/lib/python{{ pyfamily }}/site-packages/*"
+    - "{{ root }}/lib/python{{ python_family }}/site-packages/*"
   requires:
-    - python_{{ pkg_defaults.python_version }}_numpy
+    - python_{{ python_version }}-numpy

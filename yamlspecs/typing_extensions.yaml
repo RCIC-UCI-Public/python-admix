@@ -2,10 +2,10 @@
 ---
 - package: Backported and Experimental Type Hints for Python
   name:  typing_extensions
-  version: "{{ pkg_defaults.pyversionadd.typing_extensions }}"
+  version: "{{ pyversionadd.typing_extensions }}"
   vendor_source: https://files.pythonhosted.org/packages/59/b6/21774b993eec6e797fbc49e53830df823b69a3cb62f94d36dfb497a0b65a/{{ name }}-{{ version }}.{{ extension }}
   description: |
     Typing Extensions is Backported and Experimental Type Hints for Python typechecker.  
-    Required for mypy  {{ pkg_defaults.pyversionadd.mypy }}.
+    Required for mypy  {{ pyversionadd.mypy }}.
   files:
-    - "{{ root }}/lib/python{{ pyfamily }}/site-packages/*"
+    - "{{ root }}/lib/python{{ python_family }}/site-packages/*"

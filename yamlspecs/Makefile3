@@ -4,17 +4,10 @@
 # This makefile includes the generic yaml2rpm Makefile 
 # building packages for python 3
 #
+include Makefile.Versions
 
-include $(YAML2RPM_HOME)/sys/Makefile
-
-BOOTSTRAP_MODULES_FILE=modules.bootstrap
-#MODULES_FILE=modules.build
-DEFAULTS=pkg-defaults.yaml
+BOOTSTRAP_MODULES_FILE=modules.bootstrap.python3
+MODULES_FILE = modules.build.python3
+PYVERSIONS = pyversions3.yaml
 EXTRAMODS=versions3.yaml
 
-# Modules are common plus python3-specific
-MODULES = $(shell sed '1d' versions.yaml  | awk -F: '{print $$1}' | sed 's/$$/.yaml/') \
-          $(shell sed '1d' $(EXTRAMODS) | awk -F: '{print $$1}' | sed 's/$$/.yaml/')
-
-PKGS = $(MODULES:.yaml=.pkg)
-default: $(PKGS)
