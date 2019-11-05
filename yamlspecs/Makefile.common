@@ -23,14 +23,10 @@ MODULES = $(shell sed '1d' versions.yaml  | awk -F: '{print $$1}' | sed 's/$$/.y
 
 PKGS = $(MODULES:.yaml=.pkg)
 
-default: $(PKGS) $(MODULES_FILE)
+default: modules.build $(PKGS) 
 
 modules.build: 
-	/bin/rm $(MODULES_FILE)
-	$(MAKE) -f $(THISMAKE) $(MODULES_FILE)
-
-
-$(MODULES_FILE):
+	- /bin/rm $(MODULES_FILE)
 	echo $(MODULES) | sed -e 's/ //g' -e 's/\.yaml/\n/g' > $(MODULES_FILE)
 
 clean:

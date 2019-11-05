@@ -4,7 +4,7 @@
 # This makefile includes the generic yaml2rpm Makefile 
 # building packages for python 3
 #
-include Makefile.Versions
+include Makefile.common
 
 BOOTSTRAP_MODULES_FILE=modules.bootstrap.python3
 MODULES_FILE = modules.build.python3

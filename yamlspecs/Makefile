@@ -13,6 +13,10 @@ SUBMAKES = Makefile2 Makefile3
 		$(MAKE) -f $$f $@; \
         done
 	
+manifest:
+	$(MAKE) -s -f Makefile2 modules.build manifest
+	$(MAKE) -s -f Makefile3 modules.build manifest
+
 %: 	
 	$(MAKE) -f Makefile2 $*
 	$(MAKE) -f Makefile2 clean
