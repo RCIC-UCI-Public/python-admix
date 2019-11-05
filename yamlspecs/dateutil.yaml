@@ -1,10 +1,12 @@
 !include common.yaml
 ---
 - package: Python date utilities 
-  name: python-dateutil 
+  name: dateutil 
   version: "{{pyversion.dateutil}}"
-  vendor_source: https://github.com/dateutil/dateutil/releases/download/{{version}}/{{name}}-{{version}}.{{extension}}
+  vendor_source: https://github.com/dateutil/dateutil/releases/download/{{version}}/python-{{name}}-{{version}}.{{extension}}
+  src_dir: python-{{ name }}-{{ version }}
+  src_tarball: "{{ src_dir }}.{{ extension }}"
   description: >
-    python-dateutil for  python {{pyversion }}.
+    python-dateutil for  python {{python_version }}.
   files:
     - "{{root}}/lib/python{{ python_family }}/site-packages/*"
