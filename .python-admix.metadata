@@ -1,4 +1,5 @@
 2e3334c5affcc04aa422fc7b40554cd778fa4675  sources/numpy-1.15.4.tar.gz 11TomEHHgP6dHgV7jEiMPvUSDzyKcG-Zg
+14c996742687750fccfa07d78d5c25437097df01  sources/numpy-1.17.2.tar.gz 1sHJKjO-zAiDfTLxtogCHcMF47wLHmJPJ
 1176ac84c67d0f7b7bda0dc029968b73a675b9f7  sources/pandas-0.24.2.tar.gz 1PF-ZSRxiaowAdXjQR8wgKKpg7EMmqE41
 72f004c193f4cb04645d9bca3cdbc8f33ede530e  sources/pip-18.1.tar.gz 186k9TPpKciXPWR-QfDwUbhYZAyel_AOU
 c9750707d127d39a6868e1e55f7cd8c7be006b89  sources/Python-2.7.15.tgz 1GIm-hBwY9MYmBCbfETyKyo5PZdgr8dEQ
@@ -11,3 +12,12 @@ f7b3214b23138286fb3860ec83852231b54d692c  sources/pytz-2019.1.tar.gz 1nWM510IIVR
 1957b44942be21822414f4dde936e6c40b687565  sources/six-1.12.0.tar.gz 1BiiItdO18MtCNXJiZDRjgivowbOnFsCI
 7e7260c3886ff633bbf6ffbcee3a394a7e520145  sources/SQLAlchemy-1.2.14.tar.gz 1hTjLiwsCqrUHr7evNkNPUwf766ikKmWf
 eedfca8e351a6328ea05eb241560c8a26f99dca1  sources/virtualenv-16.1.0.tar.gz 13iD3tO-m5xkcE7okgpLMzCSxBKj7e3fa
+f290b4b8db56c37540008a2f8a9a1df7608a56f6  sources/typed_ast-1.4.0.tar.gz 1lETAaDnjTYg-fEToOC6LIrMZd8SGzbqV
+90fb48502fdf3e75bcdca669ac52916f2dea4ba7  sources/typing_extensions-3.7.4.tar.gz 1ck1WnnSsqisnhc7RIraEFDfbmNhEG4ft
+fed0d44b27c51d1f20b14ed02461ddd2d3de2999  sources/mypy-0.720.tar.gz 1o58O82wlnvPLzAtYYXI4opc8rWv1mivB
+c5b4df957b9f8484768a26276e6a12e7127793ed  sources/mypy_extensions-0.4.1.tar.gz 1Zg8TENLEgd--W05qgkQGRh963YRO-A1Y
+0541e30b0de4d6f17f9b942c573f8059df042938  sources/Cython-0.29.13.tar.gz 1fGiBPKQ6VfM-POsZLJE9JHAjNMKkp96q
+7abd068d09c637f4fa5fb2df3d90cc9607523aee  sources/future-0.17.1.tar.gz 1LI90k4Ohs1L3_5yIeh_vAnx3YoD5Z-R_
+e1b373b40380ba61104917abfa9b9872e6a0e43f  sources/graphviz-0.11.1.zip 13AW6veQ5Zc51KPUVlUm8uycTalX5SEvD
+20c279ff55abd78c11ce5ca0a66d47755434d00f  sources/pip-19.2.3.tar.gz 1j_J04-reCT66ozdAQ0aVYUS9FwyvSlRH
+8e1260c43b3fee042dfdb9a9db97df3fca36e481  sources/setuptools-41.0.0.tar.gz 16j_K5_SFrag1zqawBF878BQBofkgKB2_
