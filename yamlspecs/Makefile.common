@@ -23,7 +23,8 @@ MODULES = $(shell sed '1d' versions.yaml  | awk -F: '{print $$1}' | sed 's/$$/.y
 
 PKGS = $(MODULES:.yaml=.pkg)
 
-default: modules.build $(PKGS) 
+default: diag2 modules.build 
+	make -f $(THISMAKE) $(PKGS) 
 
 modules.build: 
 	- /bin/rm $(MODULES_FILE)
@@ -33,6 +34,8 @@ clean:
 	- /bin/rm $(MODULES_FILE)
 
 diag2: diag
+	echo "Modules: $(MODULES)"
+	echo "PKGS: $(PKGS)"
 	echo $(GENERATE)
 	echo $(MODULES_FILE)
 	cat $(BOOTSTRAP_MODULES_FILE)
