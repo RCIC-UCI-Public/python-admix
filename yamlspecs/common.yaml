@@ -1,7 +1,7 @@
 !include pyversions.yaml
 ---
 - pkgname: "python_{{ python_version }}-{{ name }}"
-  root: "{{ pkg_defaults.app_path }}/Python/{{ python_version }}"
+  root: "{{ pkg_defaults.app_path }}/python/{{ python_version }}"
   extension: tar.gz
   category: python module
   build:

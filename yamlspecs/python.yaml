@@ -12,7 +12,7 @@
   vendor_source: https://www.python.org/ftp/python/{{ version }}/Python-{{ version }}.tgz
   description: >
     Python version {{ version }}. 
-  root: "{{ pkg_defaults.app_path }}/{{ name }}/{{ version }}"
+  root: "{{ pkg_defaults.app_path }}/{{ common_name }}/{{ version }}"
 
   build:
     configure_args: --enable-shared  --enable-loadable-sqlite-extensions --enable-ipv6 {{ pipopts }}

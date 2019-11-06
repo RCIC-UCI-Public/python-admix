@@ -2,7 +2,7 @@
 # All rights reserved.	
 #
 # This makefile includes the generic yaml2rpm Makefile 
-# building packages for python 3
+# building packages for python 2
 #
 include Makefile.common
 
@@ -10,4 +10,5 @@ BOOTSTRAP_MODULES_FILE = modules.bootstrap.python2
 MODULES_FILE = modules.build.python2
 PYVERSIONS = pyversions2.yaml
 EXTRAMODS = versions2.yaml
+
 

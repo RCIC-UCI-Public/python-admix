@@ -9,10 +9,10 @@
 
 include $(YAML2RPM_HOME)/sys/Makefile
 
-BOOTSTRAP_MODULES_FILE=modules.bootstrap.python3
-MODULES_FILE = modules.build.python3
+BOOTSTRAP_MODULES_FILE=modules.bootstrap.python
+MODULES_FILE = modules.build.python
 PYVERSIONS = pyversions3.yaml
-EXTRAMODS=versions3.yaml
+EXTRAMODS=versions.yaml
 MANIFEST_FILE = $(MODULES_FILE)
 
 GENEXTRAS +=  --map="{'pyversions.yaml':'$(PYVERSIONS)'}" 
