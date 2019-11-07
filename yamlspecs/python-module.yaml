@@ -3,13 +3,3 @@
 ---
 - package: Python module
   category: LANGUAGES
-  pkgname: "{{ common_name }}_{{ version }}-module"
-  module:
-    name: "{{ version }}"
-    path: "{{ pkg_defaults.module.RCICmpath }}/{{ category }}/{{ common_name }}" 
-    prepend_path: 
-      - "{{ pkg_defaults.module.prepend_path }}"
-
-  requires:
-    - "{{ common_name }}_{{ version }}"
-    - rcic-module-support
