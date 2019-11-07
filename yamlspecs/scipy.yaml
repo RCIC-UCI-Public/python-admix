@@ -6,7 +6,7 @@
   vendor_source: https://github.com/scipy/scipy/releases/download/v{{ version }}/{ name }}-{{ version }}.{{ extension }}
   description: |
     Scipy version {{ version }} support for python {{ python_version }}. The SciPy library depends on NumPy, 
-    which provides convenient and fast N-dimensional array manipulation. 
+    which provides convenient and fast N-dimensional array manipulation
   files:
     - "{{ root }}/lib/python{{ python_family }}/site-packages/*"
   requires:

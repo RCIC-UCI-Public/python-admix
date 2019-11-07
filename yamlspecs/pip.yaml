@@ -5,4 +5,4 @@
   version: "{{ pyversion.pip }}"
   vendor_source: https://github.com/pypa/pip/archive/{{ version }}.{{ extension }}
   description: >
-    pip support for python {{ python_version }}.
+    Pip support for python {{ python_version }}
