@@ -1,0 +1,14 @@
+bootstrap:
+  - python
+  - python-module
+  - setuptools
+  - pip
+  - cython
+  - numpy
+system:
+  - blas-devel
+  - blas64-devel
+  - lapack-devel
+  - lapack64-devel
+  - zlib-devel
+  - openssl-devel

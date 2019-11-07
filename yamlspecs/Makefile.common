@@ -9,7 +9,7 @@
 
 include $(YAML2RPM_HOME)/sys/Makefile
 
-BOOTSTRAP_MODULES_FILE=modules.bootstrap.python
+#BOOTSTRAP_MODULES_FILE=modules.bootstrap.python
 MODULES_FILE = modules.build.python
 PYVERSIONS = pyversions3.yaml
 EXTRAMODS=versions.yaml
@@ -38,4 +38,4 @@ diag2: diag
 	echo "PKGS: $(PKGS)"
 	echo $(GENERATE)
 	echo $(MODULES_FILE)
-	cat $(BOOTSTRAP_MODULES_FILE)
+#	cat $(BOOTSTRAP_MODULES_FILE)

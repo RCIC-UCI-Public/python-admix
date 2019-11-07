@@ -6,7 +6,7 @@
 #
 include Makefile.common
 
-BOOTSTRAP_MODULES_FILE=modules.bootstrap.python3
+#BOOTSTRAP_MODULES_FILE=modules.bootstrap.python3
 MODULES_FILE = modules.build.python3
 PYVERSIONS = pyversions3.yaml
 EXTRAMODS=versions3.yaml

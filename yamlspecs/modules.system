@@ -1,8 +1,0 @@
-# These are system packages required for build and can be installed with
-# make bootstrap
-blas-devel
-blas64-devel
-lapack-devel
-lapack64-devel
-zlib-devel
-openssl-devel
