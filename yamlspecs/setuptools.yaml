@@ -5,7 +5,7 @@
   version: "{{ pyversion.setuptools }}" 
   vendor_source: https://github.com/pypa/setuptools/archive/v{{ version }}.{{ extension }}
   description: >
-    Setuptools support for python {{ python_version }}.
+    Setuptools support for python {{ python_version }}
   build:
     configure: echo
     modules: python/{{ python_version }} 

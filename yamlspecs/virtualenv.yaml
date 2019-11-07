@@ -5,4 +5,4 @@
   version: "{{ pyversion.virtualenv }}"
   vendor_source: https://github.com/pypa/virtualenv/archive/{{ version }}.{{ extension }}
   description: >
-    Virtualenv for python {{ python_version }} is a tool for creating isolated virtual python environments.
+    Virtualenv for python {{ python_version }} is a tool for creating isolated virtual python environments
