@@ -10,5 +10,6 @@ system:
   - blas64-devel
   - lapack-devel
   - lapack64-devel
+  - libffi-devel
   - zlib-devel
   - openssl-devel
