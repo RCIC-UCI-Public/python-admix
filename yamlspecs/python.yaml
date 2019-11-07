@@ -1,18 +1,18 @@
 !include pyversions.yaml
 ---
 - package: Python Programming Language 
-  name: Python 
-  category: programming language
-  common_name: python
+  name: python 
   version: "{{ python_version }}"
   family_version: "{{ python_family }}"
   major_version: "{{ python_major }}"
   extension: tgz
-  pkgname: "{{ common_name }}_{{ version }}"
+  src_dir: "Python-{{ version }}"
+  src_tarball: "{{ src_dir }}.{{ extension }}"
+  pkgname: "{{ name }}_{{ version }}"
   vendor_source: https://www.python.org/ftp/python/{{ version }}/Python-{{ version }}.tgz
   description: >
-    Python version {{ version }}. 
-  root: "{{ pkg_defaults.app_path }}/{{ common_name }}/{{ version }}"
+    Python version {{ version }}
+  root: "{{ pkg_defaults.app_path }}/{{ name }}/{{ version }}"
 
   build:
     configure_args: --enable-shared  --enable-loadable-sqlite-extensions --enable-ipv6 {{ pipopts }}
@@ -27,7 +27,6 @@
       ln -s python{{ family_version }} python{{ major_version }};
       ln -s python{{ family_version }}-config python-config;
       ln -s python{{ family_version }}-config python{{ major_version }}-config
-
   # Some items specific to RPM packaging. Use just-compiled python to compile
   # python files. No automatic dependency and provides
   rpm:
