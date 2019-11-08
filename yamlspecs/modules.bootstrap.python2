@@ -1,0 +1,7 @@
+# Modules to build and install locally. Order IS important
+python
+python-module
+setuptools
+pip
+cython
+numpy

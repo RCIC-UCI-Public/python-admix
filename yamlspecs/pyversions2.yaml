@@ -4,6 +4,4 @@
   python_major: "2"
   pyversion: !include versions.yaml
   pyversionadd: !include versions2.yaml
-  system_python_base: "{{pkg_defaults.python_base}}"
-  system_python_pkgs: "{{system_python_base }}/site-packages"
   pipopts:

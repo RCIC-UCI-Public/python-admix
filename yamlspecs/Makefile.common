@@ -9,11 +9,11 @@
 
 include $(YAML2RPM_HOME)/sys/Makefile
 
-#BOOTSTRAP_MODULES_FILE=modules.bootstrap.python
+BOOTSTRAP_MODULES_FILE=modules.bootstrap.python
 MODULES_FILE = modules.build.python
 PYVERSIONS = pyversions3.yaml
 EXTRAMODS=versions.yaml
-MANIFEST_FILE = $(MODULES_FILE)
+MANIFEST_FILE = modules.manifest
 
 GENEXTRAS +=  --map="{'pyversions.yaml':'$(PYVERSIONS)'}" 
 
@@ -27,15 +27,20 @@ default: diag2 modules.build
 	make -f $(THISMAKE) $(PKGS) 
 
 modules.build: 
-	- /bin/rm $(MODULES_FILE)
+	/bin/rm -f $(MODULES_FILE)
+	/bin/rm -f $(MANIFEST_FILE)
 	echo $(MODULES) | sed -e 's/ //g' -e 's/\.yaml/\n/g' > $(MODULES_FILE)
+	/bin/cp $(MODULES_FILE) $(MANIFEST_FILE)
+	echo  python >> $(MANIFEST_FILE)
+	echo python-module >> $(MANIFEST_FILE)
 
 clean:
 	- /bin/rm $(MODULES_FILE)
+	- /bin/rm $(MANIFEST_FILE)
 
 diag2: diag
 	echo "Modules: $(MODULES)"
 	echo "PKGS: $(PKGS)"
 	echo $(GENERATE)
 	echo $(MODULES_FILE)
-#	cat $(BOOTSTRAP_MODULES_FILE)
+	cat $(BOOTSTRAP_MODULES_FILE)
