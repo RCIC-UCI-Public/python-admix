@@ -1,0 +1,16 @@
+!include common.yaml
+---
+- package: matplotlib
+  name: matplotlib
+  version: "{{ pyversionadd.matplotlib }}"
+  vendor_source: https://files.pythonhosted.org/packages/12/d1/7b12cd79c791348cb0c78ce6e7d16bd72992f13c9f1e8e43d2725a6d8adf/{{ name }}-{{ version }}.{{ extension }}
+  description: |
+    Matplotlib {{ version }} for python {{ python_version }} strives to produce publication quality 2D graphics
+    for interactive graphing, scientific publishing, user interface development and web application servers 
+    targeting multiple user interfaces and hardcopy output formats.
+  files:
+    - "{{ root }}/lib/python{{ python_family }}/site-packages/*"
+  requires:
+    - python_{{ python_version }}-pyparsing
+    - python_{{ python_version }}-cycer
+    - python_{{ python_version }}-kiwisolver
