@@ -7,3 +7,5 @@ lapack64-devel
 libffi-devel
 zlib-devel
 openssl-devel
+tcl-devel
+tk-devel

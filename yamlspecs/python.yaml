@@ -1,6 +1,7 @@
 !include pyversions.yaml
 ---
 - package: Python Programming Language 
+  release: 2
   name: python 
   version: "{{ python_version }}"
   family_version: "{{ python_family }}"
