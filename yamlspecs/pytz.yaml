@@ -4,7 +4,7 @@
   name: pytz 
   version: "{{ pyversion.pytz}}"
   vendor_source: https://files.pythonhosted.org/packages/df/d5/3e3ff673e8f3096921b3f1b79ce04b832e0100b4741573154b72b756a681/{{ name }}-{{ version }}.{{ extension }}
-  description: >
+  description: |
     Pytz {{ version }} for python {{ python_version }}. This library allows 
     accurate and cross platform timezone calculations 
   files:
