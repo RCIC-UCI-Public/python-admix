@@ -9,3 +9,4 @@ zlib-devel
 openssl-devel
 tcl-devel
 tk-devel
+python-rpm-macros
