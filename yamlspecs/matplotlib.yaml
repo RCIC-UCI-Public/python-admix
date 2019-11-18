@@ -12,5 +12,5 @@
     - "{{ root }}/lib/python{{ python_family }}/site-packages/*"
   requires:
     - python_{{ python_version }}-pyparsing
-    - python_{{ python_version }}-cycer
+    - python_{{ python_version }}-cycler
     - python_{{ python_version }}-kiwisolver
