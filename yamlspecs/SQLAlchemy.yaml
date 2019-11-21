@@ -2,9 +2,9 @@
 ---
 - package: SQLAlchemy for python 
   name: SQLAlchemy 
-  version: "{{ pyversion.SQLAlchemy}}"
-  vendor_source: https://files.pythonhosted.org/packages/e2/0a/05b7d13618ad41c108a6c2b886af83bf9bb7e35f8951227abb18b1330745/{{ name }}-{{ version }}.{{ extension }}
+  version: "{{pyversion.SQLAlchemy}}"
+  vendor_source: https://files.pythonhosted.org/packages/e2/0a/05b7d13618ad41c108a6c2b886af83bf9bb7e35f8951227abb18b1330745/{{name}}-{{version}}.{{extension}}
   description: >
-    SQLAlchemy {{ version }} for python {{ python_version }} provides Database Abstraction Library
+    SQLAlchemy {{version}} for python {{python_version}} provides Database Abstraction Library
   files:
-    - "{{ root }}/lib/python{{ python_family }}/site-packages/*"
+    - "{{root}}/lib/python{{python_family}}/site-packages/*"

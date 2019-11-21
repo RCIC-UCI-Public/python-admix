@@ -2,10 +2,10 @@
 ---
 - package: Optional static typing for python
   name:  mypy_extensions
-  version: "{{ pyversionadd.mypy_extensions }}"
-  vendor_source: https://files.pythonhosted.org/packages/c2/92/3cc05d1206237d54db7b2565a58080a909445330b4f90a6436302a49f0f8/{{ name }}-{{ version }}.{{ extension }}
+  version: "{{pyversionadd.mypy_extensions}}"
+  vendor_source: https://files.pythonhosted.org/packages/c2/92/3cc05d1206237d54db7b2565a58080a909445330b4f90a6436302a49f0f8/{{name}}-{{version}}.{{extension}}
   description: |
     Experimental type system extensions for programs checked with the mypy typechecker.
-    Required for mypy  {{ pyversionadd.mypy }}
+    Required for mypy  {{pyversionadd.mypy}}
   files:
-    - "{{ root }}/lib/python{{ python_family }}/site-packages/*"
+    - "{{root}}/lib/python{{python_family}}/site-packages/*"

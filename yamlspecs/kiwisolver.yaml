@@ -2,9 +2,9 @@
 ---
 - package: kiwisolver
   name: kiwisolver
-  version: "{{ pyversionadd.kiwisolver }}"
-  vendor_source: https://files.pythonhosted.org/packages/16/e7/df58eb8868d183223692d2a62529a594f6414964a3ae93548467b146a24d/{{ name }}-{{ version }}.{{ extension }}
+  version: "{{pyversionadd.kiwisolver}}"
+  vendor_source: https://files.pythonhosted.org/packages/16/e7/df58eb8868d183223692d2a62529a594f6414964a3ae93548467b146a24d/{{name}}-{{version}}.{{extension}}
   description: >
     A fast implementation of the Cassowary constraint solver
   files:
-    - "{{ root }}/lib/python{{ python_family }}/site-packages/*"
+    - "{{root}}/lib/python{{python_family}}/site-packages/*"

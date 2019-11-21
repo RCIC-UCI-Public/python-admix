@@ -2,10 +2,10 @@
 ---
 - package: cycler
   name: cycler
-  version: "{{ pyversionadd.cycler }}"
-  vendor_source: https://files.pythonhosted.org/packages/c2/4b/137dea450d6e1e3d474e1d873cd1d4f7d3beed7e0dc973b06e8e10d32488/{{ name }}-{{ version }}.{{ extension }}
+  version: "{{pyversionadd.cycler}}"
+  vendor_source: https://files.pythonhosted.org/packages/c2/4b/137dea450d6e1e3d474e1d873cd1d4f7d3beed7e0dc973b06e8e10d32488/{{name}}-{{version}}.{{extension}}
   description: |
     A single entry Cycler object can be used to easily cycle over a single style.
     Prerequisite for matplotlib
   files:
-    - "{{ root }}/lib/python{{ python_family }}/site-packages/*"
+    - "{{root}}/lib/python{{python_family}}/site-packages/*"

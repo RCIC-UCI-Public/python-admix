@@ -4,9 +4,9 @@
   name: dateutil 
   version: "{{pyversion.dateutil}}"
   vendor_source: https://github.com/dateutil/dateutil/releases/download/{{version}}/python-{{name}}-{{version}}.{{extension}}
-  src_dir: python-{{ name }}-{{ version }}
-  src_tarball: "{{ src_dir }}.{{ extension }}"
+  src_dir: python-{{name}}-{{version}}
+  src_tarball: "{{src_dir}}.{{extension}}"
   description: >
-    Python dateutil for python {{python_version }}
+    Python dateutil for python {{python_version}}
   files:
-    - "{{root}}/lib/python{{ python_family }}/site-packages/*"
+    - "{{root}}/lib/python{{python_family}}/site-packages/*"
