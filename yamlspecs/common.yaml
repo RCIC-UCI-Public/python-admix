@@ -3,6 +3,7 @@
 - pkgname: "python_{{python_version}}-{{name}}"
   root: "{{pkg_defaults.app_path}}/python/{{python_version}}"
   extension: tar.gz
+  release: 2
   build:
     configure: echo
     modules: python/{{python_version}} 
