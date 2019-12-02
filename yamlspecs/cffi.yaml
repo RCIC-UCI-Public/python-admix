@@ -1,0 +1,11 @@
+!include common.yaml
+---
+- package: cffi 
+  name: cffi 
+  version: "{{pyversion.cffi}}"
+  vendor_source:  https://files.pythonhosted.org/packages/0d/aa/c5ac2f337d9a10ee95d160d47beb8d9400e1b2a46bb94990a0409fe6d133/{{name}}-{{version}}.{{extension}}
+  description: |
+     Foreign Function Interface for Python calling C code, {{name}} {{version}} . Please see the Documentation
+     at http://cffi.readthedocs.org/. Source code {{vendor_source}}
+  files:
+    - "{{root}}/lib/python{{python_family}}/site-packages/*"
