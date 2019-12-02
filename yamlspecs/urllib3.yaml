@@ -1,0 +1,14 @@
+!include common.yaml
+---
+- package: urllib3 
+  name: urllib3 
+  version: "{{pyversion.urllib3}}"
+  vendor_source: https://files.pythonhosted.org/packages/ad/fc/54d62fa4fc6e675678f9519e677dfc29b8964278d75333cf142892caf015/{{name}}-{{version}}.{{extension}}
+  description: |
+    urllib3 is a powerful, sanity-friendly HTTP client for Python. Much of the Python 
+    ecosystem already uses urllib3 and you should too. urllib3 brings many critical 
+    features that are missing from the Python standard libraries
+  files:
+    - "{{root}}/lib/python{{python_family}}/site-packages/*"
+#  requires:
+#    - python_{{python_version}}-urllib3
