@@ -1,5 +1,5 @@
 !include python.yaml
-!include /opt/rcic/include/rcic-module.yaml
+!include rcic-module.yaml
 ---
 - package: Python module
   category: LANGUAGES

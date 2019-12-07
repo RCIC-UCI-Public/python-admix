@@ -1,5 +1,5 @@
 !include pyversions.yaml
-!include /opt/rcic/include/rcic-package.yaml
+!include rcic-package.yaml
 ---
 - package: Python Programming Language 
   release: 2
