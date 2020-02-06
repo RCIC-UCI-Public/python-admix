@@ -13,9 +13,9 @@ SUBMAKES = Makefile2 Makefile3
 		$(MAKE) -f $$f $@; \
         done
 	
-manifest:
-	$(MAKE) -s -f Makefile2 modules.build manifest
-	$(MAKE) -s -f Makefile3 modules.build manifest
+manifest module-provides module-requires:
+	$(MAKE) -s -f Makefile2 modules.build $@
+	$(MAKE) -s -f Makefile3 modules.build $@
 
 %: 	
 	$(MAKE) -f Makefile2 $*
