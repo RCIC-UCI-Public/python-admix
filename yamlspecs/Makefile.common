@@ -7,6 +7,7 @@
 
 .PHONY:  modules.build 
 
+ALL_TARGETS = bootstrap default
 include $(YAML2RPM_HOME)/sys/Makefile
 
 BOOTSTRAP_MODULES_FILE=modules.bootstrap.python
