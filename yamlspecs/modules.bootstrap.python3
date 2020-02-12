@@ -5,3 +5,5 @@ setuptools
 pip
 cython
 numpy
+scipy
+joblib

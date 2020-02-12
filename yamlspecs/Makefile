@@ -17,6 +17,8 @@ manifest module-provides module-requires:
 	$(MAKE) -s -f Makefile2 modules.build $@
 	$(MAKE) -s -f Makefile3 modules.build $@
 
+ansible:
+	$(MAKE) -s -f Makefile2 modules.build $@
 %: 	
 	$(MAKE) -f Makefile2 $*
 	$(MAKE) -f Makefile2 clean
