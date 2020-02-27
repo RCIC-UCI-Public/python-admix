@@ -1,5 +1,4 @@
 ---
-scipy: "1.1.0"
 virtualenv: "16.1.0"
 PyYAML: "3.13"
 SQLAlchemy: "1.2.14"
@@ -19,3 +18,4 @@ urllib3: "1.25.7"
 chardet: "3.0.4"
 certifi: "2019.11.28"
 idna: "2.8"
+pybind11: "2.4.3"
