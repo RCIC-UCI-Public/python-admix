@@ -5,10 +5,8 @@
   version: "{{pyversion.certifi}}"
   vendor_source: https://files.pythonhosted.org/packages/41/bf/9d214a5af07debc6acf7f3f257265618f1db242a3f8e49a9b516f24523a6/{{name}}-{{version}}.{{extension}}
   description: |
-    Certifi is a carefully curated collection of Root Certificates for validating
-    the trustworthiness of SSL certificates while verifying the identity of TLS 
-    hosts.  It has been extracted from the Requests project
+    Certifi {{version}} is a carefully curated collection of Root Certificates
+    for validating the trustworthiness of SSL certificates while verifying the
+    identity of TLS hosts. It has been extracted from the Requests project
   files:
     - "{{root}}/lib/python{{python_family}}/site-packages/*"
-#  requires:
-#    - python_{{python_version}}-urllib3

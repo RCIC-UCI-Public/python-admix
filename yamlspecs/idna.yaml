@@ -3,7 +3,7 @@
 - package: idna 
   name: idna 
   version: "{{pyversion.idna}}"
-  vendor_source: https://files.pythonhosted.org/packages/ad/13/eb56951b6f7950cadb579ca166e448ba77f9d24efc03edd7e55fa57d04b7/{{name}}-{{version}}.{{extension}}
+  vendor_source: https://github.com/kjd/idna/archive/v{{version}}.{{extension}}
   description: |
     Support for the Internationalised Domain Names in Applications (IDNA) protocol as specified in RFC 5891. 
     This is the latest version of the protocol and is sometimes referred to as \"IDNA 2008\". This library
@@ -12,5 +12,3 @@
     library, but only supports the old, deprecated IDNA specification (RFC 3490)
   files:
     - "{{root}}/lib/python{{python_family}}/site-packages/*"
-#  requires:
-#    - python_{{python_version}}-urllib3

@@ -4,5 +4,12 @@
   name: virtualenv 
   version: "{{pyversion.virtualenv}}"
   vendor_source: https://github.com/pypa/virtualenv/archive/{{version}}.{{extension}}
-  description: >
-    Virtualenv for python {{python_version}} is a tool for creating isolated virtual python environments
+  install:
+    makeinstall: >
+      if [ ! -f PKG-INFO ]; then \
+        echo "Version: {{version}}" > PKG-INFO; \
+      fi ; 
+      python{{python_major}} setup.py install --root $(ROOT) 
+  description: |
+    Virtualenv {{version}} for python {{python_version}} is a tool 
+    for creating isolated virtual python environments

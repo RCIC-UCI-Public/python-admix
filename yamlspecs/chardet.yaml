@@ -3,10 +3,6 @@
 - package: chardet 
   name: chardet 
   version: "{{pyversion.chardet}}"
-  vendor_source: https://files.pythonhosted.org/packages/fc/bb/a5768c230f9ddb03acc9ef3f0d4a3cf93462473795d18e9535498c8f929d/{{name}}-{{version}}.{{extension}}
+  vendor_source: https://github.com/chardet/chardet/archive/{{version}}.{{extension}}
   description: |
-    Chardet is The Universal Character Encoding Detector 
-#  files:
-#    - "{{root}}/lib/python{{python_family}}/site-packages/*"
-#  requires:
-#    - python_{{python_version}}-urllib3
+    Chardet {{version}} is the Universal Character Encoding Detector 

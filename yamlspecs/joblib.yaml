@@ -5,7 +5,6 @@
   version: "{{pyversionadd.joblib}}"
   vendor_source: https://github.com/joblib/joblib/archive/{{version}}.{{extension}}
   description: |
-    joblib {{version}} for python {{python_version}}. 
-    Joblib is a set of tools to provide lightweight pipelining in Python. 
+    joblib {{version}} is a set of tools to provide lightweight pipelining in Python
   files:
     - "{{root}}/lib/python{{python_family}}/site-packages/*"

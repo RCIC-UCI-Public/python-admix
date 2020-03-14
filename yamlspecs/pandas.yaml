@@ -2,9 +2,11 @@
 ---
 - package: pandas 
   name: pandas 
-  version: "{{pyversion.pandas}}"
-  vendor_source: https://files.pythonhosted.org/packages/b2/4c/b6f966ac91c5670ba4ef0b0b5613b5379e3c7abdfad4e7b89a87d73bae13/{{name}}-{{version}}.{{extension}}
-  description: >
-    SQLAlchemy support for python {{pyversion}}
+  version: "{{pyversionadd.pandas}}"
+  vendor_source: https://github.com/pandas-dev/pandas/archive/v{{version}}.{{extension}}
+  description: |
+    Pandas is a Python package providing fast, flexible, and expressive data structures
+    designed to make working with structured (tabular, multidimensional, potentially
+    heterogeneous) and time series data both easy and intuitive. 
   files:
     - "{{root}}/lib/python{{python_family}}/site-packages/*"

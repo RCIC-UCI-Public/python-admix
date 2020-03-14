@@ -6,7 +6,8 @@
   vendor_source: https://github.com/dateutil/dateutil/releases/download/{{version}}/python-{{name}}-{{version}}.{{extension}}
   src_dir: python-{{name}}-{{version}}
   src_tarball: "{{src_dir}}.{{extension}}"
-  description: >
-    Python dateutil for python {{python_version}}
+  description: |
+    The dateutil {{version}} provides powerful extensions
+    to the standard datetime module, available in Python.
   files:
     - "{{root}}/lib/python{{python_family}}/site-packages/*"

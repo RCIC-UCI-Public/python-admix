@@ -3,8 +3,8 @@
 - package: Future provides compatibility layer between Python 2 and Python 3
   name:  future 
   version: "{{pyversion.future}}"
-  vendor_source: https://files.pythonhosted.org/packages/90/52/e20466b85000a181e1e144fd8305caf2cf475e2f9674e797b222f8105f5f/{{name}}-{{version }}.{{extension}}
+  vendor_source: https://files.pythonhosted.org/packages/45/0b/38b06fd9b92dc2b68d58b75f900e97884c45bedd2ff83203d933cf5851c9/{{name}}-{{version }}.{{extension}}
   description: |
-    Future is is the missing compatibility layer between Python 2 and Python 3. 
-    It allows you to use a single, clean Python 3.x-compatible codebase to 
-    support both Python 2 and Python 3 with minimal overhead
+    Future {{version}} is the missing compatibility layer between Python 2 and 
+    Python 3. It allows to use a single, clean Python 3.x-compatible codebase
+    to support both Python 2 and Python 3 with minimal overhead
