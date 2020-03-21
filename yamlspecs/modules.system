@@ -10,3 +10,6 @@ openssl-devel
 tcl-devel
 tk-devel
 bzip2-devel
+ncurses-devel
+readline-devel
+sqlite-devel
