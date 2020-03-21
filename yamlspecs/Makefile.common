@@ -30,9 +30,9 @@ default: diag2 modules.build
 modules.build: 
 	/bin/rm -f $(MODULES_FILE)
 	/bin/rm -f $(MANIFEST_FILE)
-	echo $(MODULES) | sed -e 's/ //g' -e 's/\.yaml/\n/g' > $(MODULES_FILE)
+	echo -n $(MODULES) | sed -e 's/ //g' -e 's/\.yaml/\n/g' > $(MODULES_FILE)
 	/bin/cp $(MODULES_FILE) $(MANIFEST_FILE)
-	echo  python >> $(MANIFEST_FILE)
+	echo python >> $(MANIFEST_FILE)
 	echo python-module >> $(MANIFEST_FILE)
 
 clean:
