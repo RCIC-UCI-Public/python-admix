@@ -4,4 +4,4 @@
   python_major: "2"
   pyversion: !include versions.yaml
   pyversionadd: !include versions2.yaml
-  pipopts:
+  unique_opts: --enable-unicode=ucs4 

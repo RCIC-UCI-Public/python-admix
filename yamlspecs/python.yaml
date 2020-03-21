@@ -15,7 +15,7 @@
   description: >
     Python version {{version}}
   build:
-    configure_args: --enable-shared  --enable-loadable-sqlite-extensions --enable-ipv6 {{pipopts}}
+    configure_args: --enable-shared --enable-loadable-sqlite-extensions --enable-ipv6 {{unique_opts}}
     modules: 
     target: 
   install:
