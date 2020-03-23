@@ -19,7 +19,7 @@ MANIFEST_FILE = modules.manifest
 GENEXTRAS +=  --map="{'pyversions.yaml':'$(PYVERSIONS)'}" 
 
 # Modules are common plus python3-specific
-MODULES = $(shell sed '1d' versions.yaml  | awk -F: '{print $$1}' | sed 's/$$/.yaml/' | sed '/sqlalchemy_rel/d' ) \
+MODULES = $(shell sed '1d' versions.yaml  | awk -F: '{print $$1}' | sed 's/$$/.yaml/' | sed '/sqlalchemy_rel/d' | sed '/release/d' ) \
           $(shell sed '1d' $(EXTRAMODS) | awk -F: '{print $$1}' | sed 's/$$/.yaml/')
 
 PKGS = $(MODULES:.yaml=.pkg)
