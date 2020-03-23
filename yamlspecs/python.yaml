@@ -2,8 +2,8 @@
 !include rcic-package.yaml
 ---
 - package: Python Programming Language 
-  release: 2
   name: python 
+  release: "{{pyversion.release}}"
   version: "{{python_version}}"
   family_version: "{{python_family}}"
   major_version: "{{python_major}}"
