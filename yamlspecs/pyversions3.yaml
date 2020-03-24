@@ -4,4 +4,4 @@
   python_major: "3"
   pyversion: !include versions.yaml
   pyversionadd: !include versions3.yaml
-  unique_opts: --without-ensurepip
+  unique_opts: --enable-loadable-sqlite-extensions --without-ensurepip

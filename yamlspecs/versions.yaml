@@ -1,5 +1,5 @@
 ---
-release: 3
+release: 4
 pip: "20.0.2"
 cython: "0.29.15"
 pybind11: "2.4.3"
