@@ -8,8 +8,6 @@
     Matplotlib {{version}} for python {{python_version}} strives to produce publication quality 2D graphics
     for interactive graphing, scientific publishing, user interface development and web application servers 
     targeting multiple user interfaces and hardcopy output formats
-  files:
-    - "{{root}}/lib/python{{python_family}}/site-packages/*"
   requires:
     - python_{{python_version}}-pyparsing
     - python_{{python_version}}-cycler

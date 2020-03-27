@@ -13,6 +13,5 @@
   requires:
     - python_{{python_version}}  
   files:
-    - "{{root}}/bin/*"
-    - "{{root}}/lib/python{{python_family}}/site-packages/*"
+    - "{{root}}"
   rpm: !include rpm.extras.yaml

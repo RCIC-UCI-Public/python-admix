@@ -7,5 +7,3 @@
   description: |
     Typing Extensions is Backported and Experimental Type Hints 
     for Python typechecker. Required for mypy {{pyversionadd.mypy}}
-  files:
-    - "{{root}}/lib/python{{python_family}}/site-packages/*"

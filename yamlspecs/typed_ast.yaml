@@ -8,5 +8,3 @@
     The typed_ast parsers produce the standard Python AST (plus type comments), 
     and are both fast and correct, as they are based on the CPython 2.7 and 3.6 
     parsers. Required for mypy  {{pyversionadd.mypy}}
-  files:
-    - "{{root}}/lib/python{{python_family}}/site-packages/*"

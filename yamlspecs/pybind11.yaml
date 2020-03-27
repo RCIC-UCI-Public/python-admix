@@ -11,7 +11,3 @@
     features, specifically,  tuples, lambda functions and variadic templates). Since 
     its creation, this library has grown beyond Boost.Python in many ways, leading to 
     dramatically simpler binding code in many common situations.
-  files:
-    - "{{root}}/include/python{{python_family}}/{{name}}"
-    - "{{root}}/lib/python{{python_family}}/site-packages/*"
-

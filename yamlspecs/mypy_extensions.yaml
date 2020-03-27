@@ -7,5 +7,3 @@
   description: |
     Experimental type system extensions for programs checked with the mypy typechecker.
     Required for mypy {{pyversionadd.mypy}}
-  files:
-    - "{{root}}/lib/python{{python_family}}/site-packages/*"

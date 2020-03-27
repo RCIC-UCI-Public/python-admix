@@ -9,5 +9,3 @@
     Unicode support, pickle support, capable extension API, and sensible error messages. 
     PyYAML supports standard YAML tags and provides Python-specific tags that allow
     to represent an arbitrary Python object
-  files:
-    - "{{root}}/lib/python{{python_family}}/site-packages/*"

@@ -8,5 +8,3 @@
      Foreign Function Interface for Python calling C code, {{name}} {{version}}.
      Please see the Documentation at http://cffi.readthedocs.org.
      Source code {{vendor_source}}
-  files:
-    - "{{root}}/lib/python{{python_family}}/site-packages/*"

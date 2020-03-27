@@ -8,5 +8,3 @@
   vendor_source: https://github.com/sqlalchemy/sqlalchemy/archive/rel_{{version_rel}}.{{extension}}
   description: >
     SQLAlchemy {{version}} for python {{python_version}} provides Database Abstraction Library
-  files:
-    - "{{root}}/lib/python{{python_family}}/site-packages/*"

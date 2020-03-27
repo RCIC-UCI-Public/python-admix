@@ -7,5 +7,3 @@
   src_dir: kiwi-{{version}}
   description: >
     A fast implementation of the Cassowary constraint solver
-  files:
-    - "{{root}}/lib/python{{python_family}}/site-packages/*"

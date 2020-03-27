@@ -9,8 +9,6 @@
     The SciPy library depends on NumPy, which provides convenient 
     and fast N-dimensional array manipulation, and for python3 on
     pybind11 which provides headers
-  files:
-    - "{{root}}/lib/python{{python_family}}/site-packages/*"
   requires:
     - python_{{python_version}}-numpy
     - python_{{python_version}}-pybind11

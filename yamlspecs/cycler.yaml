@@ -8,5 +8,3 @@
     Composable cycles {{name}} {{version}} provides a single entry 
     Cycler object that can be used to easily cycle over a single style. 
     Prerequisite for matplotlib. See https://matplotlib.org/cycler
-  files:
-    - "{{root}}/lib/python{{python_family}}/site-packages/*"

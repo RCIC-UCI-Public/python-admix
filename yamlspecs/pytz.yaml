@@ -7,5 +7,3 @@
   description: |
     Pytz {{version}} for python {{python_version}}. This library allows 
     accurate and cross platform timezone calculations 
-  files:
-    - "{{root}}/lib/python{{python_family}}/site-packages/*"

@@ -9,5 +9,3 @@
   description: |
     The dateutil {{version}} provides powerful extensions
     to the standard datetime module, available in Python.
-  files:
-    - "{{root}}/lib/python{{python_family}}/site-packages/*"
