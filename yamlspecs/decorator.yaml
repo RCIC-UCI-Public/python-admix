@@ -1,0 +1,11 @@
+!include common.yaml
+---
+- package: decorator 
+  name: decorator 
+  version: "{{pyversionadd.decorator}}"
+  vendor_source: https://github.com/micheles/decorator/archive/{{version}}.{{extension}}
+  description: |
+    The goal of the decorator module is to make it easy to define
+    signature-preserving function decorators and decorator factories.
+    It also includes an implementation of multiple dispatch and other
+    niceties. See docs at https://github.com/micheles/decorator

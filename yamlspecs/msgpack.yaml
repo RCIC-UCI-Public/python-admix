@@ -1,0 +1,12 @@
+!include common.yaml
+---
+- package: msgpack 
+  name: msgpack 
+  version: "{{pyversionadd.msgpack}}"
+  vendor_source: https://github.com/msgpack/msgpack-python/archive/v{{version}}.{{extension}}
+  src_dir: "{{name}}-python-{{version}}"
+  description: |
+    MessagePack {{version}} is an efficient binary serialization format.
+    It lets you exchange data among multiple languages like JSON. But it's
+    faster and smaller. This package provides CPython bindings for reading
+    and writing MessagePack data. See https://msgpack.org

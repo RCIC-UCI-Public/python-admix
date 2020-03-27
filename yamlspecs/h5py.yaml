@@ -1,0 +1,22 @@
+!include common.yaml
+---
+- package: h5py 
+  name: h5py 
+  version: "{{pyversionadd.h5py}}"
+  vendor_source: https://github.com/h5py/h5py/archive/{{version}}.{{extension}}
+  # hard coded till get sys defined common version
+  compiler: "gcc"
+  compiler_version: "4.8.5"
+  hdf5: "1.10.5"
+  build:
+    configure: python setup.py configure --hdf5=$$HDF5_DIR --mpi
+    modules:
+      - hdf5/{{hdf5}}/{{compiler}}.{{compiler_version}}
+      - python/{{python_version}} 
+  description: |
+    The h5py package {{version}} provides both a high- and low-level 
+    interface to the HDF5 library from Python. The low-level interface
+    is intended to be a complete wrapping of the HDF5 API, while the 
+    high-level component supports access to HDF5 files, datasets and
+    groups using Python and NumPy concepts. See http://www.h5py.org
+    Custom build http://docs.h5py.org/en/latest/build.html#custom-install

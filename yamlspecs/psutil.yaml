@@ -1,0 +1,13 @@
+!include common.yaml
+---
+- package: psutil 
+  name: psutil 
+  version: "{{pyversionadd.psutil}}"
+  vendor_source: https://github.com/giampaolo/psutil/archive/release-{{version}}.{{extension}}
+  src_dir: "{{name}}-release-{{version}}"
+  description: |
+    Psutil (process and system utilities) {{version}} is a cross-platform
+    library for retrieving information on running processes and system 
+    utilization (CPU, memory, disks, network, sensors) in Python. It is
+    useful mainly for system monitoring, profiling and limiting process
+    resources and management of running processes. https://github.com/giampaolo/psutil

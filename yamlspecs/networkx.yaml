@@ -1,0 +1,14 @@
+!include common.yaml
+---
+- package: networkx 
+  name: networkx 
+  version: "{{pyversionadd.networkx}}"
+  vendor_source: https://github.com/networkx/networkx/archive/{{name}}-{{version}}.{{extension}}
+  src_dir: "{{name}}-{{name}}-{{version}}"
+  description: |
+    NetworkX {{version}} is a Python package for the creation, manipulation,
+    and study of the structure, dynamics, and functions of complex networks
+    See http://networkx.github.io
+  requires:
+    - python_{{python_version}} 
+    - python_{{python_version}}-decorator

@@ -1,0 +1,12 @@
+!include common.yaml
+---
+- package: pp 
+  name: pp 
+  extension: zip
+  version: "{{pyversionadd.pp}}"
+  vendor_source: http://www.parallelpython.com/downloads/pp/{{name}}-{{version}}.{{extension}}
+  description: |
+    Parallel Python module (PP) {{version}} provides an easy and efficient
+    way to create parallel-enabled applications for SMP computers and clusters.
+    PP module features cross-platform portability and dynamic load balancing.
+    Visit http://www.parallelpython.com for further information.

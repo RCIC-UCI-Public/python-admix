@@ -1,0 +1,13 @@
+!include common.yaml
+---
+- package: dill 
+  name: dill 
+  version: "{{pyversionadd.dill}}"
+  src_dir: "{{name}}-{{name}}-{{version}}"
+  vendor_source: https://github.com/uqfoundation/dill/archive/{{name}}-{{version}}.{{extension}}
+  description: |
+    Dill {{version}} extends python's pickle module for serializing and 
+    de-serializing python objects to the majority of the built-in python
+    types. Serialization is the process of converting an object to a byte
+    stream, and the inverse of which is converting a byte stream back to
+    on python object hierarchy. See https://pypi.org/project/dill
