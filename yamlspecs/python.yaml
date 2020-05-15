@@ -10,7 +10,6 @@
   extension: tgz
   src_dir: "Python-{{version}}"
   src_tarball: "{{src_dir}}.{{extension}}"
-  pkgname: "{{name}}_{{version}}"
   vendor_source: https://www.python.org/ftp/python/{{version}}/Python-{{version}}.tgz
   description: >
     Python version {{version}}

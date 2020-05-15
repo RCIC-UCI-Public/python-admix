@@ -20,3 +20,6 @@
     high-level component supports access to HDF5 files, datasets and
     groups using Python and NumPy concepts. See http://www.h5py.org
     Custom build http://docs.h5py.org/en/latest/build.html#custom-install
+  requires:
+    - hdf5_{{hdf5}}_{{compiler}}_{{compiler_version}}
+    - python_{{python_version}} 

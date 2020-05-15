@@ -1,8 +1,8 @@
 !include pyversions.yaml
+!include rcic-package.yaml
 ---
-- pkgname: "python_{{python_version}}-{{name}}"
+- baserpm: "python_{{python_version}}-{{name}}"
   root: "{{pkg_defaults.app_path}}/python/{{python_version}}"
-  extension: tar.gz
   release: "{{pyversion.release}}"
   build:
     configure: echo
