@@ -6,3 +6,5 @@
   vendor_source: https://github.com/pypa/setuptools/archive/v{{version}}.{{extension}}
   description: >
     Setuptools support for python {{python_version}}
+  build:
+    pkgmake: python{{python_major}} bootstrap.py --root $(ROOT)
