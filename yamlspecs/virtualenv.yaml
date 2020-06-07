@@ -7,7 +7,7 @@
   install:
     makeinstall: >
       if [ ! -f PKG-INFO ]; then \
-        echo "Version: {{version}}" > PKG-INFO; \
+        echo 'Version: {{version}}' > PKG-INFO; \
       fi ; 
       python{{python_major}} setup.py install --root $(ROOT) 
   description: |
