@@ -1,5 +1,6 @@
 !include pyversions.yaml
 !include rcic-package.yaml
+!include rpm.yaml
 ---
 - baserpm: "python_{{python_version}}-{{name}}"
   root: "{{pkg_defaults.app_path}}/python/{{python_version}}"
@@ -8,11 +9,10 @@
     configure: echo
     modules: python/{{python_version}} 
     target: 
-    pkgmake: echo \"Build performed in install with python setup.py \"
+    pkgmake: echo 'Build performed in install with python setup.py'
   install:
     makeinstall: python{{python_major}} setup.py install --root $(ROOT) 
   requires:
     - python_{{python_version}}  
   files:
     - "{{root}}"
-  rpm: !include rpm.extras.yaml
