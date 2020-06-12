@@ -1,5 +1,6 @@
 !include pyversions.yaml
 !include rcic-package.yaml
+!include rpm.yaml
 ---
 - package: Python Programming Language 
   name: python 
@@ -14,27 +15,21 @@
   description: >
     Python version {{version}}
   build:
-    configure_args: --enable-shared --enable-loadable-sqlite-extensions --enable-ipv6 {{unique_opts}}
+    configure_args: --enable-shared --enable-optimizations --with-lto --enable-ipv6 {{unique_opts}}
     modules: 
     target: 
+    pkgmake: make -j 8
   install:
     makeinstall: $(MAKE) DESTDIR=$(ROOT) altinstall 
     installextra: >
-      $(INSTALL) -m 644  README* $(ROOT)/{{root}};
-      cd $(ROOT)/{{root}}/bin;
+      $(INSTALL) -m 644  README* $(ROOT){{root}};
+      cd $(ROOT){{root}}/bin;
       ln -s python{{family_version}} python;
       ln -s python{{family_version}} python{{major_version}};
       ln -s python{{family_version}}-config python-config;
       ln -s python{{family_version}}-config python{{major_version}}-config
+  rpmFilters: 
+      - 'AutoReqProv: no\nProvides: libpython{{family_version}}.so.1.0()(64bit)\n'
+      - '%define __python %{buildroot}/$(PKGROOT)/bin/python{{major_version}}'
   rpm:
-    extras:
-      - "AutoReqProv: no\\nProvides: libpython{{family_version}}m.so.1.0()(64bit)"
-      - "%define _python_bytecompile_errors_terminate_build 0"
-      - "%define __python %{buildroot}/$(PKGROOT)/bin/python{{major_version}}"
-      - | 
-        %define __spec_install_post \
-        %{?__debug_package:%{__debug_install_post}}\
-        export LD_LIBRARY_PATH=%{buildroot}/$(PKGROOT)/lib:$$LD_LIBRARY_PATH;\
-        %{__arch_install_post}\
-        %{__os_install_post}\
-        %{nil} 
+    extras: *RpmPython
