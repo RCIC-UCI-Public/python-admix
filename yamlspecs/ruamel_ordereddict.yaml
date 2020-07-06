@@ -1,0 +1,9 @@
+!include common.yaml
+---
+- package: ruamel-ordereddict
+  name: ruamel.ordereddict
+  version: "{{pyversionadd.ruamel_ordereddict}}"
+  vendor_source: https://files.pythonhosted.org/packages/7d/fd/522c4722347aaf01e6bc8cce486130d83c52c72d3c3c2bbe3cbb02dddd4d/ruamel.ordereddict-{{version}}.{{extension}}
+  description: |
+     {{name}} {{version}} a version of dict that keeps keys in insertion resp. sorted order
+     source code: {{vendor_source}}
