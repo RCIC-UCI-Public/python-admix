@@ -11,7 +11,7 @@
     target: 
     pkgmake: echo 'Build performed in install with python setup.py'
   install:
-    makeinstall: python{{python_major}} setup.py install --root $(ROOT) 
+    makeinstall: python{{python_major}} ./setup.py install --root $(ROOT) 
   requires:
     - python_{{python_version}}  
   files:
