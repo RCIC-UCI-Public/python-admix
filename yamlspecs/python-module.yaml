@@ -3,3 +3,4 @@
 ---
 - package: Python module
   category: LANGUAGES
+  release: 5
