@@ -27,7 +27,7 @@ Environment modules are build  for python2/3
    make bootstrap | tee out-make-bootstrap 2>&1
    ```
 
-## Building addiitonal packages
+## Building additional packages
 
 To build additional packages, create yaml files and add definitions of 
 the packages to one of 3 files:
