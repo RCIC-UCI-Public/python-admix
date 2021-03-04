@@ -14,3 +14,4 @@ ncurses-devel
 readline-devel
 sqlite-devel
 libyaml-devel
+xz-devel
