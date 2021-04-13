@@ -3,7 +3,6 @@
 - package: ruamel-yaml 
   name: ruamel.yaml 
   version: "{{pyversion.ruamel_yaml}}"
-  extension: tar.xz
   vendor_source: https://bitbucket.org/ruamel/yaml/downloads/ruamel.yaml-{{version}}.{{extension}}
   description: |
      {{name}} {{version}} is a YAML 1.2  parser/emitter that supports roundtrip 
