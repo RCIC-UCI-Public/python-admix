@@ -1,0 +1,10 @@
+!include common.yaml
+---
+- package: wheel 
+  name: wheel 
+  version: "{{pyversionadd.wheel}}"
+  vendor_source: https://github.com/pypa/wheel/archive/refs/tags/{{version}}.{{extension}}
+  description: |
+    Wheel {{version}} for python {{python_version}}. This library is the
+    reference implementation of the Python wheel packaging standard,
+    as defined in PEP 427. See https://pypi.org/project/wheel
