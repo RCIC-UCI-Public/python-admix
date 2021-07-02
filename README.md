@@ -47,3 +47,14 @@ the packages to one of 3 files:
    cd yamlspecs/
    make
    ```
+## Python 2
+
+Support for python 2 is dropped and depending on a particular package build outcome will vary. 
+Many packages depend on setuptools_scm for legacy dependencies and this package is usually
+automaticallty downloaded into temp location during python package build. 
+
+As of setuptools_scm v. 6.0.0 support for python2 is dropped which will result in build failure.
+
+Install setuptools_scm 5.0.2 for python2 during bootstrap to prevent failure of building. 
+
+As of current python2 package list, building dateutils and virtualenv failed without setuptools_scm.

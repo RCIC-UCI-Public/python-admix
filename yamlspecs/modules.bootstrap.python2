@@ -2,6 +2,7 @@
 python
 python-module
 setuptools
+setuptools_scm
 pip
 cython
 numpy
