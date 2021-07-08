@@ -16,8 +16,6 @@
     Python version {{version}}
   build:
     configure_args: --enable-shared --enable-optimizations --with-lto --enable-ipv6 {{unique_opts}}
-    modules: 
-    target: 
     pkgmake: make -j 8
   install:
     makeinstall: $(MAKE) DESTDIR=$(ROOT) altinstall 

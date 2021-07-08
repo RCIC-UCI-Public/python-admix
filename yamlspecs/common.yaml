@@ -6,9 +6,7 @@
   root: "{{pkg_defaults.app_path}}/python/{{python_version}}"
   release: "{{pyversion.release}}"
   build:
-    configure: echo
     modules: python/{{python_version}} 
-    target: 
     pkgmake: echo 'Build performed in install with python setup.py'
   install:
     makeinstall: python{{python_major}} ./setup.py install --root $(ROOT) 
