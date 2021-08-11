@@ -1,0 +1,19 @@
+!include common.yaml
+---
+- package: distro 
+  name: distro 
+  version: "{{pyversionadd.distro}}"
+  vendor_source: https://github.com/python-distro/distro/archive/refs/tags/v{{version}}.{{extension}}
+  description: |
+    Distro {{version}} provides information about the OS distribution it runs on, such as
+    a reliable machine-readable ID, or version information.  It is the recommended
+    replacement for Python's original platform.linux_distribution function (removed
+    in Python 3.8). It also provides much more functionality which isn't necessarily
+    Python bound, like a command-line interface. See https://pypi.org/project/distro/
+#  family_version: "{{python_family}}"
+#  root_package: "{{root}}/lib/python{{family_version}}/site-packages"
+#  install:
+#    makeinstall: >
+#      mkdir -p $(ROOT){{root_package}}/{{name}}-{{version}}.dist-info;
+#      cp -pR LICENSE $(ROOT){{root_package}}/{{name}}-{{version}}.dist-info;
+#      cp -pR {{name}} $(ROOT){{root_package}}

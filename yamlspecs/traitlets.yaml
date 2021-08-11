@@ -1,0 +1,14 @@
+!include common.yaml
+---
+- package: traitlets 
+  name: traitlets 
+  version: "{{pyversionadd.traitlets}}"
+  vendor_source:  https://github.com/ipython/traitlets/archive/refs/tags/{{version}}.{{extension}}
+  description: |
+    Traitlets {{version}} is a pure Python library. Its implementation relies on
+    the descriptor pattern, and it is a lightweight pure-python alternative
+    of the traits library. Traitlets powers the configuration system of
+    IPython and Jupyter and the declarative API of IPython interactive
+    widgets.  See https://github.com/ipython/traitlets
+  requires:
+    - python_{{python_version}}-ipython_genutils

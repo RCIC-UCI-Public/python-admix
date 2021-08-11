@@ -1,0 +1,15 @@
+!include common.yaml
+---
+- package: packaging 
+  name: packaging 
+  version: "{{pyversionadd.packaging}}"
+  vendor_source: https://github.com/pypa/packaging/archive/refs/tags/{{version}}.{{extension}}
+  description: |
+    Packaging {{version}} is core utilities for various Python Packaging
+    interoperability specifications. This library provides utilities
+    that implement the interoperability specifications which have
+    clearly one correct behaviour (eg. PEP 440) or benefit greatly
+    from having a single shared implementation (eg. PEP 425).
+    See https://packaging.pypa.io/
+#  requires:
+#    - python_{{python_version}}-ptyprocess

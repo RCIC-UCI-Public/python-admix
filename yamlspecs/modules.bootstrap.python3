@@ -8,3 +8,6 @@ numpy
 pybind11
 scipy
 joblib
+distro
+packaging
+scikit_build

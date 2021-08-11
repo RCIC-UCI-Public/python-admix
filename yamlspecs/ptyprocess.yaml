@@ -1,0 +1,26 @@
+!include common.yaml
+---
+- package: ptyprocess 
+  name: ptyprocess 
+  version: "{{pyversionadd.ptyprocess}}"
+  vendor_source: https://github.com/pexpect/ptyprocess/archive/refs/tags/{{version}}.{{extension}}
+  description: |
+    Ptyprocess {{version}} launches a subprocess in a pseudo terminal (pty), and interacts
+    with both the process and its pty. See https://github.com/pexpect/ptyprocess
+  family_version: "{{python_family}}"
+  root_package: "{{root}}/lib/python{{family_version}}/site-packages"
+  setup_py: setup.py 
+  install:
+    makeinstall: >
+      echo 'from setuptools import setup' > {{setup_py}};
+      echo 'setup(' >> {{setup_py}};
+      echo '    name="{{name}}",' >> {{setup_py}};
+      echo '    version="{{version}}",' >> {{setup_py}};
+      echo '    packages=["{{name}}"],' >> {{setup_py}};
+      echo ')' >> {{setup_py}};
+      python setup.py bdist_wheel;
+      mkdir -p $(ROOT){{root_package}};
+      unzip -d $(ROOT){{root_package}} dist/*whl
+#      mkdir -p $(ROOT){{root_package}}/{{name}}-{{version}}.dist-info;
+#      cp -pR LICENSE $(ROOT){{root_package}}/{{name}}-{{version}}.dist-info;
+#      cp -pR {{name}} $(ROOT){{root_package}}
