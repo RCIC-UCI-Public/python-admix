@@ -3,8 +3,16 @@
 - package: ruamel-yaml 
   name: ruamel.yaml 
   version: "{{pyversion.ruamel_yaml}}"
-  vendor_source: https://bitbucket.org/ruamel/yaml/downloads/ruamel.yaml-{{version}}.{{extension}}
+  vendor_source: https://files.pythonhosted.org/packages/17/2f/f38332bf6ba751d1c8124ea70681d2b2326d69126d9058fbd9b4c434d268/{{name}}-{{version}}.{{extension}}
   description: |
      {{name}} {{version}} is a YAML 1.2  parser/emitter that supports roundtrip 
      preservation of comments, seq/map flow style, and map key order
      source code: {{vendor_source}}
+  build:
+    pkgmake: python{{python_major}} ./setup.py build
+  install:
+    makeinstall: python{{python_major}} ./setup.py install --root=$(ROOT)
+
+# NOTE: important for this package specifics of setup.py
+# to use the syntax "./setup.py " in make commands above.
+#
