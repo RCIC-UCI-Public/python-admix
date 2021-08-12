@@ -11,5 +11,3 @@
     clearly one correct behaviour (eg. PEP 440) or benefit greatly
     from having a single shared implementation (eg. PEP 425).
     See https://packaging.pypa.io/
-#  requires:
-#    - python_{{python_version}}-ptyprocess

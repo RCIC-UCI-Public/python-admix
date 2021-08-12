@@ -21,6 +21,3 @@
       python setup.py bdist_wheel;
       mkdir -p $(ROOT){{root_package}};
       unzip -d $(ROOT){{root_package}} dist/*whl
-#      mkdir -p $(ROOT){{root_package}}/{{name}}-{{version}}.dist-info;
-#      cp -pR LICENSE $(ROOT){{root_package}}/{{name}}-{{version}}.dist-info;
-#      cp -pR {{name}} $(ROOT){{root_package}}

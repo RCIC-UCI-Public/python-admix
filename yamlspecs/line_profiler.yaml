@@ -3,12 +3,8 @@
 - package: line_profiler 
   name: line_profiler 
   version: "{{pyversionadd.line_profiler}}"
-#  vendor_source: https://github.com/pyutils/line_profiler/archive/refs/tags/{{version}}.{{extension}}
-  #extension: whl
-  suffix: cp38-cp38-manylinux1_x86_64
-  url: https://files.pythonhosted.org/packages/7e/ca/62e8dfb0d95243a5abb1ca8da50fef27f9be36733ff39fb96ac2a3c2cb58
-  #src_tarball: "{{name}}-{{version}}-{{suffix}}.{{extension}}"
-  vendor_source: "{{url}}/{{src_tarball}}"
+  url: https://files.pythonhosted.org/packages/2e/be/f5823af81106e7fc56016bd50464e5cff9da9a5b7ce6640c705d15583731
+  vendor_source: "{{url}}/{{name}}-{{version}}.{{extension}}"
   description: |
     {{name}} {{version}} is a module for doing line-by-line profiling of functions.
     kernprof is a convenient script for running either line_profiler or the
@@ -23,12 +19,3 @@
   requires:
     - python_{{python_version}}-ipython
     - python_{{python_version}}-scikit-build
-
-#  family_version: "{{python_family}}"
-#  root_package: "{{root}}/lib/python{{family_version}}/site-packages"
-#  install:
-#    makeinstall: >
-#      mkdir -p $(ROOT)/{{root_package}};
-#      unzip -d $(ROOT)/{{root_package}} {{src_tarball}};
-#      (cd $(ROOT)/$(PKGROOT); chmod -R a+r {{name}}*)
-#
