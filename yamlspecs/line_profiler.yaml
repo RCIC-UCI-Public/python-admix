@@ -1,0 +1,21 @@
+!include common.yaml
+---
+- package: line_profiler 
+  name: line_profiler 
+  version: "{{versions.line_profiler}}"
+  url: https://files.pythonhosted.org/packages/2e/be/f5823af81106e7fc56016bd50464e5cff9da9a5b7ce6640c705d15583731
+  vendor_source: "{{url}}/{{name}}-{{version}}.{{extension}}"
+  description: |
+    {{name}} {{version}} is a module for doing line-by-line profiling of functions.
+    kernprof is a convenient script for running either line_profiler or the
+    Python standard library's cProfile or profile modules, depending on what
+    is available. See https://github.com/pyutils/line_profiler
+  build:
+    modules:
+      - python/{{python_version}} 
+      - foundation
+  install:
+    makeinstall: python{{python_major}} ./setup.py install --root $(ROOT) 
+  requires:
+    - python_{{python_version}}-ipython
+    - python_{{python_version}}-scikit-build

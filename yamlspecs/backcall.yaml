@@ -1,0 +1,23 @@
+!include common.yaml
+---
+- package: backcall 
+  name: backcall 
+  version: "{{versions.backcall}}"
+  vendor_source: https://github.com/takluyver/backcall/archive/refs/tags/{{version}}.{{extension}}
+  description: |
+    Backcall {{version}} provides a way of specifying the callback signature
+    using a prototype function. See https://github.com/takluyver/backcall
+  family_version: "{{python_family}}"
+  root_package: "{{root}}/lib/python{{family_version}}/site-packages"
+  setup_py: setup.py 
+  install:
+    makeinstall: >
+      echo 'from setuptools import setup' > {{setup_py}};
+      echo 'setup(' >> {{setup_py}};
+      echo '    name="{{name}}",' >> {{setup_py}};
+      echo '    version="{{version}}",' >> {{setup_py}};
+      echo '    packages=["{{name}}"],' >> {{setup_py}};
+      echo ')' >> {{setup_py}};
+      python setup.py bdist_wheel;
+      mkdir -p $(ROOT){{root_package}};
+      unzip -d $(ROOT){{root_package}} dist/*whl

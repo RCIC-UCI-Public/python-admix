@@ -1,0 +1,10 @@
+!include common.yaml
+---
+- package: wcwidth 
+  name: wcwidth 
+  version: "{{versions.wcwidth}}"
+  vendor_source: https://github.com/jquast/wcwidth/archive/refs/tags/{{version}}.{{extension}}
+  description: |
+    Wcwidth {{version}} is a library mainly for CLI programs that carefully 
+    produce output for Terminals, or make pretend to be an emulator. See
+    https://pypi.org/project/wcwidth

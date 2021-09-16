@@ -1,0 +1,12 @@
+!include common.yaml
+---
+- package: ipython_genutils 
+  name: ipython_genutils 
+  version: "{{versions.ipython_genutils}}"
+  url: https://files.pythonhosted.org/packages/e8/69/fbeffffc05236398ebfcfb512b6d2511c622871dca1746361006da310399
+  vendor_source: "{{url}}/{{name}}-{{version}}.{{extension}}"
+  description: |
+    This is obsoleted yet is still refered to by traitlets which is called by
+    IPython. all 3 are from teh same developers team.
+    Verbatim project description on pypi.org is
+    Pretend this doesn't exist. Nobody should use it.

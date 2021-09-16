@@ -1,0 +1,20 @@
+!include common.yaml
+---
+- package: ipython 
+  name: ipython 
+  version: "{{versions.ipython}}"
+  vendor_source: https://github.com/ipython/ipython/archive/refs/tags/{{version}}.{{extension}}
+  description: |
+    IPython (Interactive Python) {{version}} is a command shell for interactive
+    computing in multiple programming languages, originally developed for
+    the Python programming language, that offers introspection, rich media,
+    shell syntax, tab completion, and history. See https://ipython.readthedocs.io/en/stable/
+  requires:
+    - python_{{python_version}}-decorator
+    - python_{{python_version}}-setuptools
+    - python_{{python_version}}-traitlets
+    - python_{{python_version}}-pygments
+    - python_{{python_version}}-pexpect
+    - python_{{python_version}}-pickleshare
+    - python_{{python_version}}-backcall
+    - python_{{python_version}}-prompt-toolkit

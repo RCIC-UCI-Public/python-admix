@@ -1,0 +1,14 @@
+!include common.yaml
+---
+- package: prompt-toolkit 
+  name: prompt-toolkit 
+  version: "{{versions.prompt_toolkit}}"
+  url: https://files.pythonhosted.org/packages/e5/9b/ff402e0e930e70467a7178abb7c128709a30dfb22d8777c043e501bc1b10
+  vendor_source: https://github.com/prompt-toolkit/python-prompt-toolkit/archive/refs/tags/{{version}}.{{extension}}
+  src_dir: python-{{name}}-{{version}}
+  description: |
+    Prompt-toolkit {{version}} is a library for building powerful 
+    interactive command line applications in Python. See
+    https://github.com/prompt-toolkit/python-prompt-toolkit
+  requires:
+    - python_{{python_version}}-wcwidth
