@@ -32,20 +32,22 @@ Environment modules are build  for python2/3
 To build additional packages, create yaml files and add definitions of 
 the packages to one of 3 files:
 
-- versions.yaml if want to buld this package for python 2 and python 3
-- versions2.yaml if want to buld this package only for python 2 
-- versions3.yaml if want to buld this package only for python 3
+- versions.yaml if want to buld this package for python 3
+- python2.versions.yaml if want to buld this package only for python 2 
+  or the version of package differes for python 2/3.
 
 1. Download sources, for example
    ```bash
-   make download PKG=graphviz
-   make download -f Makefile3 PKG=mypy
+   make download SET=python2 PKG=scipy  # download version for python2 build
+   make download PKG=scipy              # download version for python3 build
    ```
 
 1. Run to build packages for both python versions
    ```bash
    cd yamlspecs/
-   make
+   make scipy.pkg
+   rm scipy.pkg
+   make SET=python2 scipy.pkg
    ```
 ## Python 2
 
