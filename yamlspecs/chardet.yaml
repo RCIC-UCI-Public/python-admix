@@ -2,7 +2,7 @@
 ---
 - package: chardet 
   name: chardet 
-  version: "{{pyversion.chardet}}"
+  version: "{{versions.chardet}}"
   vendor_source: https://github.com/chardet/chardet/archive/{{version}}.{{extension}}
   description: |
     Chardet {{version}} is the Universal Character Encoding Detector 

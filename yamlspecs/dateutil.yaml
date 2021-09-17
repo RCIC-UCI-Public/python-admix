@@ -2,7 +2,7 @@
 ---
 - package: Python date utilities 
   name: dateutil 
-  version: "{{pyversion.dateutil}}"
+  version: "{{versions.dateutil}}"
   vendor_source: https://github.com/dateutil/dateutil/releases/download/{{version}}/python-{{name}}-{{version}}.{{extension}}
   src_dir: python-{{name}}-{{version}}
   src_tarball: "{{src_dir}}.{{extension}}"

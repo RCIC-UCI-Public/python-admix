@@ -2,7 +2,7 @@
 ---
 - package: pandas 
   name: pandas 
-  version: "{{pyversionadd.pandas}}"
+  version: "{{versions.pandas}}"
   vendor_source: https://github.com/pandas-dev/pandas/archive/v{{version}}.{{extension}}
   description: |
     Pandas is a Python package providing fast, flexible, and expressive data structures

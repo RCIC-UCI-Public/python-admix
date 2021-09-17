@@ -2,7 +2,7 @@
 ---
 - package:  scikit-learn 
   name: scikit-learn 
-  version: "{{pyversionadd.scikit_learn}}"
+  version: "{{versions.scikit_learn}}"
   vendor_source: https://github.com/scikit-learn/scikit-learn/releases/download/{{version}}/{{name}}-{{version}}.{{extension}}
   description: |
     Scikit-learn {{version}} is a Python module for machine learning built on 

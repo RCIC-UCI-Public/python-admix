@@ -1,0 +1,11 @@
+!include versions.yaml
+---
+unique_opts: --enable-unicode=ucs4 
+python_version: "2.7.17"
+python_family: "2.7"
+python_major: "2"
+setuptools: "41.0.0"
+numpy: "1.15.4"
+scipy: "1.1.0"
+pandas: "0.24.2"
+setuptools_scm: "5.0.2"

@@ -2,7 +2,7 @@
 ---
 - package: SciPy is a Scientific Library for Python
   name: scipy 
-  version: "{{pyversionadd.scipy}}"
+  version: "{{versions.scipy}}"
   vendor_source: https://github.com/scipy/scipy/archive/v{{version}}.{{extension}}
   description: |
     Scipy version {{version}} support for python {{python_version}}.

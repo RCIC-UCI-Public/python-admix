@@ -2,7 +2,7 @@
 ---
 - package: pybind11 header only library
   name: pybind11 
-  version: "{{pyversion.pybind11}}"
+  version: "{{versions.pybind11}}"
   vendor_source: https://github.com/pybind/pybind11/archive/v{{version}}.{{extension}}
   description: |
     pybind11 is a lightweight header-only library that exposes C++ types in Python 

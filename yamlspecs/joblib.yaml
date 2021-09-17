@@ -2,7 +2,7 @@
 ---
 - package:  joblib pipeline execution
   name: joblib 
-  version: "{{pyversionadd.joblib}}"
+  version: "{{versions.joblib}}"
   vendor_source: https://github.com/joblib/joblib/archive/{{version}}.{{extension}}
   description: |
     joblib {{version}} is a set of tools to provide lightweight pipelining in Python

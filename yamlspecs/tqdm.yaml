@@ -2,7 +2,7 @@
 ---
 - package: tqdm support
   name: tqdm
-  version: "{{pyversion.tqdm}}"
+  version: "{{versions.tqdm}}"
   vendor_source: https://github.com/tqdm/tqdm/archive/v{{version}}.{{extension}}
   description: |
     Instantly make your loops show a smart progress meter, just

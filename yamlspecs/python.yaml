@@ -1,13 +1,14 @@
-!include pyversions.yaml
 !include rcic-package.yaml
 !include rpm.yaml
 ---
 - package: Python Programming Language 
   name: python 
-  release: "{{pyversion.release}}"
-  version: "{{python_version}}"
-  family_version: "{{python_family}}"
-  major_version: "{{python_major}}"
+  versions: !include versions.yaml
+  release: "{{versions.release}}"
+  version: "{{versions.python_version}}"
+  family_version: "{{versions.python_family}}"
+  major_version: "{{versions.python_major}}"
+  unique_opts: "{{versions.unique_opts}}"
   extension: tgz
   src_dir: "Python-{{version}}"
   src_tarball: "{{src_dir}}.{{extension}}"

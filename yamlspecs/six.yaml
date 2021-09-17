@@ -2,7 +2,7 @@
 ---
 - package: Python 2 and 3 compatibility utilities
   name: six 
-  version: "{{pyversion.six}}"
+  version: "{{versions.six}}"
   vendor_source: https://github.com/benjaminp/six/archive/{{version}}.{{extension}}
   description: |
     Six {{version}} for  python {{python_version}} is a Python 2 and 3 compatibility library. 

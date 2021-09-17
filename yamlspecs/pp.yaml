@@ -3,7 +3,7 @@
 - package: pp 
   name: pp 
   extension: zip
-  version: "{{pyversionadd.pp}}"
+  version: "{{versions.pp}}"
   vendor_source: http://www.parallelpython.com/downloads/pp/{{name}}-{{version}}.{{extension}}
   description: |
     Parallel Python module (PP) {{version}} provides an easy and efficient

@@ -2,7 +2,7 @@
 ---
 - package: Cython support
   name: cython
-  version: "{{pyversion.cython}}"
+  version: "{{versions.cython}}"
   vendor_source: https://github.com/cython/cython/archive/{{version}}.{{extension}}
   description: |
     Cython {{version}} for python {{python_version}}. 

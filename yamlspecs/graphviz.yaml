@@ -2,7 +2,7 @@
 ---
 - package: Graphviz for python
   name: graphviz 
-  version: "{{pyversion.graphviz}}"
+  version: "{{versions.graphviz}}"
   vendor_source: https://github.com/xflr6/graphviz/archive/{{version}}.{{extension}}
   description: |
     Graphviz {{version}} for  python {{python_version}}. This package 

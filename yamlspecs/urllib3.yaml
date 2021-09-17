@@ -2,7 +2,7 @@
 ---
 - package: urllib3 
   name: urllib3 
-  version: "{{pyversion.urllib3}}"
+  version: "{{versions.urllib3}}"
   vendor_source: https://github.com/urllib3/urllib3/archive/{{version}}.{{extension}}
   description: |
     urllib3 is a powerful, sanity-friendly HTTP client for Python. Much of the Python 

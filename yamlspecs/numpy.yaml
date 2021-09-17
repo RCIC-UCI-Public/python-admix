@@ -2,7 +2,7 @@
 ---
 - package: numpy for python 
   name: numpy
-  version: "{{pyversionadd.numpy}}"
+  version: "{{versions.numpy}}"
   vendor_source: https://github.com/numpy/numpy/archive/v{{version}}.{{extension}}
   description: >
     Numpy support for python {{python_version}}

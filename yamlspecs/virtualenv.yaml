@@ -2,7 +2,7 @@
 ---
 - package: Virtual Python Environment builder
   name: virtualenv 
-  version: "{{pyversion.virtualenv}}"
+  version: "{{versions.virtualenv}}"
   vendor_source: https://github.com/pypa/virtualenv/archive/{{version}}.{{extension}}
   install:
     makeinstall: >

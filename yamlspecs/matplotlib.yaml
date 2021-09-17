@@ -2,7 +2,7 @@
 ---
 - package: matplotlib
   name: matplotlib
-  version: "{{pyversionadd.matplotlib}}"
+  version: "{{versions.matplotlib}}"
   vendor_source: https://github.com/matplotlib/matplotlib/archive/v{{version}}.{{extension}}
   description: |
     Matplotlib {{version}} for python {{python_version}} strives to produce publication quality 2D graphics

@@ -2,7 +2,7 @@
 ---
 - package: requests 
   name: requests 
-  version: "{{pyversion.requests}}"
+  version: "{{versions.requests}}"
   vendor_source: https://github.com/psf/requests/archive/v{{version}}.{{extension}}
   description: |
     Requests allows you to send organic, grass-fed HTTP/1.1 requests, without the need 

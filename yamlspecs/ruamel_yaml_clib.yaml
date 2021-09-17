@@ -2,7 +2,7 @@
 ---
 - package: ruamel-yaml-clib
   name: ruamel.yaml.clib
-  version: "{{pyversion.ruamel_yaml_clib}}"
+  version: "{{versions.ruamel_yaml_clib}}"
   vendor_source: https://files.pythonhosted.org/packages/92/28/612085de3fae9f82d62d80255d9f4cf05b1b341db1e180adcf28c1bf748d/{{name}}-{{version}}.{{extension}}
   description: |
      {{name}} {{version}} is the C based reader/scanner and emitter for ruamel.yaml

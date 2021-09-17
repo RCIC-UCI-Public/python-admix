@@ -2,7 +2,7 @@
 ---
 - package: Bio 
   name: biopython 
-  version: "{{pyversionadd.biopython}}"
+  version: "{{versions.biopython}}"
   vendor_source: http://biopython.org/DIST/{{name}}-{{version}}.{{extension}}
   description: |
     Biopython {{version}} is a set of tools for Computational

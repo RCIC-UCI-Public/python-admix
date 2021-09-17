@@ -2,7 +2,7 @@
 ---
 - package: wheel 
   name: wheel 
-  version: "{{pyversionadd.wheel}}"
+  version: "{{versions.wheel}}"
   vendor_source: https://github.com/pypa/wheel/archive/refs/tags/{{version}}.{{extension}}
   description: |
     Wheel {{version}} for python {{python_version}}. This library is the
