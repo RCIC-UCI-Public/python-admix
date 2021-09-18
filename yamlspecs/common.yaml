@@ -8,6 +8,7 @@
   python_version: "{{versions.python_version}}"
   python_major: "{{versions.python_major}}"
   python_family: "{{versions.python_family}}"
+  pymod_requires:
   build:
     modules: python/{{python_version}} 
     pkgmake: echo 'Build performed in install with python setup.py'
@@ -15,5 +16,6 @@
     makeinstall: python{{python_major}} ./setup.py install --root $(ROOT) 
   requires:
     - python_{{python_version}}  
+    - "{{pymod_requires}}"
   files:
     - "{{root}}"

@@ -16,6 +16,6 @@
       - foundation
   install:
     makeinstall: python{{python_major}} ./setup.py install --root $(ROOT) 
-  requires:
+  pymod_requires:
     - python_{{python_version}}-ipython
     - python_{{python_version}}-scikit-build

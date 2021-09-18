@@ -8,5 +8,5 @@
     Numpy support for python {{python_version}}
   install:
     makeinstall: export CFLAGS='-std=c99'; python{{python_major}} setup.py install --root $(ROOT) 
-  requires:
+  pymod_requires:
     - libgfortran

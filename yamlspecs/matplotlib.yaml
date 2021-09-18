@@ -8,7 +8,7 @@
     Matplotlib {{version}} for python {{python_version}} strives to produce publication quality 2D graphics
     for interactive graphing, scientific publishing, user interface development and web application servers 
     targeting multiple user interfaces and hardcopy output formats
-  requires:
+  pymod_requires:
     - python_{{python_version}}-pyparsing
     - python_{{python_version}}-cycler
     - python_{{python_version}}-kiwisolver

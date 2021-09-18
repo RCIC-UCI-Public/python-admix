@@ -8,7 +8,7 @@
     Pandas is a Python package providing fast, flexible, and expressive data structures
     designed to make working with structured (tabular, multidimensional, potentially
     heterogeneous) and time series data both easy and intuitive. 
-  requires:
+  pymod_requires:
     - python_{{python_version}}-six
     - python_{{python_version}}-pytz
     - python_{{python_version}}-dateutil

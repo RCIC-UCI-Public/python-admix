@@ -9,5 +9,5 @@
     Pexpect {{version}} is a pure Python module for spawning child applications;
     controlling them; and responding to expected patterns in their output.
     See https://pexpect.readthedocs.io/en/stable/
-  requires:
+  pymod_requires:
     - python_{{python_version}}-ptyprocess

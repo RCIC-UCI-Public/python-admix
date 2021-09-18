@@ -9,6 +9,6 @@
     setuptools Python module and CMake.  See https://pypi.org/project/scikit-build/
   install:
     makeinstall: python{{python_major}} ./setup.py install --root $(ROOT) 
-  requires:
+  pymod_requires:
     - python_{{python_version}}-distro
     - python_{{python_version}}-packaging

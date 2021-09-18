@@ -10,5 +10,5 @@
     Prompt-toolkit {{version}} is a library for building powerful 
     interactive command line applications in Python. See
     https://github.com/prompt-toolkit/python-prompt-toolkit
-  requires:
+  pymod_requires:
     - python_{{python_version}}-wcwidth
