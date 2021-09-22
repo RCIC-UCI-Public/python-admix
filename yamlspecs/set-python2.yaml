@@ -1,6 +1,6 @@
 !include packages.yaml
 ---
-versions: python2.versions.yaml
+versions: versions-python2.yaml
 bootstrap:
   - python
   - python-module

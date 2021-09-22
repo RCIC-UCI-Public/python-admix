@@ -1,7 +1,0 @@
----
-  python_version: "3.8.0"
-  python_family: "3.8"
-  python_major: "3"
-  pyversion: !include versions.yaml
-  pyversionadd: !include versions3.yaml
-  unique_opts: --enable-loadable-sqlite-extensions --without-ensurepip
