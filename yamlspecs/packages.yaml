@@ -44,7 +44,6 @@ build:
   - tqdm
   - ruamel_yaml_clib
   - ruamel_yaml
-  - setuptools
   - pandas
   - scikit_learn
   - mypy_extensions
