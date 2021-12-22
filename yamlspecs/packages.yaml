@@ -1,9 +1,13 @@
+# Note: on RHEL8, the powertools repo must be enabled to get some of the devel packages.
 ---
+site: !include site.yaml
+develext: !ifeq "{{site.os_release}},8,,-devel"
 system:
+  - atlas-devel
   - blas-devel
-  - blas64-devel
+  - blas64{{develext}}
   - lapack-devel
-  - lapack64-devel
+  - lapack64{{develext}}
   - libffi-devel
   - zlib-devel
   - openssl-devel
@@ -13,7 +17,7 @@ system:
   - ncurses-devel
   - readline-devel
   - sqlite-devel
-  - libyaml-devel
+  - libyaml{{develext}}
   - xz-devel
 bootstrap:
   - python
@@ -25,6 +29,11 @@ bootstrap:
   - pybind11
   - scipy
   - joblib
+  - packaging
+  - distro
+  - scikit_build
+  - pyparsing
+  - wheel
 build:
   - virtualenv
   - pyyaml
@@ -34,7 +43,6 @@ build:
   - six
   - graphviz
   - future
-  - pyparsing
   - cffi
   - urllib3
   - chardet
@@ -44,6 +52,7 @@ build:
   - tqdm
   - ruamel_yaml_clib
   - ruamel_yaml
+  - setuptools
   - pandas
   - scikit_learn
   - mypy_extensions
@@ -57,7 +66,6 @@ build:
   - biopython
   - decorator
   - networkx
-  - h5py
   - pp
   - dill
   - pox
@@ -67,7 +75,6 @@ build:
   - appdirs
   - distlib
   - filelock
-  - wheel
   - line_profiler
   - memory_profiler
   - ipython
@@ -78,11 +85,8 @@ build:
   - pickleshare
   - backcall
   - prompt_toolkit
-  - scikit_build
-  - distro
   - wcwidth
   - pygments
-  - packaging
 manifest:
   - "{{bootstrap}}"
   - "{{build}}"
