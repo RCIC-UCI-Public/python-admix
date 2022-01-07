@@ -87,6 +87,7 @@ build:
   - prompt_toolkit
   - wcwidth
   - pygments
+  - h5py
 manifest:
   - "{{bootstrap}}"
   - "{{build}}"

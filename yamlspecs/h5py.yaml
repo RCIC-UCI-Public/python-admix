@@ -5,8 +5,8 @@
   version: "{{versions.h5py}}"
   vendor_source: https://github.com/h5py/h5py/archive/{{version}}.{{extension}}
   # hard coded till get sys defined common version
-  compiler: "gcc"
-  compiler_version: "4.8.5"
+  compiler: "{{versions.compiler_sys.name}}"
+  compiler_version: "{{versions.compiler_sys.version}}"
   hdf5: "1.10.5"
   build:
     configure: python setup.py configure --hdf5=$$HDF5_DIR --mpi

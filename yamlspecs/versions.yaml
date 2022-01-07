@@ -1,3 +1,4 @@
+!include site.yaml
 ---
 unique_opts: --enable-loadable-sqlite-extensions --without-ensurepip
 release: 5
