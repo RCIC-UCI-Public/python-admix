@@ -19,6 +19,13 @@ system:
   - sqlite-devel
   - libyaml{{develext}}
   - xz-devel
+  - !ifeq "{{site.os_release}},8,{{pillow_libs}},"
+pillow_libs:
+  - libjpeg-turbo-devel
+  - openjpeg2-devel
+  - libtiff-devel
+  - lcms2-devel
+  - libwebp-devel
 bootstrap:
   - python
   - python-module
@@ -34,13 +41,15 @@ bootstrap:
   - scikit_build
   - pyparsing
   - wheel
+  - six
+  - pkgconfig
+  - dateutil
+  - filelock
 build:
   - virtualenv
   - pyyaml
   - sqlalchemy
   - pytz
-  - dateutil
-  - six
   - graphviz
   - future
   - cffi
@@ -74,7 +83,6 @@ build:
   - mako
   - appdirs
   - distlib
-  - filelock
   - line_profiler
   - memory_profiler
   - ipython
