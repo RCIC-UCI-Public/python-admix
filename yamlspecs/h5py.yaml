@@ -4,10 +4,9 @@
   name: h5py 
   version: "{{versions.h5py}}"
   vendor_source: https://github.com/h5py/h5py/archive/{{version}}.{{extension}}
-  # hard coded till get sys defined common version
   compiler: "{{versions.compiler_sys.name}}"
   compiler_version: "{{versions.compiler_sys.version}}"
-  hdf5: "1.10.5"
+  hdf5: "{{versions.hdf5}}"
   build:
     configure: python setup.py configure --hdf5=$$HDF5_DIR --mpi
     modules:
@@ -22,3 +21,5 @@
     Custom build http://docs.h5py.org/en/latest/build.html#custom-install
   pymod_requires:
     - hdf5_{{hdf5}}_{{compiler}}_{{compiler_version}}
+    - python_{{python_version}}-six
+    - python_{{python_version}}-pkgconfig
