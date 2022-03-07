@@ -1,0 +1,18 @@
+!include common.yaml
+---
+- name: common_wheel
+  no_src_dir: True
+  extension: whl
+  suffix: py3-none-any
+  hash: 
+  src_tarball: "{{name}}-{{version}}-{{suffix}}.{{extension}}"
+  pypiurl: https://files.pythonhosted.org/packages/{{hash}}
+  vendor_source: "{{pypiurl}}/{{src_tarball}}"
+  build:
+    pkgmake: echo 'Using wheel distro'
+  install:
+    makeinstall: >
+      pip install --root $(ROOT) --no-deps {{src_tarball}}
+
+# For installing from wheel files for packages where current combination
+# of setuptools+distutils does not work for regular build

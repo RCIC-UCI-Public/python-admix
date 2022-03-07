@@ -1,0 +1,8 @@
+!include common_wheel.yaml
+---
+- package: tomli
+  name: tomli 
+  version: "{{versions.tomli}}"
+  hash: "{{versions.tomli_hash}}"
+  description: |
+    Tomli {{version}} little TOML parser
