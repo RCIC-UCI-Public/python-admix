@@ -1,0 +1,11 @@
+!include common.yaml
+---
+- package: beniget
+  name: beniget 
+  version: "{{versions.beniget}}"
+  vendor_source: https://github.com/serge-sans-paille/beniget/archive/refs/tags/{{version}}.{{extension}}
+  description: |
+    Beniget {{version}} is a collection of Compile-time analyse on Python
+    Abstract Syntax Tree(AST). It's a building block to write static
+    analyzer or compiler for Python. Beniget relies on gast to provide
+    a cross version abstraction of the AST

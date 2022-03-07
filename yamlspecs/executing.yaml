@@ -1,0 +1,9 @@
+!include common.yaml
+---
+- package: executing 
+  name: executing 
+  version: "{{versions.executing}}"
+  vendor_source: https://files.pythonhosted.org/packages/{{versions.executing_hash}}/{{name}}-{{version}}.{{extension}}
+  description: |
+    Executing {{version}} Tis a  mini-package lets you get information about what
+    a frame is currently doing, particularly the AST node being executed

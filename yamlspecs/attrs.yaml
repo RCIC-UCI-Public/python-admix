@@ -1,0 +1,10 @@
+!include common.yaml
+---
+- package: attrs
+  name: attrs
+  version: "{{versions.attrs}}"
+  vendor_source: https://github.com/python-attrs/attrs/archive/refs/tags/{{version}}.{{extension}}
+  description: |
+    Attrs {{version}} is the Python package that will bring back the joy of writing
+    classes by relieving you from the drudgery of implementing object protocols
+    (aka dunder methods). Trusted by NASA for Mars missions since 2020!

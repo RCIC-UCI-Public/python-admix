@@ -1,0 +1,26 @@
+!include common.yaml
+---
+- package: pillow
+  name: pillow
+  version: "{{versions.pillow}}"
+  vendor_source: https://github.com/python-pillow/Pillow/archive/refs/tags/{{version}}.{{extension}}
+  src_dir: Pillow-{{version}}
+  description: |
+    Pillow {{version}} is the friendly PIL fork by Alex Clark and Contributors.
+    PIL is the Python Imaging Library by Fredrik Lundh and Contributors
+
+# NOTE all dependent libraries are listed in RPM dependency and are provided by 
+# - libjpeg-turbo
+# - openjpeg2
+# - libtiff
+# - lcms2
+# - libwebp
+# Their -devel RPMs were used during RPM build.
+# If libraqm becomes needed will have to build libraqm from source
+# https://github.com/HOST-Oman/libraqm and install before build
+# the following
+# - freetype-devel
+# - fribidi-devel
+# - harfbuzz-devel
+# See https://pillow.readthedocs.io/en/latest/installation.html#external-libraries
+# for detials on building pillow from source

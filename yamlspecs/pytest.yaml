@@ -1,0 +1,16 @@
+!include common.yaml
+---
+- package: pytest 
+  name: pytest 
+  version: "{{versions.pytest}}"
+  vendor_source: https://files.pythonhosted.org/packages/{{versions.pytest_hash}}/{{name}}-{{version}}.{{extension}}
+  description: |
+    The pytest {{version}} framework makes it easy to write small tests, yet scales
+    to support complex functional testing for applications and libraries
+  pymod_requires:
+    - python_{{python_version}}-attrs
+    - python_{{python_version}}-iniconfig
+    - python_{{python_version}}-packaging
+    - python_{{python_version}}-pluggy
+    - python_{{python_version}}-py
+    - python_{{python_version}}-tomli

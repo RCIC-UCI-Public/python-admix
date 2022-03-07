@@ -1,0 +1,12 @@
+!include common.yaml
+---
+- package: pycparser
+  name: pycparser 
+  version: "{{versions.pycparser}}"
+  prefix: "release_v"
+  src_dir: "{{name}}-{{prefix}}{{version}}"
+  vendor_source: https://github.com/eliben/pycparser/archive/refs/tags/{{prefix}}{{version}}.{{extension}}
+  description: |
+    Pycparser {{version}} is a parser for the C language, written in pure Python.
+    It is a module designed to be easily integrated into applications that
+    need to parse C source code

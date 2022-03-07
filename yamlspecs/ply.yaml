@@ -1,0 +1,11 @@
+!include common.yaml
+---
+- package: ply
+  name: ply 
+  version: "{{versions.ply}}"
+  vendor_source: http://www.dabeaz.com/ply/{{name}}-{{version}}.{{extension}}
+  description: |
+    PLY {{version}} is yet another implementation of lex and yacc
+    for Python.  PLY provides most of the standard lex/yacc
+    features including support for empty productions, precedence
+    rules, error recovery, and support for ambiguous grammars
