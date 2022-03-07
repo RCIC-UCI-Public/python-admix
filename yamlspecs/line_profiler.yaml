@@ -3,8 +3,7 @@
 - package: line_profiler 
   name: line_profiler 
   version: "{{versions.line_profiler}}"
-  url: https://files.pythonhosted.org/packages/2e/be/f5823af81106e7fc56016bd50464e5cff9da9a5b7ce6640c705d15583731
-  vendor_source: "{{url}}/{{name}}-{{version}}.{{extension}}"
+  vendor_source: https://files.pythonhosted.org/packages/{{versions.line_profiler_hash}}/{{name}}-{{version}}.{{extension}}
   description: |
     {{name}} {{version}} is a module for doing line-by-line profiling of functions.
     kernprof is a convenient script for running either line_profiler or the

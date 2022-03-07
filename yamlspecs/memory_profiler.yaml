@@ -3,7 +3,7 @@
 - package: memory_profiler 
   name: memory_profiler 
   version: "{{versions.memory_profiler}}"
-  vendor_source: https://github.com/pythonprofilers/memory_profiler/archive/refs/tags/{{version}}.{{extension}}
+  vendor_source: https://files.pythonhosted.org/packages/{{versions.memory_profiler_hash}}/{{name}}-{{version}}.{{extension}}
   description: |
     The {{name}} {{version}} is a python module for monitoring memory consumption of
     a process as well as line-by-line analysis of memory consumption for python programs.

@@ -3,8 +3,7 @@
 - package: pexpect 
   name: pexpect 
   version: "{{versions.pexpect}}"
-  url: https://files.pythonhosted.org/packages/e5/9b/ff402e0e930e70467a7178abb7c128709a30dfb22d8777c043e501bc1b10
-  vendor_source: "{{url}}/{{name}}-{{version}}.{{extension}}"
+  vendor_source: https://files.pythonhosted.org/packages/{{versions.pexpect_hash}}/{{name}}-{{version}}.{{extension}}
   description: |
     Pexpect {{version}} is a pure Python module for spawning child applications;
     controlling them; and responding to expected patterns in their output.
