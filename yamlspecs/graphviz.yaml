@@ -3,7 +3,7 @@
 - package: Graphviz for python
   name: graphviz 
   version: "{{versions.graphviz}}"
-  vendor_source: https://github.com/xflr6/graphviz/archive/{{version}}.{{extension}}
+  vendor_source: https://github.com/xflr6/graphviz/archive/refs/tags/{{version}}.{{extension}}
   description: |
     Graphviz {{version}} for  python {{python_version}}. This package 
     facilitates the creation and rendering of graph descriptions in
