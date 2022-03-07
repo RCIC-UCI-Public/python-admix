@@ -13,3 +13,9 @@
   description: |
     Virtualenv {{version}} for python {{python_version}} is a tool 
     for creating isolated virtual python environments
+  pkgadd: !ifeq "{{versions.python_family}},3.10,platformdirs,appdirs"
+  pymod_requires:
+    - python_{{python_version}}-{{pkgadd}}
+    - python_{{python_version}}-distlib
+    - python_{{python_version}}-filelock
+    - python_{{python_version}}-six
