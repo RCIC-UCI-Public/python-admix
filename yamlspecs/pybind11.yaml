@@ -1,13 +1,15 @@
 !include common.yaml
 ---
 - package: pybind11 header only library
-  name: pybind11 
+  name: pybind11
   version: "{{versions.pybind11}}"
   vendor_source: https://github.com/pybind/pybind11/archive/v{{version}}.{{extension}}
   description: |
-    pybind11 is a lightweight header-only library that exposes C++ types in Python 
+    pybind11 is a lightweight header-only library that exposes C++ types in Python
     and vice versa, mainly to create Python bindings of existing C++ code.
-    This compact implementation was possible thanks to some of the new C++11 language 
-    features, specifically,  tuples, lambda functions and variadic templates). Since 
-    its creation, this library has grown beyond Boost.Python in many ways, leading to 
+    This compact implementation was possible thanks to some of the new C++11 language
+    features, specifically,  tuples, lambda functions and variadic templates). Since
+    its creation, this library has grown beyond Boost.Python in many ways, leading to
     dramatically simpler binding code in many common situations.
+  build:
+    modules: python/{{python_version}} foundation/{{versions.foundation}}
