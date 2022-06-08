@@ -31,3 +31,7 @@ build:
   - ruamel_yaml
   - scipy
   - pandas
+  - appdirs
+  - distlib 
+  - filelock
+
