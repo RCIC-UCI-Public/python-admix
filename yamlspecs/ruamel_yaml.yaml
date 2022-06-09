@@ -2,8 +2,8 @@
 ---
 - package: ruamel-yaml 
   name: ruamel.yaml 
-  version: "{{pyversion.ruamel_yaml}}"
-  vendor_source: https://files.pythonhosted.org/packages/17/2f/f38332bf6ba751d1c8124ea70681d2b2326d69126d9058fbd9b4c434d268/{{name}}-{{version}}.{{extension}}
+  version: "{{versions.ruamel_yaml}}"
+  vendor_source: https://files.pythonhosted.org/packages/{{versions.ruamel_yaml_hash}}/{{name}}-{{version}}.{{extension}}
   description: |
      {{name}} {{version}} is a YAML 1.2  parser/emitter that supports roundtrip 
      preservation of comments, seq/map flow style, and map key order

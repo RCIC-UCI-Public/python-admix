@@ -1,0 +1,11 @@
+!include common.yaml
+---
+- package: sortedcontainers
+  name: sortedcontainers 
+  version: "{{versions.sortedcontainers}}"
+  vendor_source: https://files.pythonhosted.org/packages/{{versions.sortedcontainers_hash}}/{{name}}-{{version}}.{{extension}}
+  description: |
+    Gast {{version}} is a generic AST to represent Python2 and Python3’s
+    Abstract Syntax Tree(AST). GAST provides a compatibility layer
+    between the AST of various Python versions, as produced by 
+    ast.parse from the standard ast module

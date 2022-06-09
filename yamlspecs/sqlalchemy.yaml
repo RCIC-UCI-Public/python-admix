@@ -2,8 +2,8 @@
 ---
 - package: SQLAlchemy for python 
   name: sqlalchemy 
-  version: "{{pyversion.sqlalchemy}}"
-  version_rel: "{{pyversion.sqlalchemy_rel}}"
+  version: "{{versions.sqlalchemy}}"
+  version_rel: "{{versions.sqlalchemy_rel}}"
   src_dir: "{{name}}-rel_{{version_rel}}"
   vendor_source: https://github.com/sqlalchemy/sqlalchemy/archive/rel_{{version_rel}}.{{extension}}
   description: >

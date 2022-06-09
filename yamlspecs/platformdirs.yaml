@@ -1,0 +1,9 @@
+!include common.yaml
+---
+- package: platformdirs
+  name: platformdirs 
+  version: "{{versions.platformdirs}}"
+  vendor_source: https://files.pythonhosted.org/packages/{{versions.platformdirs_hash}}/{{name}}-{{version}}.{{extension}}
+  description: |
+    Platformdirs {{version}} is a small Python module for determining
+    appropriate platform-specific dirs, e.g. a 'user data dir'

@@ -2,7 +2,7 @@
 ---
 - package: msgpack 
   name: msgpack 
-  version: "{{pyversionadd.msgpack}}"
+  version: "{{versions.msgpack}}"
   vendor_source: https://github.com/msgpack/msgpack-python/archive/v{{version}}.{{extension}}
   src_dir: "{{name}}-python-{{version}}"
   description: |

@@ -1,0 +1,9 @@
+!include common_wheel.yaml
+---
+- package: flit_core
+  name: flit_core 
+  version: "{{versions.flit_core}}"
+  hash: "{{versions.flit_core_hash}}"
+  description: |
+    Flit_core {{version}} is distribution-building parts of Flit.
+    See flit package for more information

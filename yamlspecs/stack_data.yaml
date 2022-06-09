@@ -1,0 +1,14 @@
+!include common.yaml
+---
+- package: stack_data 
+  name: stack_data 
+  version: "{{versions.stack_data}}"
+  vendor_source: https://files.pythonhosted.org/packages/{{versions.stack_data_hash}}/{{name}}-{{version}}.{{extension}}
+  description: |
+    Stack_data {{version}} is a library that extracts data from stack frames and tracebacks,
+    particularly to display more useful tracebacks than the default. It powers the
+    tracebacks in IPython and futurecoder
+  pymod_requires:
+    - python_{{python_version}}-executing
+    - python_{{python_version}}-asttokens
+    - python_{{python_version}}-pure_eval

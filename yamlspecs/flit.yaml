@@ -1,0 +1,8 @@
+!include common_wheel.yaml
+---
+- package: flit
+  name: flit 
+  version: "{{versions.flit}}"
+  hash: "{{versions.flit_hash}}"
+  description: |
+    Flit {{version}} a simple packaging tool for simple packages

@@ -2,8 +2,8 @@
 ---
 - package: tqdm support
   name: tqdm
-  version: "{{pyversion.tqdm}}"
-  vendor_source: https://github.com/tqdm/tqdm/archive/v{{version}}.{{extension}}
+  version: "{{versions.tqdm}}"
+  vendor_source: https://files.pythonhosted.org/packages/{{versions.tqdm_hash}}/{{name}}-{{version}}.{{extension}}
   description: |
     Instantly make your loops show a smart progress meter, just
     wrap any iterable with tqdm(iterable), and you are done!

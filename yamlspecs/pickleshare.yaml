@@ -2,7 +2,7 @@
 ---
 - package: pickleshare 
   name: pickleshare 
-  version: "{{pyversionadd.pickleshare}}"
+  version: "{{versions.pickleshare}}"
   vendor_source: https://github.com/pickleshare/pickleshare/archive/refs/tags/{{version}}.{{extension}}
   description: |
     Pickleshare {{version}} is a small 'shelve' like datastore with concurrency support

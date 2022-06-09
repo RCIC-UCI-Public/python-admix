@@ -1,0 +1,12 @@
+!include common_wheel.yaml
+---
+- package: threadpoolctl
+  name: threadpoolctl 
+  version: "{{versions.threadpoolctl}}"
+  hash: "{{versions.threadpoolctl_hash}}"
+  description: |
+    Threadpoolctl {{version}} Python helpers to limit the number of threads used in the
+    threadpool-backed of common native libraries used for scientific computing and
+    data science (e.g. BLAS and OpenMP). Fine control of the underlying thread-pool
+    size can be useful in workloads that involve nested parallelism so as to mitigate
+    oversubscription issues

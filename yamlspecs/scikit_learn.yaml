@@ -2,15 +2,16 @@
 ---
 - package:  scikit-learn 
   name: scikit-learn 
-  version: "{{pyversionadd.scikit_learn}}"
-  vendor_source: https://github.com/scikit-learn/scikit-learn/releases/download/{{version}}/{{name}}-{{version}}.{{extension}}
+  version: "{{versions.scikit_learn}}"
+  vendor_source: https://github.com/scikit-learn/scikit-learn/archive/refs/tags/{{version}}.{{extension}}
   description: |
     Scikit-learn {{version}} is a Python module for machine learning built on 
     top of SciPy and is distributed under the 3-Clause BSD license. The 
     project was started in 2007 by David Cournapeau as a Google Summer of
     Code project, and since then many volunteers have contributed
-  requires:
+  pkgadd: !ifeq "{{versions.python_family}},3.10,threadpoolctl,pandas"
+  pymod_requires:
     - python_{{python_version}}-joblib
     - python_{{python_version}}-numpy
     - python_{{python_version}}-scipy
-    - python_{{python_version}}-pandas
+    - python_{{python_version}}-{{pkgadd}}

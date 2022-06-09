@@ -1,0 +1,9 @@
+!include common.yaml
+---
+- package: pure_eval 
+  name: pure_eval 
+  version: "{{versions.pure_eval}}"
+  vendor_source: https://files.pythonhosted.org/packages/{{versions.pure_eval_hash}}/{{name}}-{{version}}.{{extension}}
+  description: |
+    Pure_eval {{version}} lets you safely evaluate certain AST nodes without 
+    triggering arbitrary code that may have unwanted side effects

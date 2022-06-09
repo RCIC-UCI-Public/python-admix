@@ -2,7 +2,7 @@
 ---
 - package: multiprocess 
   name: multiprocess 
-  version: "{{pyversionadd.multiprocess}}"
+  version: "{{versions.multiprocess}}"
   src_dir: "{{name}}-{{name}}-{{version}}"
   vendor_source: https://github.com/uqfoundation/multiprocess/archive/{{name}}-{{version}}.{{extension}}
   description: |

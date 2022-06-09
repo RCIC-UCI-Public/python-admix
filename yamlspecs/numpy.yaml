@@ -1,12 +1,21 @@
 !include common.yaml
 ---
-- package: numpy for python 
+- package: numpy for python
   name: numpy
-  version: "{{pyversionadd.numpy}}"
-  vendor_source: https://github.com/numpy/numpy/archive/v{{version}}.{{extension}}
+  version: "{{versions.numpy}}"
+  vendor_source: https://github.com/numpy/numpy/releases/download/v{{version}}/{{name}}-{{version}}.{{extension}}
   description: >
     Numpy support for python {{python_version}}
+  comm: !ifeq "{{version}},1.22.2,echo,"
   install:
-    makeinstall: export CFLAGS='-std=c99'; python{{python_major}} setup.py install --root $(ROOT) 
-  requires:
+    makeinstall: >
+      {{comm}} export CFLAGS='-std=c99'; python{{python_major}} setup.py install --root $(ROOT)
+  pymod_requires:
     - libgfortran
+
+# NOTES
+# The build failes for many newer versions of setuptools:Many newer versions of
+# setuptools:  60.9.3, 59.2.0, 57.1.0. Build workded with so called pinned version
+# 49.2.0 per bug report submitted to numpy. However this pinned version is too old
+# for building ipython.
+# Settled on setuptools 52.0.0 that worked for numpy, ipython, pythran, scipy,  pip.

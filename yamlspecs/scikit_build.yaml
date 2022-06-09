@@ -2,13 +2,13 @@
 ---
 - package: scikit-build 
   name: scikit-build 
-  version: "{{pyversionadd.scikit_build}}"
+  version: "{{versions.scikit_build}}"
   vendor_source: https://github.com/scikit-build/scikit-build/archive/refs/tags/{{version}}.{{extension}}
   description: |
     The scikit-build {{version}} package is fundamentally just glue between the
     setuptools Python module and CMake.  See https://pypi.org/project/scikit-build/
   install:
     makeinstall: python{{python_major}} ./setup.py install --root $(ROOT) 
-  requires:
+  pymod_requires:
     - python_{{python_version}}-distro
     - python_{{python_version}}-packaging

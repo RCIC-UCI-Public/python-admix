@@ -2,7 +2,7 @@
 ---
 - package: pox 
   name: pox 
-  version: "{{pyversionadd.pox}}"
+  version: "{{versions.pox}}"
   src_dir: "{{name}}-{{name}}-{{version}}"
   vendor_source: https://github.com/uqfoundation/pox/archive/{{name}}-{{version}}.{{extension}}
   description: |

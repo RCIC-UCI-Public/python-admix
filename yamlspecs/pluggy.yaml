@@ -1,0 +1,8 @@
+!include common.yaml
+---
+- package: pluggy
+  name: pluggy 
+  version: "{{versions.pluggy}}"
+  vendor_source: https://files.pythonhosted.org/packages/{{versions.pluggy_hash}}/{{name}}-{{version}}.{{extension}}
+  description: |
+    Pluggy {{version}} is the core framework used by the pytest, tox, and devpi projects

@@ -1,0 +1,18 @@
+!include common.yaml
+---
+- package: pythran
+  name: pythran 
+  version: "{{versions.pythran}}"
+  hash: "{{versions.pythran_hash}}"
+  vendor_source: https://files.pythonhosted.org/packages/{{versions.pythran_hash}}/{{name}}-{{version}}.{{extension}}
+  description: |
+    Pythran {{version}} is an ahead of time compiler for a subset of the Python language,
+    with a focus on scientific computing. It takes a Python module annotated with a
+    few interface descriptions and turns it into a native Python module with the same
+    interface, but (hopefully) faster. It is meant to efficiently compile scientific
+    programs, and takes advantage of multi-cores and SIMD instruction units
+  pymod_requires:
+    - python_{{python_version}}-ply
+    - python_{{python_version}}-gast
+    - python_{{python_version}}-numpy
+    - python_{{python_version}}-beniget

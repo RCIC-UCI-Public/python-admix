@@ -2,7 +2,7 @@
 ---
 - package: kiwisolver
   name: kiwisolver
-  version: "{{pyversionadd.kiwisolver}}"
+  version: "{{versions.kiwisolver}}"
   vendor_source: https://github.com/nucleic/kiwi/archive/{{version}}.{{extension}}
   src_dir: kiwi-{{version}}
   description: >

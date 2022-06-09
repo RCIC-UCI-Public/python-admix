@@ -1,0 +1,8 @@
+!include common.yaml
+---
+- package: iniconfig
+  name: iniconfig 
+  version: "{{versions.iniconfig}}"
+  vendor_source: https://github.com/pytest-dev/iniconfig/archive/refs/tags/v{{version}}.{{extension}}
+  description: |
+    Iniconfig {{version}} brain-dead simple config-ini parsing

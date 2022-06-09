@@ -2,8 +2,12 @@
 ---
 - package: Backported and Experimental Type Hints for Python
   name:  typing_extensions
-  version: "{{pyversionadd.typing_extensions}}"
-  vendor_source: https://files.pythonhosted.org/packages/e7/dd/f1713bc6638cc3a6a23735eff6ee09393b44b96176d3296693ada272a80b/{{name}}-{{version}}.{{extension}}
+  version: "{{versions.typing_extensions}}"
+  vendor_source: https://files.pythonhosted.org/packages/{{versions.typing_extensions_hash}}/{{name}}-{{version}}.{{extension}}
   description: |
     Typing Extensions is Backported and Experimental Type Hints 
-    for Python typechecker. Required for mypy {{pyversionadd.mypy}}
+    for Python typechecker. Required for mypy {{versions.mypy}}
+  install_setup: python{{python_major}} ./setup.py install --root $(ROOT)
+  install_pip: pip install --root $(ROOT) --no-deps ../{{src_tarball}}
+  install:
+    makeinstall: !ifeq "{{versions.python_family}},3.10,{{install_pip}},{{install_setup}}"

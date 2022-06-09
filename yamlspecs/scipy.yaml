@@ -1,14 +1,15 @@
 !include common.yaml
 ---
 - package: SciPy is a Scientific Library for Python
-  name: scipy 
-  version: "{{pyversionadd.scipy}}"
-  vendor_source: https://github.com/scipy/scipy/archive/v{{version}}.{{extension}}
+  name: scipy
+  version: "{{versions.scipy}}"
+  vendor_source: https://github.com/scipy/scipy/releases/download/v{{version}}/{{name}}-{{version}}.{{extension}}
   description: |
     Scipy version {{version}} support for python {{python_version}}.
-    The SciPy library depends on NumPy, which provides convenient 
+    The SciPy library depends on NumPy, which provides convenient
     and fast N-dimensional array manipulation, and for python3 on
     pybind11 which provides headers
-  requires:
+  pymod_requires:
     - python_{{python_version}}-numpy
     - python_{{python_version}}-pybind11
+    - !ifeq "{{versions.python_family}},3.10,python_{{python_version}}-pythran,"

@@ -2,8 +2,8 @@
 ---
 - package: Optional static typing for python
   name:  mypy_extensions
-  version: "{{pyversionadd.mypy_extensions}}"
+  version: "{{versions.mypy_extensions}}"
   vendor_source: https://github.com/python/mypy_extensions/archive/{{version}}.{{extension}}
   description: |
     Experimental type system extensions for programs checked with the mypy typechecker.
-    Required for mypy {{pyversionadd.mypy}}
+    Required for mypy {{versions.mypy}}

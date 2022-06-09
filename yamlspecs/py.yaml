@@ -1,0 +1,8 @@
+!include common.yaml
+---
+- package: py
+  name: py 
+  version: "{{versions.py}}"
+  vendor_source: https://files.pythonhosted.org/packages/{{versions.py_hash}}/{{name}}-{{version}}.{{extension}}
+  description: |
+    Py {{version}} is a library with cross-python path, ini-parsing, io, code, log facilities

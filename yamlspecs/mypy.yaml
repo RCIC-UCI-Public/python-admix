@@ -2,7 +2,7 @@
 ---
 - package: Optional static typing for python
   name:  mypy 
-  version: "{{pyversionadd.mypy}}"
+  version: "{{versions.mypy}}"
   vendor_source: https://github.com/python/mypy/archive/v{{version}}.{{extension}}
   description: |
     Mypy for python {{python_version}} is an optional static type checker for Python 
@@ -10,7 +10,7 @@
     Mypy combines the expressive power and convenience of Python with a powerful type 
     system and compile-time type checking. Mypy type checks standard Python programs; 
     run them using any Python VM with basically no runtime overhead
-  requires:
+  pymod_requires:
     - python_{{python_version}}-mypy_extensions
     - python_{{python_version}}-typing_extensions
     - python_{{python_version}}-typed_ast

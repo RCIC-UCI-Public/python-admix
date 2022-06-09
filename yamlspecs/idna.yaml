@@ -2,7 +2,7 @@
 ---
 - package: idna 
   name: idna 
-  version: "{{pyversion.idna}}"
+  version: "{{versions.idna}}"
   vendor_source: https://github.com/kjd/idna/archive/v{{version}}.{{extension}}
   description: |
     Support for the Internationalised Domain Names in Applications (IDNA) protocol as specified in RFC 5891. 

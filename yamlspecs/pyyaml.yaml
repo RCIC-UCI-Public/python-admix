@@ -1,7 +1,7 @@
 !include common.yaml
 ---
 - package: YAML parser and emitter for Python
-  version: "{{pyversion.pyyaml}}"
+  version: "{{versions.pyyaml}}"
   name: pyyaml
   vendor_source: https://github.com/yaml/pyyaml/archive/{{version}}.{{extension}}
   description: |

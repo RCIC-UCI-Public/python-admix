@@ -2,7 +2,7 @@
 ---
 - package: pyparsing
   name: pyparsing
-  version: "{{pyversion.pyparsing}}"
+  version: "{{versions.pyparsing}}"
   vendor_source: https://github.com/pyparsing/pyparsing/archive/{{name}}_{{version}}.{{extension}}
   src_dir: "{{name}}-{{name}}_{{version}}"
   description: |

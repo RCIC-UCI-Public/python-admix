@@ -1,0 +1,11 @@
+!include common.yaml
+---
+- package: pkgconfig
+  name: pkgconfig 
+  version: "{{versions.pkgconfig}}"
+  vendor_source: https://github.com/matze/pkgconfig/archive/refs/tags/v{{version}}.{{extension}}
+  description: |
+    Pkgconfig {{version}} is a Python module to interface with
+    the pkg-config command line tool for Python 3.3+
+  install:
+    makeinstall: pip install --root $(ROOT) --no-deps ../{{src_tarball}}

@@ -2,7 +2,7 @@
 ---
 - package: wcwidth 
   name: wcwidth 
-  version: "{{pyversionadd.wcwidth}}"
+  version: "{{versions.wcwidth}}"
   vendor_source: https://github.com/jquast/wcwidth/archive/refs/tags/{{version}}.{{extension}}
   description: |
     Wcwidth {{version}} is a library mainly for CLI programs that carefully 

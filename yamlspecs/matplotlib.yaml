@@ -2,13 +2,38 @@
 ---
 - package: matplotlib
   name: matplotlib
-  version: "{{pyversionadd.matplotlib}}"
+  version: "{{versions.matplotlib}}"
   vendor_source: https://github.com/matplotlib/matplotlib/archive/v{{version}}.{{extension}}
   description: |
     Matplotlib {{version}} for python {{python_version}} strives to produce publication quality 2D graphics
-    for interactive graphing, scientific publishing, user interface development and web application servers 
+    for interactive graphing, scientific publishing, user interface development and web application servers
     targeting multiple user interfaces and hardcopy output formats
-  requires:
+  install:
+    makeinstall: unset MAKEFLAGS; python{{python_major}} ./setup.py install --root $(ROOT)
+  pymod_requires:
     - python_{{python_version}}-pyparsing
     - python_{{python_version}}-cycler
     - python_{{python_version}}-kiwisolver
+    - python_{{python_version}}-numpy
+    - python_{{python_version}}-dateutil
+    - !ifeq "{{versions.python_family}},3.10,python_{{python_version}}-packaging,"
+    - !ifeq "{{versions.python_family}},3.10,python_{{python_version}}-fonttools,"
+    - !ifeq "{{versions.python_family}},3.10,python_{{python_version}}-pillow,"
+
+# NOTES
+# import matplotlib works once all the above de[endencies are resolved.
+# did selective testing. For full testing need to setup virtualenv and
+# git checkout which does not really tests a current distro. See
+# https://matplotlib.org/stable/devel/testing.html for details.
+# For tests:
+# (1) load python module,
+# (2) from source distro extract lib/matplotlib/tests/, lib/mpl_toolkits/tests/ and pytest.ini
+#     to a separate location,
+# (3) run  selective tests via commands like:
+#     python -m  pytest lib/matplotlib/tests/test_ttconv.py
+# The output suggests tests did not get updated  per latest code changes
+# as require modules for import do not exists in the current matplotlib distro.
+# Some tests succeed some fail with internal matplotlib errors.
+# One of the full test dependencies is inkscape which itself has a big number of
+# dependencies https://inkscape.org/develop/getting-started/#building-inkscape-linux
+# and was not built on CentOS.

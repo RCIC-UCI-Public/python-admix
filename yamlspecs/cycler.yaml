@@ -2,7 +2,7 @@
 ---
 - package: cycler
   name: cycler
-  version: "{{pyversionadd.cycler}}"
+  version: "{{versions.cycler}}"
   vendor_source: https://github.com/matplotlib/cycler/archive/v{{version}}.{{extension}}
   description: |
     Composable cycles {{name}} {{version}} provides a single entry 

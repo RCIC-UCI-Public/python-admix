@@ -2,8 +2,8 @@
 ---
 - package: filelock 
   name: filelock 
-  version: "{{pyversionadd.filelock}}"
-  vendor_source: https://files.pythonhosted.org/packages/14/ec/6ee2168387ce0154632f856d5cc5592328e9cf93127c5c9aeca92c8c16cb/{{name}}-{{version}}.{{extension}}
+  version: "{{versions.filelock}}"
+  vendor_source: https://files.pythonhosted.org/packages/{{versions.filelock_hash}}/{{name}}-{{version}}.{{extension}}
   description: |
     filelock {{version}} for python {{python_version}}  implements a platform independent 
     file lock in Python, which provides a simple way of inter-process communication

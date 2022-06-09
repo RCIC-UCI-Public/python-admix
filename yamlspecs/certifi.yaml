@@ -2,8 +2,8 @@
 ---
 - package: certifi 
   name: certifi 
-  version: "{{pyversion.certifi}}"
-  vendor_source: https://files.pythonhosted.org/packages/41/bf/9d214a5af07debc6acf7f3f257265618f1db242a3f8e49a9b516f24523a6/{{name}}-{{version}}.{{extension}}
+  version: "{{versions.certifi}}"
+  vendor_source: https://files.pythonhosted.org/packages/{{versions.certifi_hash}}/{{name}}-{{version}}.{{extension}}
   description: |
     Certifi {{version}} is a carefully curated collection of Root Certificates
     for validating the trustworthiness of SSL certificates while verifying the

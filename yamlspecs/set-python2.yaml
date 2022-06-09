@@ -1,0 +1,37 @@
+!include packages.yaml
+---
+versions: versions-python2.yaml
+bootstrap:
+  - python
+  - python-module
+  - setuptools
+  - setuptools_scm
+  - pip
+  - cython
+  - numpy
+  - pybind11
+build:
+  - virtualenv
+  - pyyaml
+  - sqlalchemy
+  - pytz
+  - dateutil
+  - six
+  - graphviz
+  - future
+  - pyparsing
+  - cffi
+  - urllib3
+  - chardet
+  - certifi
+  - idna
+  - requests
+  - tqdm
+  - ruamel_yaml_clib
+  - ruamel_yaml
+  - scipy
+  - pandas
+  - appdirs
+  - distlib 
+  - filelock
+
