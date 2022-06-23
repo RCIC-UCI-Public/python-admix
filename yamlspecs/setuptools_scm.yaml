@@ -3,7 +3,8 @@
 - package: setuptools_scm for python 
   name: setuptools_scm
   version: "{{versions.setuptools_scm}}" 
-  vendor_source: https://files.pythonhosted.org/packages/56/c9/09f4a531720b1bf54f316fdff926fbb937c59a9c4a34e3a533b26e501898/{{name}}-{{version}}.{{extension}}
+  hash: "{{versions.setuptools_scm_hash}}"
+  vendor_source: https://files.pythonhosted.org/packages/{{hash}}/{{name}}-{{version}}.{{extension}}
   description: >
     Setuptools_scm {{version}} handles managing your Python {{python_version}} package
     versions in SCM metadata instead of declaring them as the version
