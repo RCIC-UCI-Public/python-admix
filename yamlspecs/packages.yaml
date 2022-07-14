@@ -96,6 +96,10 @@ build:
   - wcwidth
   - pygments
   - h5py
+  - click
+  - numpy-groupies
+  - llvmlite
+  - numba
 manifest:
   - "{{bootstrap}}"
   - "{{build}}"

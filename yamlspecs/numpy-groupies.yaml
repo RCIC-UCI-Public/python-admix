@@ -1,0 +1,12 @@
+!include common.yaml
+---
+- package: numpy-groupies 
+  name: numpy-groupies 
+  version: "{{versions.numpy_groupies}}"
+  vendor_source: https://github.com/ml31415/numpy-groupies/archive/v{{version}}.{{extension}}
+  description: |
+    Numpy-groupies {{version}} are optimised tools for group-indexing 
+    operations such as aggregated sum and more
+# requires:
+#   - "python_{{pyversion}}"
+#   - "python_{{pyversion}}-llvmlite"

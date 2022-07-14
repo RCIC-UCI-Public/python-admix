@@ -1,0 +1,11 @@
+!include common.yaml
+---
+- package: click 
+  name: click
+  version: "{{versions.click}}"
+  vendor_source: https://github.com/pallets/click/archive/{{version}}.{{extension}}
+  description: |
+    Click {{version}} is a Python package for creating beautiful command line
+    interfaces in a composable way with as little code as necessary. It is 
+    the 'Command Line Interface Creation Kit'. It is highly configurable 
+    but comes with sensible defaults out of the box

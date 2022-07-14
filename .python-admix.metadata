@@ -150,3 +150,7 @@ f5e9c1f576a2e5603b7960dcbe256fc9bde343ac  sources/setuptools-52.0.0.tar.gz 1fu8u
 9267ce7678e9435a87b3fe45f173fe506c894fa7  sources/urllib3-1.26.8.tar.gz 1ArRbDi4RFVfhgswlWOBPCaf-BTOXtQji
 0641cadaeec6dcad88fa41c05426b7995e5cd371  sources/virtualenv-20.13.2.tar.gz 1NgsvHrdancvloBXbldyY_k2Au4NdzvrO
 3c86e09322e93efe54b2d1ff9d7dd5958c14132e  sources/wheel-0.37.1.tar.gz 1UcHkf3Xn9XPqeYDReBors6EN74ktcw7Q
+df5cae0c0df77aef5890b35247eff1ff5890d873  sources/click-7.1.2.tar.gz 1Ef8aRxmKFG-bCwdhE-OACEN7SFQd9h_A
+1b63f958816df0ba4b440feb75e057eff138f253  sources/llvmlite-0.33.0.tar.gz 1UnL2JsVD342IoZygGfxX7HDWpUxgZxMZ
+bc77ffa9afaaaf6c33a3cf4dc816413211e05b32  sources/numba-0.50.1.tar.gz 1qpTs4eLe14KVstO_pffhsyqUHa-mKrln
+cd26beb467ac621c194b9d4e4bfc7f9cd803c46e  sources/numpy-groupies-0.9.10.tar.gz 1-uRr2VhJAAQComXwZup3NELC-QYqAWm9

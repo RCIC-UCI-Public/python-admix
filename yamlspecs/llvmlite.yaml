@@ -1,0 +1,28 @@
+!include common.yaml
+---
+- package: llvmlite 
+  name: llvmlite 
+  version: "{{versions.llvmlite}}"
+  compiler: "{{versions.compiler_sys.name}}"
+  compiler_version: "{{versions.compiler_sys.version}}"
+  vendor_source: https://github.com/numba/llvmlite/archive/v{{version}}.{{extension}}
+  description: |
+    Llvmlite {{version}} is lightweight LLVM python binding for writing JIT compilers
+    The old llvmpy binding exposes a lot of LLVM APIs but the mapping of C++-style
+    memory management to Python is error prone. Numba and many JIT compilers do not
+    need a full LLVM API. Only the IR builder, optimizer, and JIT compiler APIs are
+    necessary.  llvmlite is a project originally tailored for Numba package needs
+  build:
+    base_modules: 
+      - "{{compiler}}/{{compiler_version}}"
+      - python/{{python_version}}
+    modules: 
+      - llvm/{{versions.llvm}}
+      - "{{build.base_modules}}"
+  install:
+    makeinstall: 
+      export CXXFLAGS=-fPIC;
+      export LLVMLITE_SKIP_LLVM_VERSION_CHECK=1;
+      unset MAKEFLAGS; python{{python_major}} ./setup.py install --root $(ROOT)
+  pymod_requires:
+    - llvm_{{versions.llvm}}
