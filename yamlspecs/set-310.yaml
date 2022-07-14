@@ -96,3 +96,7 @@ build:
   - executing
   - pure_eval
   - stack_data
+  - click
+  - numpy_groupies
+  - llvmlite
+  - numba
