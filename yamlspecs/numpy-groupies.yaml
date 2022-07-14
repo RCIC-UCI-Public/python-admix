@@ -7,6 +7,9 @@
   description: |
     Numpy-groupies {{version}} are optimised tools for group-indexing 
     operations such as aggregated sum and more
-# requires:
-#   - "python_{{pyversion}}"
-#   - "python_{{pyversion}}-llvmlite"
+  build:
+    pkgmake:
+      sed -i 's/version=versioneer\.get_version()/version="{{version}}"/' setup.py;
+      sed -i 's/ setup_requires/\#setup_requires/' setup.py;
+      sed -i 's/ cmdclass/\#cmdclass/' setup.py;
+      sed -i 's/   versioneer/\#versioneer/' setup.py
