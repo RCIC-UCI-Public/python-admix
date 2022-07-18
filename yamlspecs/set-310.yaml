@@ -97,6 +97,6 @@ build:
   - pure_eval
   - stack_data
   - click
-  - numpy_groupies
+  - numpy-groupies
   - llvmlite
   - numba
