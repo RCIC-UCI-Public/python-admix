@@ -2,13 +2,21 @@
 ---
 - package: SciPy is a Scientific Library for Python
   name: scipy
+  release: 6
   version: "{{versions.scipy}}"
   vendor_source: https://github.com/scipy/scipy/releases/download/v{{version}}/{{name}}-{{version}}.{{extension}}
+  addfile: site.cfg.template
   description: |
     Scipy version {{version}} support for python {{python_version}}.
     The SciPy library depends on NumPy, which provides convenient
     and fast N-dimensional array manipulation, and for python3 on
     pybind11 which provides headers
+  build:
+    modules: python/{{python_version}} OpenBLAS/{{versions.OpenBLAS}}
+  install:
+     makeinstall: >
+      sed -e "s%&PREFIX&%$$OpenBLAS__PREFIX%g" ../site.cfg.template > site.cfg;
+      python{{python_major}} ./setup.py install --root $(ROOT)    
   pymod_requires:
     - python_{{python_version}}-numpy
     - python_{{python_version}}-pybind11

@@ -3,15 +3,22 @@
 - package: numpy for python
   name: numpy
   version: "{{versions.numpy}}"
+  release: 6
+  addfile: site.cfg.template
   vendor_source: https://github.com/numpy/numpy/releases/download/v{{version}}/{{name}}-{{version}}.{{extension}}
   description: >
     Numpy support for python {{python_version}}
   comm: !ifeq "{{version}},1.22.2,echo,"
+  build: 
+    modules: python/{{python_version}} OpenBLAS/{{versions.OpenBLAS}}
   install:
     makeinstall: >
+      sed -e "s%&PREFIX&%$$OpenBLAS__PREFIX%g" ../site.cfg.template > site.cfg;
       {{comm}} export CFLAGS='-std=c99'; python{{python_major}} setup.py install --root $(ROOT)
   pymod_requires:
     - libgfortran
+    - OpenBLAS/{{versions.OpenBLAS}}
+ 
 
 # NOTES
 # The build failes for many newer versions of setuptools:Many newer versions of
