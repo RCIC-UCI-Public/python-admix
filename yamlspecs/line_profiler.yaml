@@ -12,7 +12,6 @@
   build:
     modules:
       - python/{{python_version}} 
-      - foundation
   install:
     makeinstall: python{{python_major}} ./setup.py install --root $(ROOT) 
   pymod_requires:
