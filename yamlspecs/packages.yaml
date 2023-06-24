@@ -19,6 +19,7 @@ system:
   - sqlite-devel
   - libyaml{{develext}}
   - xz-devel
+  - cmake
   - !ifeq "{{site.os_release}},8,{{pillow_libs}},"
 pillow_libs:
   - libjpeg-turbo-devel
