@@ -5,8 +5,10 @@ versions: versions-310.yaml
 bootstrap:
   - python
   - python-module
+  - packaging
   - setuptools
   - setuptools_scm
+  - tomli
   - pip
   - cython
   - numpy
@@ -17,7 +19,6 @@ bootstrap:
   - pythran
   - scipy
   - joblib
-  - packaging
   - distro
   - scikit_build
   - pyparsing

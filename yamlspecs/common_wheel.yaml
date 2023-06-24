@@ -12,7 +12,7 @@
     pkgmake: echo 'Using wheel distro'
   install:
     makeinstall: >
-      pip install --root $(ROOT) --no-deps {{src_tarball}}
+      pip3 install --root $(ROOT) --no-deps {{src_tarball}}
 
 # For installing from wheel files for packages where current combination
 # of setuptools+distutils does not work for regular build
