@@ -8,7 +8,7 @@ bootstrap:
   - setuptools_scm
   - pip
   - cython
-  - numpy
+  - numpy-python2
   - pybind11
 build:
   - virtualenv
@@ -29,7 +29,7 @@ build:
   - tqdm
   - ruamel_yaml_clib
   - ruamel_yaml
-  - scipy
+  - scipy-python2
   - pandas
   - appdirs
   - distlib 
