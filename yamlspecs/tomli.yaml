@@ -1,4 +1,4 @@
-!include common_wheel.yaml
+!include common_bootstrap_wheel.yaml
 ---
 - package: tomli
   name: tomli 

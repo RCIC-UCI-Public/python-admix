@@ -1,0 +1,17 @@
+!include common_wheel.yaml
+---
+- name: common_bootstrap_wheel
+  install:
+    makeinstall: >
+      export PIP3=`find $$python__PREFIX -name pip-\*-py3\*whl`;
+      python $$PIP3/pip install --ignore-installed --root $(ROOT) --no-deps {{src_tarball}}
+
+# For installing from wheel files for packages where current combination
+# of setuptools+distutils does not work for regular build
+
+# Overrides the definition of pip in common_wheel to use the bundled,
+# but uninstalled, pip wheel file of the base distro.
+
+# This solves the "bootstrap" build problem of circular dependency 
+# pip requires tomli AND tomli can only use pip to install itself
+#

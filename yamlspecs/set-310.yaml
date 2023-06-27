@@ -87,7 +87,6 @@ build:
   - pytest
   - pluggy
   - py
-  - tomli
   - sortedcontainers
   - hypothesis
   - flit
