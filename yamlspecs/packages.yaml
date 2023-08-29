@@ -104,5 +104,5 @@ manifest:
   - "{{bootstrap}}"
   - "{{build}}"
 sets:
-  - python2
+  - "217"
   - "310"
