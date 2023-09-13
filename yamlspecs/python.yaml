@@ -28,8 +28,9 @@
       ln -s python{{family_version}} python{{major_version}};
       ln -s python{{family_version}}-config python-config;
       ln -s python{{family_version}}-config python{{major_version}}-config
+  
+  rpmAutoReqProv: "No"
   rpmFilters: 
-      - 'AutoReqProv: no\nProvides: libpython{{family_version}}.so.1.0()(64bit)\n'
-      - '%define __python %{buildroot}/$(PKGROOT)/bin/python{{major_version}}'
+      - '%define __python %{buildroot}/$(PKGROOT)/bin/python{{major_version}}\nProvides: libpython{{family_version}}.so.1.0()(64bit)\n'
   rpm:
     extras: *RpmPython
