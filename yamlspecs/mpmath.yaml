@@ -1,0 +1,8 @@
+!include common.yaml
+---
+- package: mpmath
+  name: mpmath
+  version: "{{versions.mpmath}}"
+  vendor_source: https://github.com/{{name}}/{{name}}/archive/refs/tags/{{version}}.{{extension}}
+  description: |
+    A Python library for arbitrary-precision floating-point arithmetic.

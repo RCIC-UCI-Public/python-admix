@@ -1,0 +1,8 @@
+!include common.yaml
+---
+- package: sympy
+  name: sympy
+  version: "{{versions.sympy}}"
+  vendor_source: https://github.com/{{name}}/{{name}}/releases/download/{{name}}-{{version}}/{{name}}-{{version}}.{{extension}}
+  description: |
+    Python Library for symbolic mathematics

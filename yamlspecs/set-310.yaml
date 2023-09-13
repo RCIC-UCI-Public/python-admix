@@ -100,3 +100,5 @@ build:
   - numpy-groupies
   - llvmlite
   - numba
+  - sympy
+  - mpmath
