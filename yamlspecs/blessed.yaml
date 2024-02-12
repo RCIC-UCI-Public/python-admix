@@ -1,0 +1,9 @@
+!include common.yaml
+---
+- package: blessed
+  name: blessed 
+  version: "{{versions.blessed}}"
+  vendor_source: https://github.com/jquast/blessed/archive/refs/tags/{{version}}.{{extension}}
+  description: |
+      Blessed {{version}} Blessed is an easy, practical library for making terminal apps, by providing an elegant,
+      well-documented interface to Colors, Keyboard input, and screen position and Location capabilities

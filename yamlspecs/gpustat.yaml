@@ -1,0 +1,11 @@
+!include common.yaml
+---
+- package: gpustat
+  name: gpustat 
+  version: "{{versions.gpustat}}"
+  vendor_source: https://files.pythonhosted.org/packages/{{versions.gpustat_hash}}/{{name}}-{{version}}.{{extension}}
+  description: |
+      Gpustat {{version}} is a utility to monitor NVIDIA GPU status and usage
+  pymod_requires:
+    - python_{{python_version}}-blessed
+    - python_{{python_version}}-pynvml

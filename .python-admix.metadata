@@ -160,3 +160,6 @@ f8244b67e7cb8ba1cb9d0f6985f3e78ac780ba50  sources/numpy-groupies-0.9.17.tar.gz 1
 f0d3a75f00752f75876468d04bf0cfbc05643b7e  sources/iniconfig-1.1.1.tar.gz
 6ddb00cfd988199f2a73acd109e0db23f1c03ed2  sources/mpmath-1.3.0.tar.gz
 604968f191e2d69053b8310066d089f73a1bd109  sources/sympy-1.12.tar.gz
+a0549a2c3fe4bd35e15068c05ef86b963e1a8692  sources/gpustat-1.1.1.tar.gz
+10730f5455e8ca78b8ae6b8baa384d07b2959d2f  sources/blessed-1.20.0.tar.gz
+e1bec149edad88e0576698c68b94b4d9bbaea43d  sources/pynvml-12.535.133.tar.gz

@@ -102,3 +102,6 @@ build:
   - numba
   - sympy
   - mpmath
+  - gpustat
+  - blessed
+  - pynvml
