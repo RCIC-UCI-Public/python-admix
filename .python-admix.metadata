@@ -163,3 +163,5 @@ f0d3a75f00752f75876468d04bf0cfbc05643b7e  sources/iniconfig-1.1.1.tar.gz
 a0549a2c3fe4bd35e15068c05ef86b963e1a8692  sources/gpustat-1.1.1.tar.gz
 10730f5455e8ca78b8ae6b8baa384d07b2959d2f  sources/blessed-1.20.0.tar.gz
 e1bec149edad88e0576698c68b94b4d9bbaea43d  sources/pynvml-12.535.133.tar.gz
+494386e21f14c28ade0199f7b6c11480f4c89c59  sources/pycuda-2022.1.tar.gz
+be2b7e0f6f65a01a7170180796112f3070b7aa99  sources/pycuda-2024.1.tar.gz

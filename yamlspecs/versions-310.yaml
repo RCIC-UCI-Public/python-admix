@@ -142,3 +142,5 @@ gpustat_hash: "79/c4/46d005aec3bf911cb030467d91e062a5386ff4a03e51874424cacc0f60c
 blessed: "1.20.0"
 pynvml: "12.535.133"
 pynvml_hash: "c9/f5/35d8002a4a9532c58fa304046de2d9b8be18183c341c517ac48f2bce907a"
+pycuda: "2024.1"
+pycuda_hash: "3f/50/dd356c8afe228baecaf0259b9579121dd869c5ace07a296158c39ac5065a"
