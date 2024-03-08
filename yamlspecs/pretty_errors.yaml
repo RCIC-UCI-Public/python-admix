@@ -1,0 +1,11 @@
+!include common.yaml
+---
+- package: pretty_errors
+  name: pretty_errors 
+  version: "{{versions.pretty_errors}}"
+  hash: "{{versions.pretty_errors_hash}}"
+  vendor_source: https://files.pythonhosted.org/packages/{{hash}}/{{name}}-{{version}}.{{extension}}
+  description: |
+    Prerty-errors {{version}} prettifies Python exception output to make it legible.
+  pymod_requires:
+    - python_{{python_version}}-colorama

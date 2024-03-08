@@ -1,0 +1,12 @@
+!include common.yaml
+---
+- package: colorama 
+  name: colorama 
+  version: "{{versions.colorama}}"
+  vendor_source: https://github.com/tartley/{{name}}/archive/refs/tags/{{version}}.{{extension}}
+  description: |
+    Colorama {{version}} makes ANSI escape character sequences for producing colored terminal
+    text and cursor positioningwork under MS Windows. ON other platforms colorama does nothing.
+    Required by pretty_errors.
+  install:
+    makeinstall: pip install --root $(ROOT) --no-deps ../{{src_tarball}}

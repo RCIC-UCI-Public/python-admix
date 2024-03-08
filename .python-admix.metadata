@@ -165,3 +165,5 @@ a0549a2c3fe4bd35e15068c05ef86b963e1a8692  sources/gpustat-1.1.1.tar.gz
 e1bec149edad88e0576698c68b94b4d9bbaea43d  sources/pynvml-12.535.133.tar.gz
 494386e21f14c28ade0199f7b6c11480f4c89c59  sources/pycuda-2022.1.tar.gz
 be2b7e0f6f65a01a7170180796112f3070b7aa99  sources/pycuda-2024.1.tar.gz
+aa1fc7722b9128a3c945048de03f5b4e55157c6a  sources/colorama-0.4.6.tar.gz
+5c7800d4753e1437ef5a79921ca1d05268c4c7b7  sources/pretty_errors-1.2.25.tar.gz
