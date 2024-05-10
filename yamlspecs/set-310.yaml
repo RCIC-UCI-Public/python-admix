@@ -108,3 +108,4 @@ build:
   - pycuda
   - colorama
   - pretty_errors
+  - rich

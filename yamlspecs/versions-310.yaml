@@ -147,3 +147,5 @@ pycuda_hash: "3f/50/dd356c8afe228baecaf0259b9579121dd869c5ace07a296158c39ac5065a
 pretty_errors: "1.2.25"
 pretty_errors_hash: "c8/a7/823f451d48726729b4983072aad7c442f4c02fbaec04b71c1f4c03993964"
 colorama: "0.4.6"
+rich: "13.7.1"
+rich_hash: "b3/01/c954e134dc440ab5f96952fe52b4fdc64225530320a910473c1fe270d9aa"

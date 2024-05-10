@@ -1,0 +1,11 @@
+!include common.yaml
+---
+- package: rich
+  name: rich 
+  version: "{{versions.rich}}"
+  vendor_source: https://files.pythonhosted.org/packages/{{versions.rich_hash}}/{{src_tarball}}
+  description: |
+    Rich {{version}} is a Python library for rich text and beautiful formatting in the terminal.
+  install:
+    makeinstall: pip install --root $(ROOT) --no-deps ../{{src_tarball}}
+
