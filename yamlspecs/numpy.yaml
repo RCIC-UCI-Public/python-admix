@@ -8,7 +8,7 @@
   vendor_source: https://github.com/numpy/numpy/releases/download/v{{version}}/{{name}}-{{version}}.{{extension}}
   description: >
     Numpy support for python {{python_version}}
-  comm: !ifeq "{{version}},1.22.2,echo,"
+  comm: !ifeq "{{python_version}},3.8.0,,echo"
   build: 
     modules: python/{{python_version}} OpenBLAS/{{versions.OpenBLAS}}
   install:
@@ -19,7 +19,6 @@
     - libgfortran
     - OpenBLAS/{{versions.OpenBLAS}}
  
-
 # NOTES
 # The build failes for many newer versions of setuptools:Many newer versions of
 # setuptools:  60.9.3, 59.2.0, 57.1.0. Build workded with so called pinned version
