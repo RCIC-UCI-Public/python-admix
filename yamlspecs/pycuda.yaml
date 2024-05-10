@@ -11,7 +11,7 @@
   pypiurl: https://files.pythonhosted.org/packages/{{versions.pycuda_hash}}
   vendor_source:  "{{pypiurl}}/{{src_tarball}}"
   description: |
-     PyCUDA {[version}} lets you access Nvidia’s CUDA parallel computation API from Python.
+     PyCUDA {{version}} lets you access Nvidia’s CUDA parallel computation API from Python.
   build:
     configure: ./configure.py
     configure_args: 
