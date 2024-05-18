@@ -1,0 +1,8 @@
+!include common_wheel.yaml
+---
+- package: lark
+  name: lark 
+  version: "{{versions.lark}}"
+  hash: "{{versions.lark_hash}}"
+  description: |
+    A modern parsing library {{version}}

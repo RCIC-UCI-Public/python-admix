@@ -1,0 +1,9 @@
+!include common.yaml
+---
+- package: types-dataclasses
+  name: types-dataclasses 
+  version: "{{versions.types_dataclasses}}"
+  vendor_source: https://files.pythonhosted.org/packages/{{versions.types_dataclasses_hash}}/{{src_tarball}}
+  description: |
+    Typing stubs for dataclasses {{version}} 
+

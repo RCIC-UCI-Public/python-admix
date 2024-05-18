@@ -1,0 +1,12 @@
+!include common.yaml
+---
+- package: expecttest 
+  name: expecttest
+  version: "{{versions.expecttest}}"
+  vendor_source: https://files.pythonhosted.org/packages/{{versions.expecttest_hash}}/{{name}}-{{version}}.{{extension}}
+  description: |
+    Expecttest {{version}} is a  library that implements expect tests (also known as "golden" tests).
+    Expect tests are a method of writing tests where instead of hard-coding the expected output of a test,
+    you run the test to get the output, and the test framework automatically populates the expected output
+  install:
+    makeinstall: pip install --root $(ROOT) --no-deps ../{{src_tarball}}

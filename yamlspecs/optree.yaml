@@ -1,0 +1,12 @@
+!include common_wheel.yaml
+---
+- package: optree
+  name: optree 
+  version: "{{versions.optree}}"
+  hash: "{{versions.optree_hash}}"
+  suffix: "cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64"
+# vendor_source: https://files.pythonhosted.org/packages/{{versions.optree_hash}}/{{src_tarball}}
+  description: |
+     Optimized PyTree Utilities {{version}}
+# install:
+#   makeinstall: pip install --root $(ROOT) --no-deps ../{{src_tarball}}

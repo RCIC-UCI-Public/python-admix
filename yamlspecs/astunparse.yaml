@@ -1,0 +1,8 @@
+!include common.yaml
+---
+- package: astunparse 
+  name: astunparse
+  version: "{{versions.astunparse}}"
+  vendor_source: https://github.com/simonpercivall/astunparse/archive/refs/tags/v{{version}}.{{extension}}
+  description: |
+    Astunparse {{version}} is an AST unparser for Python.

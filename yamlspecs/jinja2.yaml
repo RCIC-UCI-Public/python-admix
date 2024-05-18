@@ -1,0 +1,8 @@
+!include common_wheel.yaml
+---
+- package: jinja2
+  name: jinja2 
+  version: "{{versions.jinja2}}"
+  hash: "{{versions.jinja2_hash}}"
+  description: |
+    Jinja2 {{version}} is a very fast and expressive template engine

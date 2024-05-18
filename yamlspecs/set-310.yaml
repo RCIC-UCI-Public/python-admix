@@ -109,3 +109,10 @@ build:
   - colorama
   - pretty_errors
   - rich
+  - astunparse
+  - expecttest
+  - optree
+  - jinja2
+  - fsspec
+  - lark
+  - types-dataclasses
