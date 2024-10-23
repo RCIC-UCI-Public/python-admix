@@ -1,0 +1,9 @@
+!include common_wheel.yaml
+---
+- package: shortuuid
+  name: shortuuid 
+  version: "{{versions.shortuuid}}"
+  hash: "{{versions.shortuuid_hash}}"
+  description: |
+    Shortuuid {{version}} is a simple python library that
+    generates concise, unambiguous, URL-safe UUIDs.

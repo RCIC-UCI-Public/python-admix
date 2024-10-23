@@ -116,3 +116,5 @@ build:
   - fsspec
   - lark
   - types-dataclasses
+  - shortuuid
+  - natsort
