@@ -10,3 +10,5 @@ yum.*
 *.pkg
 .rpmmacros
 modules.*
+.cache
+.wget-hsts
