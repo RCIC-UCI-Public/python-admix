@@ -1,0 +1,10 @@
+!include common_wheel.yaml
+---
+- package: botocore
+  name: botocore 
+  version: "{{versions.botocore}}"
+  hash: "{{versions.botocore_hash}}"
+  description: |
+    Botocore {{version}} is a low-level interface to a growing number
+    of Amazon Web Services. The botocore package is the foundation
+    for the AWS CLI as well as boto3

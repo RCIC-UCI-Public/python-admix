@@ -1,0 +1,9 @@
+!include common_wheel.yaml
+---
+- package: jmespath
+  name: jmespath 
+  version: "{{versions.jmespath}}"
+  hash: "{{versions.jmespath_hash}}"
+  description: |
+    Jmespath {{version}} is JSON matching expressions, allows to
+    declaratively specify how to extract elements from a JSON document

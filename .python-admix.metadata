@@ -177,3 +177,7 @@ f5209bf4d2bf90b8fba6afda7fe6d9e6f7d7fc69  sources/lark-1.1.9-py3-none-any.whl
 7b1dfb0fd7d2a2d6dec01cb6978be5ffc33e3564  sources/types-dataclasses-0.6.6.tar.gz
 ab8eb3a495e2c812a2296d6258de92d77b5fd243  sources/natsort-8.4.0-py3-none-any.whl
 c7c4ebe2763326cb23e575d5f2899abe558b7a2f  sources/shortuuid-1.0.13-py3-none-any.whl
+b519c6c5f2832cc8e685d3ece175cb711cf532f7  sources/boto3-1.35.47-py3-none-any.whl
+a0e6871acc3962dc452f241ce95202a20d0aee0d  sources/botocore-1.35.47-py3-none-any.whl
+c3921cdd7b71c27f41bb6cba51cfb0fdeae3396f  sources/jmespath-1.0.1-py3-none-any.whl
+c08843fe95d5fc4815e497032ca9c623f96c74db  sources/s3transfer-0.10.3-py3-none-any.whl

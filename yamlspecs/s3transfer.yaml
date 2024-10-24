@@ -1,0 +1,9 @@
+!include common_wheel.yaml
+---
+- package: s3transfer
+  name: s3transfer 
+  version: "{{versions.s3transfer}}"
+  hash: "{{versions.s3transfer_hash}}"
+  description: |
+    S3transfer {{version}} is a Python library for managing Amazon S3 transfers.
+    This project is maintained and published by Amazon Web Services.

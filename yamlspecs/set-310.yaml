@@ -118,3 +118,7 @@ build:
   - types-dataclasses
   - shortuuid
   - natsort
+  - jmespath
+  - botocore
+  - s3transfer
+  - boto3

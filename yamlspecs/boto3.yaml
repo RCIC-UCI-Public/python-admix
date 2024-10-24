@@ -1,0 +1,12 @@
+!include common_wheel.yaml
+---
+- package: boto3
+  name: boto3 
+  version: "{{versions.boto3}}"
+  hash: "{{versions.boto3_hash}}"
+  description: |
+    Boto3 {{version}} is the AWS SDK for Python
+  pymod_requires:
+    - python_{{python_version}}-botocore
+    - python_{{python_version}}-jmespath
+    - python_{{python_version}}-s3transfer
