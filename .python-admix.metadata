@@ -181,3 +181,4 @@ b519c6c5f2832cc8e685d3ece175cb711cf532f7  sources/boto3-1.35.47-py3-none-any.whl
 a0e6871acc3962dc452f241ce95202a20d0aee0d  sources/botocore-1.35.47-py3-none-any.whl
 c3921cdd7b71c27f41bb6cba51cfb0fdeae3396f  sources/jmespath-1.0.1-py3-none-any.whl
 c08843fe95d5fc4815e497032ca9c623f96c74db  sources/s3transfer-0.10.3-py3-none-any.whl
+8b48d54d59ba77d1150b5b2c3af232a0d9f38391  sources/attrs-24.2.0.tar.gz
