@@ -9,9 +9,6 @@
     kernprof is a convenient script for running either line_profiler or the
     Python standard library's cProfile or profile modules, depending on what
     is available. See https://github.com/pyutils/line_profiler
-  build:
-    modules:
-      - python/{{python_version}} 
   install:
     makeinstall: python{{python_major}} ./setup.py install --root $(ROOT) 
   pymod_requires:
