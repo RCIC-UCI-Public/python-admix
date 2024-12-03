@@ -12,4 +12,5 @@
     its creation, this library has grown beyond Boost.Python in many ways, leading to
     dramatically simpler binding code in many common situations.
   build:
-    modules: python/{{python_version}} foundation/{{versions.foundation}}
+    modules:
+      - python/{{python_version}}
