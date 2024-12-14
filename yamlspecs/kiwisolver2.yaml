@@ -1,0 +1,16 @@
+!include common_wheel.yaml
+---
+- package: kiwisolver
+  name: kiwisolver
+  version: "{{versions.kiwisolver}}"
+  hash: "{{versions.kiwisolver_hash}}"
+  suffix: "cp310-cp310-manylinux_2_12_x86_64.manylinux2010_x86_64"
+  description: >
+    A fast implementation of the Cassowary constraint solver
+  install:
+    makeinstall: >
+      pip3 install --force-reinstall --root $(ROOT) --no-deps {{src_tarball}}
+
+# this file is a result of insanity due to the fact that the same package under all the same conditions 
+# no longer builds now form src tarball while it was building 2 montha ago on the same server. 
+# this file is building the same version but  from the wheel whihc works. 

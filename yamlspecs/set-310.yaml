@@ -54,7 +54,7 @@ build:
   - typed_ast
   - mypy
   - cycler
-  - kiwisolver
+  - kiwisolver2
   - pillow
   - fonttools
   - matplotlib
