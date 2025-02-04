@@ -1,13 +1,12 @@
-# Packages for Python 3.10.2
 !include versions.yaml
 !include updates8.yaml
 ---
-unique_opts: --enable-loadable-sqlite-extensions --without-ensurepip
 release: 1
 python_version: "3.10.2"
 python_family: "3.10"
 python_major: "3"
 llvm: "11.1.0"
+appdirs: "1.4.4"
 asttokens: "2.0.5"
 asttokens_hash: "aa/51/59965dead3960a97358f289c7c11ebc1f6c5d28710fab5d421000fe60353"
 attrs: "24.2.0"
