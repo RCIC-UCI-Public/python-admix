@@ -1,7 +1,7 @@
 # Note: on RHEL8, the powertools repo must be enabled to get some of the devel packages.
 ---
 site: !include site.yaml
-develext: !ifeq "{{site.os_release}},8,,-devel"
+develext: !ifeq "{{site.os_release}},7,-devel,"
 system:
   - atlas-devel
   - blas-devel
@@ -20,7 +20,7 @@ system:
   - libyaml{{develext}}
   - xz-devel
   - cmake
-  - !ifeq "{{site.os_release}},8,{{pillow_libs}},"
+  - !eval "'{{pillow_libs}}' if {{site.os_release}} >= 8 else ''"
 pillow_libs:
   - libjpeg-turbo-devel
   - openjpeg2-devel
