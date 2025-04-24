@@ -9,6 +9,10 @@ bootstrap:
   - cython
   - numpy
   - pybind11
+  - ply
+  - gast
+  - beniget
+  - pythran
   - scipy
   - joblib
   - packaging

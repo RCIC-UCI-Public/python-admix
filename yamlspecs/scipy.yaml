@@ -20,4 +20,4 @@
   pymod_requires:
     - python_{{python_version}}-numpy
     - python_{{python_version}}-pybind11
-    - !ifeq "{{versions.python_family}},3.10,python_{{python_version}}-pythran,"
+    - !eval "'python_{{python_version}}-pythran' if {{versions.python_major}} >= 3 else ''"
