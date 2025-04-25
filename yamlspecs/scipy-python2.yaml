@@ -9,6 +9,9 @@
     The SciPy library depends on NumPy, which provides convenient
     and fast N-dimensional array manipulation, and for python3 on
     pybind11 which provides headers
+  install:
+    fortranflag: export FFLAGS='-std=legacy -fPIC';
+    makeinstall: "{{install.fortranflag}} python{{python_major}} ./setup.py install --root $(ROOT)"
   pymod_requires:
     - python_{{python_version}}-numpy
     - python_{{python_version}}-pybind11
