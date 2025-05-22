@@ -32,6 +32,11 @@ build:
 manifest:
   - "{{bootstrap}}"
   - "{{build}}"
+
+parallel:
+  sets: 3
+  pkgs: 4
+
 sets:
   - "217"
   - "380"
