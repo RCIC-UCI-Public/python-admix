@@ -98,5 +98,5 @@ pythran_hash: "c4/92/94b344b88bb010186caa65e5730509b4a6d2b1ab59e512ea11a2cbbb36f
 beniget: "0.4.1"
 gast: "0.5.3"
 ply: "3.11"
-
+hdf5: "1.13.1"
 
