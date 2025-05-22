@@ -1,7 +1,7 @@
 !include common.yaml
 ---
-- package: colorama 
-  name: colorama 
+- package: colorama
+  name: colorama
   version: "{{versions.colorama}}"
   vendor_source: https://github.com/tartley/{{name}}/archive/refs/tags/{{version}}.{{extension}}
   description: |

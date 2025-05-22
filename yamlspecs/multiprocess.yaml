@@ -1,12 +1,12 @@
 !include common.yaml
 ---
-- package: multiprocess 
-  name: multiprocess 
+- package: multiprocess
+  name: multiprocess
   version: "{{versions.multiprocess}}"
   src_dir: "{{name}}-{{name}}-{{version}}"
   vendor_source: https://github.com/uqfoundation/multiprocess/archive/{{name}}-{{version}}.{{extension}}
   description: |
-    Multiprocess {{version}} is a better multiprocessing and 
+    Multiprocess {{version}} is a better multiprocessing and
     multithreading in python. It is a fork of multiprocessing,
     developed as part of pathos https://github.com/uqfoundation/pathos
 

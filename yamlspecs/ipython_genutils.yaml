@@ -1,7 +1,7 @@
 !include common.yaml
 ---
-- package: ipython_genutils 
-  name: ipython_genutils 
+- package: ipython_genutils
+  name: ipython_genutils
   version: "{{versions.ipython_genutils}}"
   vendor_source: https://files.pythonhosted.org/packages/{{versions.ipython_genutils_hash}}/{{name}}-{{version}}.{{extension}}
   description: |

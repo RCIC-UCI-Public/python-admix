@@ -1,9 +1,9 @@
 !include common.yaml
 ---
-- package: distlib 
-  name: distlib 
+- package: distlib
+  name: distlib
   version: "{{versions.distlib}}"
   extension: "zip"
   vendor_source: https://bitbucket.org/pypa/distlib/downloads/{{name}}-{{version}}.{{extension}}
   description: |
-    distlib {{version}} for python {{python_version}}. 
+    distlib {{version}} for python {{python_version}}.

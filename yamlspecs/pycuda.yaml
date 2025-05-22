@@ -1,6 +1,6 @@
 !include common.yaml
 ---
-- name: pycuda 
+- name: pycuda
   release: 5
   versions: !include versions.yaml
   version: "{{versions.pycuda}}"
@@ -14,8 +14,8 @@
      PyCUDA {{version}} lets you access Nvidia’s CUDA parallel computation API from Python.
   build:
     configure: ./configure.py
-    configure_args: 
-    modules: 
+    configure_args:
+    modules:
       - "python/{{python_version}}"
       - "{{cuda_name}}/{{cuda_version}}"
   requires:

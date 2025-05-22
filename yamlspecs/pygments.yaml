@@ -1,7 +1,7 @@
 !include common.yaml
 ---
-- package: Pygments 
-  name: pygments 
+- package: Pygments
+  name: pygments
   version: "{{versions.pygments}}"
   vendor_source:  https://files.pythonhosted.org/packages/{{versions.pygments_hash}}/{{package}}-{{version}}.{{extension}}
   src_dir: "{{package}}-{{version}}"

@@ -5,7 +5,7 @@
   name: pyyaml
   vendor_source: https://github.com/yaml/pyyaml/archive/{{version}}.{{extension}}
   description: |
-    PyYAML {{version}} support for python {{python_version}}, features a complete YAML 1.1 parser, 
-    Unicode support, pickle support, capable extension API, and sensible error messages. 
+    PyYAML {{version}} support for python {{python_version}}, features a complete YAML 1.1 parser,
+    Unicode support, pickle support, capable extension API, and sensible error messages.
     PyYAML supports standard YAML tags and provides Python-specific tags that allow
     to represent an arbitrary Python object

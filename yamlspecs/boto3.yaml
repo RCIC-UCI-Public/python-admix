@@ -1,7 +1,7 @@
 !include common_wheel.yaml
 ---
 - package: boto3
-  name: boto3 
+  name: boto3
   version: "{{versions.boto3}}"
   hash: "{{versions.boto3_hash}}"
   description: |

@@ -1,7 +1,7 @@
 !include common.yaml
 ---
-- package: pickleshare 
-  name: pickleshare 
+- package: pickleshare
+  name: pickleshare
   version: "{{versions.pickleshare}}"
   vendor_source: https://github.com/pickleshare/pickleshare/archive/refs/tags/{{version}}.{{extension}}
   description: |

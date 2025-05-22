@@ -1,7 +1,7 @@
 !include common_wheel.yaml
 ---
 - package: docutils
-  name: docutils 
+  name: docutils
   version: "{{versions.docutils}}"
   hash: "{{versions.docutils_hash}}"
   suffix: py2.py3-none-any

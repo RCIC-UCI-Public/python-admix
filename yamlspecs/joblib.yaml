@@ -1,7 +1,7 @@
 !include common.yaml
 ---
 - package:  joblib pipeline execution
-  name: joblib 
+  name: joblib
   version: "{{versions.joblib}}"
   vendor_source: https://github.com/joblib/joblib/archive/{{version}}.{{extension}}
   description: |

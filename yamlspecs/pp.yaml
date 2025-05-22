@@ -1,7 +1,7 @@
 !include common.yaml
 ---
-- package: pp 
-  name: pp 
+- package: pp
+  name: pp
   extension: zip
   version: "{{versions.pp}}"
   vendor_source: http://www.parallelpython.com/downloads/pp/{{name}}-{{version}}.{{extension}}

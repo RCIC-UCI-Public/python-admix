@@ -1,7 +1,7 @@
 !include common.yaml
 ---
-- package: SQLAlchemy for python 
-  name: sqlalchemy 
+- package: SQLAlchemy for python
+  name: sqlalchemy
   version: "{{versions.sqlalchemy}}"
   version_rel: "{{versions.sqlalchemy_rel}}"
   src_dir: "{{name}}-rel_{{version_rel}}"

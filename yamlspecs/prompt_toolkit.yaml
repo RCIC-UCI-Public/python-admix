@@ -1,11 +1,11 @@
 !include common.yaml
 ---
-- package: prompt-toolkit 
+- package: prompt-toolkit
   name: prompt_toolkit
   version: "{{versions.prompt_toolkit}}"
   vendor_source: https://files.pythonhosted.org/packages/{{versions.prompt_toolkit_hash}}/{{name}}-{{version}}.{{extension}}
   description: |
-    Prompt-toolkit {{version}} is a library for building powerful 
+    Prompt-toolkit {{version}} is a library for building powerful
     interactive command line applications in Python. See
     https://github.com/prompt-toolkit/python-prompt-toolkit
   pymod_requires:

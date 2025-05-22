@@ -1,7 +1,7 @@
 !include common.yaml
 ---
-- package: pip for python 
-  name: pip 
+- package: pip for python
+  name: pip
   version: "{{versions.pip}}"
   vendor_source: https://github.com/pypa/pip/archive/{{version}}.{{extension}}
   description: >

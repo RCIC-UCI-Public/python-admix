@@ -1,7 +1,7 @@
 !include common.yaml
 ---
 - package: beniget
-  name: beniget 
+  name: beniget
   version: "{{versions.beniget}}"
   vendor_source: https://github.com/serge-sans-paille/beniget/archive/refs/tags/{{version}}.{{extension}}
   description: |

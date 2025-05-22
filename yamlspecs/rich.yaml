@@ -1,7 +1,7 @@
 !include common.yaml
 ---
 - package: rich
-  name: rich 
+  name: rich
   version: "{{versions.rich}}"
   vendor_source: https://files.pythonhosted.org/packages/{{versions.rich_hash}}/{{src_tarball}}
   description: |

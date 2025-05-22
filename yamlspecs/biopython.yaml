@@ -1,7 +1,7 @@
 !include common.yaml
 ---
-- package: Bio 
-  name: biopython 
+- package: Bio
+  name: biopython
   version: "{{versions.biopython}}"
   vendor_source: http://biopython.org/DIST/{{name}}-{{version}}.{{extension}}
   description: |

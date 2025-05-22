@@ -1,14 +1,14 @@
 !include common.yaml
 ---
-- package: numba 
-  name: numba 
+- package: numba
+  name: numba
   version: "{{versions.numba}}"
   vendor_source: https://github.com/numba/numba/archive/{{version}}.{{extension}}
   compiler: "{{versions.compiler_sys.name}}"
   compiler_version: "{{versions.compiler_sys.version}}"
   description: |
     A Just-In-Time Compiler for Numerical Functions in Python
-    Numba {{version}} is an open source, NumPy-aware optimizing compiler for Python 
+    Numba {{version}} is an open source, NumPy-aware optimizing compiler for Python
     sponsored by Anaconda, Inc. It uses the LLVM compiler project to generate machine
     code from Python syntax. Numba can compile a large subset of numerically-focused
     Python, including many NumPy functions. Additionally, Numba has support for automatic
@@ -19,11 +19,11 @@
       export CXXFLAGS=-fPIC;
       export TBBROOT=$$INTELTBB_HOME;
       python setup.py build
-    base_modules: 
+    base_modules:
       - "{{compiler}}/{{compiler_version}}"
       - python/{{python_version}}
       - intel-tbb/{{versions.intel_tbb}}
-    modules: 
+    modules:
       - "{{build.base_modules}}"
   install:
     makeinstall: export TBBROOT=$$INTELTBB_HOME; python{{python_major}} ./setup.py install --root $(ROOT)

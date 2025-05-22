@@ -1,9 +1,9 @@
 !include common.yaml
 ---
 - package: pytz brings the Olson tz database into Python
-  name: pytz 
+  name: pytz
   version: "{{versions.pytz}}"
   vendor_source: https://files.pythonhosted.org/packages/{{versions.pytz_hash}}/{{name}}-{{version}}.{{extension}}
   description: |
-    Pytz {{version}} for python {{python_version}}. This library allows 
-    accurate and cross platform timezone calculations 
+    Pytz {{version}} for python {{python_version}}. This library allows
+    accurate and cross platform timezone calculations

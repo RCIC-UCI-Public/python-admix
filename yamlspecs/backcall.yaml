@@ -1,7 +1,7 @@
 !include common.yaml
 ---
-- package: backcall 
-  name: backcall 
+- package: backcall
+  name: backcall
   version: "{{versions.backcall}}"
   vendor_source: https://github.com/takluyver/backcall/archive/refs/tags/{{version}}.{{extension}}
   description: |

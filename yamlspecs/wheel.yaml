@@ -1,7 +1,7 @@
 !include common.yaml
 ---
-- package: wheel 
-  name: wheel 
+- package: wheel
+  name: wheel
   version: "{{versions.wheel}}"
   vendor_source: https://github.com/pypa/wheel/archive/refs/tags/{{version}}.{{extension}}
   description: |

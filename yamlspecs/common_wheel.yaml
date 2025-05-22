@@ -4,7 +4,7 @@
   no_src_dir: True
   extension: whl
   suffix: py3-none-any
-  hash: 
+  hash:
   src_tarball: "{{name}}-{{version}}-{{suffix}}.{{extension}}"
   pypiurl: https://files.pythonhosted.org/packages/{{hash}}
   vendor_source: "{{pypiurl}}/{{src_tarball}}"

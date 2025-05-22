@@ -1,7 +1,7 @@
 !include common.yaml
 ---
-- package: psutil 
-  name: psutil 
+- package: psutil
+  name: psutil
   version: "{{versions.psutil}}"
   vendor_source: https://github.com/giampaolo/psutil/archive/release-{{version}}.{{extension}}
   src_dir: "{{name}}-release-{{version}}"

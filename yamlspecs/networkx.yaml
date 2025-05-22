@@ -1,7 +1,7 @@
 !include common.yaml
 ---
-- package: networkx 
-  name: networkx 
+- package: networkx
+  name: networkx
   version: "{{versions.networkx}}"
   vendor_source: https://github.com/networkx/networkx/archive/{{name}}-{{version}}.{{extension}}
   src_dir: "{{name}}-{{name}}-{{version}}"

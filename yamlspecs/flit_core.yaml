@@ -1,7 +1,7 @@
 !include common_wheel.yaml
 ---
 - package: flit_core
-  name: flit_core 
+  name: flit_core
   version: "{{versions.flit_core}}"
   hash: "{{versions.flit_core_hash}}"
   description: |

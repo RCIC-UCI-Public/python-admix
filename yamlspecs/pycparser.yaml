@@ -1,7 +1,7 @@
 !include common.yaml
 ---
 - package: pycparser
-  name: pycparser 
+  name: pycparser
   version: "{{versions.pycparser}}"
   prefix: "release_v"
   src_dir: "{{name}}-{{prefix}}{{version}}"

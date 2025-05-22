@@ -1,7 +1,7 @@
 !include common.yaml
 ---
 - package: pythran
-  name: pythran 
+  name: pythran
   version: "{{versions.pythran}}"
   hash: "{{versions.pythran_hash}}"
   vendor_source: https://files.pythonhosted.org/packages/{{versions.pythran_hash}}/{{name}}-{{version}}.{{extension}}

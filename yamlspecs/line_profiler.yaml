@@ -1,7 +1,7 @@
 !include common.yaml
 ---
-- package: line_profiler 
-  name: line_profiler 
+- package: line_profiler
+  name: line_profiler
   version: "{{versions.line_profiler}}"
   vendor_source: https://files.pythonhosted.org/packages/{{versions.line_profiler_hash}}/{{name}}-{{version}}.{{extension}}
   description: |

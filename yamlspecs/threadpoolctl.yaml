@@ -1,7 +1,7 @@
 !include common_wheel.yaml
 ---
 - package: threadpoolctl
-  name: threadpoolctl 
+  name: threadpoolctl
   version: "{{versions.threadpoolctl}}"
   hash: "{{versions.threadpoolctl_hash}}"
   description: |

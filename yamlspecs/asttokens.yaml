@@ -1,7 +1,7 @@
 !include common.yaml
 ---
-- package: asttokens 
-  name: asttokens 
+- package: asttokens
+  name: asttokens
   version: "{{versions.asttokens}}"
   vendor_source: https://files.pythonhosted.org/packages/{{versions.asttokens_hash}}/{{name}}-{{version}}.{{extension}}
   description: |

@@ -1,7 +1,7 @@
 !include common.yaml
 ---
 - package: blessed
-  name: blessed 
+  name: blessed
   version: "{{versions.blessed}}"
   vendor_source: https://github.com/jquast/blessed/archive/refs/tags/{{version}}.{{extension}}
   description: |

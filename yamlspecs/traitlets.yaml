@@ -1,7 +1,7 @@
 !include common.yaml
 ---
-- package: traitlets 
-  name: traitlets 
+- package: traitlets
+  name: traitlets
   version: "{{versions.traitlets}}"
   vendor_source:  https://github.com/ipython/traitlets/archive/refs/tags/{{version}}.{{extension}}
   description: |

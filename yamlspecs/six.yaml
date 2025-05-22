@@ -1,11 +1,11 @@
 !include common.yaml
 ---
 - package: Python 2 and 3 compatibility utilities
-  name: six 
+  name: six
   version: "{{versions.six}}"
   vendor_source: https://github.com/benjaminp/six/archive/{{version}}.{{extension}}
   description: |
-    Six {{version}} for  python {{python_version}} is a Python 2 and 3 compatibility library. 
+    Six {{version}} for  python {{python_version}} is a Python 2 and 3 compatibility library.
     It provides utility functions for smoothing over the differences between
     the Python versions with the goal of writing Python code that is compatible
     on both Python versions. See the documentation at https://six.readthedocs.io

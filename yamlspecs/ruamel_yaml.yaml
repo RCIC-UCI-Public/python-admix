@@ -1,11 +1,11 @@
 !include common.yaml
 ---
-- package: ruamel-yaml 
-  name: ruamel.yaml 
+- package: ruamel-yaml
+  name: ruamel.yaml
   version: "{{versions.ruamel_yaml}}"
   vendor_source: https://files.pythonhosted.org/packages/{{versions.ruamel_yaml_hash}}/{{name}}-{{version}}.{{extension}}
   description: |
-     {{name}} {{version}} is a YAML 1.2  parser/emitter that supports roundtrip 
+     {{name}} {{version}} is a YAML 1.2  parser/emitter that supports roundtrip
      preservation of comments, seq/map flow style, and map key order
      source code: {{vendor_source}}
   build:

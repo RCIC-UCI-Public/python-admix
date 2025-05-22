@@ -1,7 +1,7 @@
 !include common.yaml
 ---
-- package: memory_profiler 
-  name: memory_profiler 
+- package: memory_profiler
+  name: memory_profiler
   version: "{{versions.memory_profiler}}"
   vendor_source: https://files.pythonhosted.org/packages/{{versions.memory_profiler_hash}}/{{name}}-{{version}}.{{extension}}
   description: |

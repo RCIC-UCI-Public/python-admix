@@ -1,7 +1,7 @@
 !include common_wheel.yaml
 ---
 - package: fsspec
-  name: fsspec 
+  name: fsspec
   version: "{{versions.fsspec}}"
   hash: "{{versions.fsspec_hash}}"
   description: |

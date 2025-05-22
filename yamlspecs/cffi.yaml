@@ -1,7 +1,7 @@
 !include common.yaml
 ---
-- package: cffi 
-  name: cffi 
+- package: cffi
+  name: cffi
   version: "{{versions.cffi}}"
   vendor_source: https://files.pythonhosted.org/packages/{{versions.cffi_hash}}/{{name}}-{{version}}.{{extension}}
   description: |

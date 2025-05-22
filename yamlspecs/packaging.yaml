@@ -1,7 +1,7 @@
 !include common.yaml
 ---
-- package: packaging 
-  name: packaging 
+- package: packaging
+  name: packaging
   version: "{{versions.packaging}}"
   vendor_source: https://github.com/pypa/packaging/archive/refs/tags/{{version}}.{{extension}}
   description: |

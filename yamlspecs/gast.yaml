@@ -1,7 +1,7 @@
 !include common.yaml
 ---
 - package: gast
-  name: gast 
+  name: gast
   version: "{{versions.gast}}"
   vendor_source: https://github.com/serge-sans-paille/gast/archive/refs/tags/{{version}}.{{extension}}
   description: |

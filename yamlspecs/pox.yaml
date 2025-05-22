@@ -1,10 +1,10 @@
 !include common.yaml
 ---
-- package: pox 
-  name: pox 
+- package: pox
+  name: pox
   version: "{{versions.pox}}"
   src_dir: "{{name}}-{{name}}-{{version}}"
   vendor_source: https://github.com/uqfoundation/pox/archive/{{name}}-{{version}}.{{extension}}
   description: |
-    Pox {{version}} provides a collection of utilities for navigating and 
+    Pox {{version}} provides a collection of utilities for navigating and
     manipulating filesystems. See https://pypi.org/project/pox/

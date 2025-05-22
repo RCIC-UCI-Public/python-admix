@@ -1,7 +1,7 @@
 !include versions.yaml
 ---
 release: 6
-unique_opts: --enable-unicode=ucs4 
+unique_opts: --enable-unicode=ucs4
 python_version: "2.7.17"
 python_family: "2.7"
 python_major: "2"

@@ -1,7 +1,7 @@
 !include common.yaml
 ---
-- package: pexpect 
-  name: pexpect 
+- package: pexpect
+  name: pexpect
   version: "{{versions.pexpect}}"
   vendor_source: https://files.pythonhosted.org/packages/{{versions.pexpect_hash}}/{{name}}-{{version}}.{{extension}}
   description: |

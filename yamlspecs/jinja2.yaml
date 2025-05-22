@@ -1,7 +1,7 @@
 !include common_wheel.yaml
 ---
 - package: jinja2
-  name: jinja2 
+  name: jinja2
   version: "{{versions.jinja2}}"
   hash: "{{versions.jinja2_hash}}"
   description: |

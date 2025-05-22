@@ -1,10 +1,10 @@
 !include common.yaml
 ---
-- package: urllib3 
-  name: urllib3 
+- package: urllib3
+  name: urllib3
   version: "{{versions.urllib3}}"
   vendor_source: https://github.com/urllib3/urllib3/archive/{{version}}.{{extension}}
   description: |
-    urllib3 is a powerful, sanity-friendly HTTP client for Python. Much of the Python 
-    ecosystem already uses urllib3 and you should too. urllib3 brings many critical 
+    urllib3 is a powerful, sanity-friendly HTTP client for Python. Much of the Python
+    ecosystem already uses urllib3 and you should too. urllib3 brings many critical
     features that are missing from the Python standard libraries

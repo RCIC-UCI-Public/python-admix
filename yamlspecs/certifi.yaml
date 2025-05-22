@@ -1,7 +1,7 @@
 !include common.yaml
 ---
-- package: certifi 
-  name: certifi 
+- package: certifi
+  name: certifi
   version: "{{versions.certifi}}"
   vendor_source: https://files.pythonhosted.org/packages/{{versions.certifi_hash}}/{{name}}-{{version}}.{{extension}}
   description: |

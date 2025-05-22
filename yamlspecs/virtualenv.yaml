@@ -1,17 +1,17 @@
 !include common.yaml
 ---
 - package: Virtual Python Environment builder
-  name: virtualenv 
+  name: virtualenv
   version: "{{versions.virtualenv}}"
   vendor_source: https://github.com/pypa/virtualenv/archive/{{version}}.{{extension}}
   install:
     makeinstall: >
       if [ ! -f PKG-INFO ]; then \
         echo 'Version: {{version}}' > PKG-INFO; \
-      fi ; 
-      python{{python_major}} setup.py install --root $(ROOT) 
+      fi ;
+      python{{python_major}} setup.py install --root $(ROOT)
   description: |
-    Virtualenv {{version}} for python {{python_version}} is a tool 
+    Virtualenv {{version}} for python {{python_version}} is a tool
     for creating isolated virtual python environments
   pkgadd: !ifeq "{{versions.python_family}},3.10,platformdirs,appdirs"
   pymod_requires:

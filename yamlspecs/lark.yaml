@@ -1,7 +1,7 @@
 !include common_wheel.yaml
 ---
 - package: lark
-  name: lark 
+  name: lark
   version: "{{versions.lark}}"
   hash: "{{versions.lark_hash}}"
   description: |

@@ -1,7 +1,7 @@
 !include common_bootstrap_wheel.yaml
 ---
 - package: tomli
-  name: tomli 
+  name: tomli
   version: "{{versions.tomli}}"
   hash: "{{versions.tomli_hash}}"
   description: |

@@ -16,7 +16,7 @@
   install:
      makeinstall: >
       sed -e "s%&PREFIX&%$$OpenBLAS__PREFIX%g" ../site.cfg.template > site.cfg;
-      python{{python_major}} ./setup.py install --root $(ROOT)    
+      python{{python_major}} ./setup.py install --root $(ROOT)
   pymod_requires:
     - python_{{python_version}}-numpy
     - python_{{python_version}}-pybind11

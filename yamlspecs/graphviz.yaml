@@ -1,7 +1,7 @@
 !include common.yaml
 ---
 - package: Graphviz for python
-  name: graphviz 
+  name: graphviz
   version: "{{versions.graphviz}}"
   vendor_source: https://github.com/xflr6/graphviz/archive/refs/tags/{{version}}.{{extension}}
   description: |

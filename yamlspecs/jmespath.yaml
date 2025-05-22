@@ -1,7 +1,7 @@
 !include common_wheel.yaml
 ---
 - package: jmespath
-  name: jmespath 
+  name: jmespath
   version: "{{versions.jmespath}}"
   hash: "{{versions.jmespath_hash}}"
   description: |

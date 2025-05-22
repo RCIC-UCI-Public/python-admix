@@ -1,6 +1,6 @@
 !include common.yaml
 ---
-- package: expecttest 
+- package: expecttest
   name: expecttest
   version: "{{versions.expecttest}}"
   vendor_source: https://files.pythonhosted.org/packages/{{versions.expecttest_hash}}/{{name}}-{{version}}.{{extension}}

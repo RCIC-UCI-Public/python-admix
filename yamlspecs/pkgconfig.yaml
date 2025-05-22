@@ -1,7 +1,7 @@
 !include common.yaml
 ---
 - package: pkgconfig
-  name: pkgconfig 
+  name: pkgconfig
   version: "{{versions.pkgconfig}}"
   vendor_source: https://github.com/matze/pkgconfig/archive/refs/tags/v{{version}}.{{extension}}
   description: |

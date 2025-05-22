@@ -1,7 +1,7 @@
 !include common_wheel.yaml
 ---
 - package: natsort
-  name: natsort 
+  name: natsort
   version: "{{versions.natsort}}"
   hash: "{{versions.natsort_hash}}"
   description: |

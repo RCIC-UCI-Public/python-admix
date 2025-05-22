@@ -1,7 +1,7 @@
 !include common.yaml
 ---
-- package: distro 
-  name: distro 
+- package: distro
+  name: distro
   version: "{{versions.distro}}"
   vendor_source: https://github.com/python-distro/distro/archive/refs/tags/v{{version}}.{{extension}}
   description: |

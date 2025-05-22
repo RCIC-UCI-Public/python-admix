@@ -1,7 +1,7 @@
 !include common_wheel.yaml
 ---
 - package: botocore
-  name: botocore 
+  name: botocore
   version: "{{versions.botocore}}"
   hash: "{{versions.botocore_hash}}"
   description: |

@@ -1,7 +1,7 @@
 !include common.yaml
 ---
-- package: decorator 
-  name: decorator 
+- package: decorator
+  name: decorator
   version: "{{versions.decorator}}"
   vendor_source: https://github.com/micheles/decorator/archive/{{version}}.{{extension}}
   description: |

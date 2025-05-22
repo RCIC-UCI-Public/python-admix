@@ -1,7 +1,7 @@
 !include common.yaml
 ---
-- package: stack_data 
-  name: stack_data 
+- package: stack_data
+  name: stack_data
   version: "{{versions.stack_data}}"
   vendor_source: https://files.pythonhosted.org/packages/{{versions.stack_data_hash}}/{{name}}-{{version}}.{{extension}}
   description: |

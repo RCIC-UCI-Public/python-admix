@@ -1,7 +1,7 @@
 !include common.yaml
 ---
-- package: pytest 
-  name: pytest 
+- package: pytest
+  name: pytest
   version: "{{versions.pytest}}"
   vendor_source: https://files.pythonhosted.org/packages/{{versions.pytest_hash}}/{{name}}-{{version}}.{{extension}}
   description: |

@@ -10,12 +10,12 @@
   python_family: "{{versions.python_family}}"
   pymod_requires:
   build:
-    modules: python/{{python_version}} 
+    modules: python/{{python_version}}
     pkgmake: echo 'Build performed in install with python setup.py'
   install:
-    makeinstall: python{{python_major}} ./setup.py install --root $(ROOT) 
+    makeinstall: python{{python_major}} ./setup.py install --root $(ROOT)
   requires:
-    - python_{{python_version}}  
+    - python_{{python_version}}
     - "{{pymod_requires}}"
   files:
     - "{{root}}"

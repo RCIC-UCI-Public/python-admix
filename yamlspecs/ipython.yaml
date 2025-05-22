@@ -1,7 +1,7 @@
 !include common.yaml
 ---
-- package: ipython 
-  name: ipython 
+- package: ipython
+  name: ipython
   version: "{{versions.ipython}}"
   vendor_source: https://github.com/ipython/ipython/archive/refs/tags/{{version}}.{{extension}}
   description: |
