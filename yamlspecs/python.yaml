@@ -1,8 +1,8 @@
 !include rcic-package.yaml
 !include rpm.yaml
 ---
-- package: Python Programming Language 
-  name: python 
+- package: Python Programming Language
+  name: python
   versions: !include versions.yaml
   release: "{{versions.release}}"
   version: "{{versions.python_version}}"
@@ -13,14 +13,14 @@
   src_dir: "Python-{{version}}"
   src_tarball: "{{src_dir}}.{{extension}}"
   vendor_source: https://www.python.org/ftp/python/{{version}}/Python-{{version}}.tgz
-  description: >
-    Python version {{version}}
+  description: |
+    Python Programming Language version {{version}}.
   build:
     configure: ./configure
     configure_args: --prefix={{root}} --enable-shared --enable-optimizations --with-lto --enable-ipv6 {{unique_opts}}
     pkgmake: make -j 8
   install:
-    makeinstall: $(MAKE) DESTDIR=$(ROOT) altinstall 
+    makeinstall: $(MAKE) DESTDIR=$(ROOT) altinstall
     installextra: >
       $(INSTALL) -m 644  README* $(ROOT){{root}};
       cd $(ROOT){{root}}/bin;
@@ -29,7 +29,7 @@
       ln -s python{{family_version}}-config python-config;
       ln -s python{{family_version}}-config python{{major_version}}-config
   rpmAutoReqProv: no
-  rpmFilters: 
+  rpmFilters:
       - '\nProvides: libpython{{family_version}}.so.1.0()(64bit)\n'
       - '%define __python %{buildroot}/$(PKGROOT)/bin/python{{major_version}}'
   rpm:
