@@ -7,8 +7,6 @@
   description: |
     The scikit-build {{version}} package is fundamentally just glue between the
     setuptools Python module and CMake.  See https://pypi.org/project/scikit-build/
-  install:
-    makeinstall: python{{python_major}} ./setup.py install --root $(ROOT) 
   pymod_requires:
     - python_{{python_version}}-distro
     - python_{{python_version}}-packaging
