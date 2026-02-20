@@ -1,0 +1,9 @@
+!include common.yaml
+---
+- package: markupsafe
+  name: markupsafe
+  version: "{{versions.markupsafe}}"
+  hash: "{{versions.markupsafe_hash}}"
+  vendor_source: https://files.pythonhosted.org/packages/{{hash}}/{{name}}-{{version}}.{{extension}}
+  description: |
+    Safely add untrusted strings to HTML/XML markup
