@@ -1,0 +1,5 @@
+!include msgpack.yaml
+---
+- hash: "{{versions.msgpack_hash}}"
+  vendor_source: https://files.pythonhosted.org/packages/{{hash}}/{{name}}-{{version}}.{{extension}}
+  src_dir: "{{name}}-{{version}}"
