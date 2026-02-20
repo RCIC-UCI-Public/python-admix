@@ -1,0 +1,4 @@
+!include urllib3.yaml
+---
+- hash: "{{versions.urllib3_hash}}"
+  vendor_source: https://files.pythonhosted.org/packages/{{hash}}/{{name}}-{{version}}.{{extension}}
