@@ -1,0 +1,22 @@
+!include ipython.yaml
+---
+- pymod_requires:
+    - python_{{python_version}}-decorator
+    - python_{{python_version}}-traitlets
+    - python_{{python_version}}-pygments
+    - python_{{python_version}}-pexpect
+    - python_{{python_version}}-prompt_toolkit
+    - python_{{python_version}}-stack_data
+    - python_{{python_version}}-ipython-pygments-lexers
+    - python_{{python_version}}-jedi
+    - python_{{python_version}}-matplotlib-inline
+
+#   "decorator>=4.3.2", # wheel
+#   "traitlets>=5.13.0",
+#   "pygments>=2.11.0", # wheel
+#   'pexpect>4.3; sys_platform != "win32" and sys_platform != "emscripten"',
+#   "prompt_toolkit>=3.0.41,<3.1.0",
+#   "stack_data>=0.6.0",
+#   "ipython-pygments-lexers>=1.0.0",
+#   "jedi>=0.18.1",
+#   "matplotlib-inline>=0.1.5", # first guess (0.1.0 is known not to work)
