@@ -1,7 +1,7 @@
 !include common.yaml
 ---
 - package: mako
-  name: Mako
+  name: "{{versions.mako_fname}}"
   version: "{{versions.mako}}"
   vendor_source: https://files.pythonhosted.org/packages/{{versions.mako_hash}}/{{name}}-{{version}}.{{extension}}
   description: |
