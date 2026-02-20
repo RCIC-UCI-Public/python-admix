@@ -3,7 +3,9 @@
 - package: Pygments
   name: pygments
   version: "{{versions.pygments}}"
-  vendor_source:  https://files.pythonhosted.org/packages/{{versions.pygments_hash}}/{{package}}-{{version}}.{{extension}}
-  src_dir: "{{package}}-{{version}}"
+  hash: "{{versions.pygments_hash}}"
+  fname: "{{versions.pygments_fname}}"
+  vendor_source:  https://files.pythonhosted.org/packages/{{hash}}/{{fname}}-{{version}}.{{extension}}
+  src_dir: "{{fname}}-{{version}}"
   description: |
     Pygments {{version}} is a syntax highlighting package. See https://pygments.org/
