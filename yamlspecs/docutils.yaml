@@ -4,6 +4,6 @@
   name: docutils
   version: "{{versions.docutils}}"
   hash: "{{versions.docutils_hash}}"
-  suffix: py2.py3-none-any
+  suffix: "{{versions.docutils_suffix}}"
   description: |
     Docutils {{version}} Python Documentation Utilities
