@@ -1,0 +1,9 @@
+!include pip.yaml
+---
+- install:
+    makeinstall: >
+      export PIP3=`find $$python__PREFIX -name pip-\*-py3\*whl`;
+      python $$PIP3/pip install --ignore-installed --root $(ROOT) --no-deps ../{{src_tarball}}
+
+# NOTE: as at this point there is no pip installed for this python
+# need to use preinstalled by python RPM whl file for pip to bootstarp this build
