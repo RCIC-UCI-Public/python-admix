@@ -10,4 +10,4 @@
   install_setup: python{{python_major}} ./setup.py install --root $(ROOT)
   install_pip: pip install --root $(ROOT) --no-deps ../{{src_tarball}}
   install:
-    makeinstall: !ifeq "{{versions.python_family}},3.10,{{install_pip}},{{install_setup}}"
+    makeinstall: !ifeq "{{versions.python_family}},3.8,{{install_setup}},{{install_pip}}"
