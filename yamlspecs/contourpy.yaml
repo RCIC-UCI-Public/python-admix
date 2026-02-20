@@ -1,0 +1,9 @@
+!include common.yaml
+---
+- package: contourpy
+  name:  contourpy
+  version: "{{versions.contourpy}}"
+  hash: "{{versions.contourpy_hash}}"
+  vendor_source: https://files.pythonhosted.org/packages/{{hash}}/{{name}}-{{version}}.{{extension}}
+  description: |
+    Python library for calculating contours of 2D quadrilateral grids
