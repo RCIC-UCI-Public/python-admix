@@ -1,0 +1,11 @@
+!include common.yaml
+---
+- package: matplotlib-inline
+  name: matplotlib-inline
+  fname: matplotlib_inline
+  version: "{{versions.matplotlib_inline}}"
+  hash: "{{versions.matplotlib_inline_hash}}"
+  src_dir: "{{fname}}-{{version}}"
+  vendor_source: https://files.pythonhosted.org/packages/{{hash}}/{{fname}}-{{version}}.{{extension}}
+  description: |
+    Inline Matplotlib backend for Jupyter
