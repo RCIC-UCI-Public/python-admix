@@ -13,4 +13,5 @@
   pymod_requires:
     - python_{{python_version}}-mypy_extensions
     - python_{{python_version}}-typing_extensions
-    - python_{{python_version}}-typed_ast
+    - !ifeq "{{versions.python_family}},3.8,python_{{python_version}}-typed_ast,"
+    - !ifeq "{{versions.python_family}},3.10,python_{{python_version}}-typed_ast,"
