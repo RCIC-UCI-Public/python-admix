@@ -1,0 +1,5 @@
+!include cffi.yaml
+---
+- vendor_source: https://github.com/python-{{name}}/{{name}}/archive/refs/tags/v{{version}}.{{extension}}
+  pymod_requires:
+    - python_{{python_version}}-pycparser
