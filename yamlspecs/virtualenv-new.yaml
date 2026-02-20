@@ -1,0 +1,9 @@
+!include virtualenv.yaml
+---
+- hash: "{{versions.virtualenv_hash}}"
+  vendor_source: https://files.pythonhosted.org/packages/{{hash}}/{{name}}-{{version}}.{{extension}}
+  install:
+    makeinstall: pip install --root $(ROOT) --no-deps ../{{src_tarball}}
+  pymod_requires:
+    - python_{{python_version}}-distlib
+    - python_{{python_version}}-platformdirs
