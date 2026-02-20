@@ -3,7 +3,7 @@
 - package: traitlets
   name: traitlets
   version: "{{versions.traitlets}}"
-  vendor_source:  https://github.com/ipython/traitlets/archive/refs/tags/{{version}}.{{extension}}
+  vendor_source:  https://github.com/ipython/traitlets/archive/refs/tags/v{{version}}.{{extension}}
   description: |
     Traitlets {{version}} is a pure Python library. Its implementation relies on
     the descriptor pattern, and it is a lightweight pure-python alternative
@@ -11,4 +11,5 @@
     IPython and Jupyter and the declarative API of IPython interactive
     widgets.  See https://github.com/ipython/traitlets
   pymod_requires:
-    - python_{{python_version}}-ipython_genutils
+      - !ifeq "{{versions.python_family}},3.8,python_{{python_version}}-ipython_genutils,"
+      - !ifeq "{{versions.python_family}},3.10,python_{{python_version}}-ipython_genutils,"
