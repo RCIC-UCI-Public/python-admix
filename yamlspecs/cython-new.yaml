@@ -1,0 +1,9 @@
+!include common_wheel.yaml
+---
+- package: Cython support
+  name: cython
+  version: "{{versions.cython}}"
+  hash: "{{versions.cython_hash}}"
+  description: |
+    Cython {{version}} for python {{python_version}}.
+    The Cython compiler for writing C extensions
