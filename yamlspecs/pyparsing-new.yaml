@@ -1,0 +1,5 @@
+!include pyparsing.yaml
+---
+- hash: "{{versions.pyparsing_hash}}"
+  vendor_source: https://files.pythonhosted.org/packages/{{hash}}/{{name}}-{{version}}.{{extension}}
+  src_dir: "{{name}}-{{version}}"
