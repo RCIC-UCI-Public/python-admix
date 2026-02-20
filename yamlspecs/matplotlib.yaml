@@ -8,8 +8,11 @@
     Matplotlib {{version}} for python {{python_version}} strives to produce publication quality 2D graphics
     for interactive graphing, scientific publishing, user interface development and web application servers
     targeting multiple user interfaces and hardcopy output formats
+
+  # use setup style install for up to python 3.10 and pip install for python 3.14+
+  install_setup: unset MAKEFLAGS; python{{python_major}} ./setup.py install --root $(ROOT)
   install:
-    makeinstall: unset MAKEFLAGS; python{{python_major}} ./setup.py install --root $(ROOT)
+    makeinstall: !ifeq "{{versions.python_family}},3.14,{{install_pip}},{{install_setup}}"
   pymod_requires:
     - python_{{python_version}}-pyparsing
     - python_{{python_version}}-cycler
@@ -19,6 +22,10 @@
     - !ifeq "{{versions.python_family}},3.10,python_{{python_version}}-packaging,"
     - !ifeq "{{versions.python_family}},3.10,python_{{python_version}}-fonttools,"
     - !ifeq "{{versions.python_family}},3.10,python_{{python_version}}-pillow,"
+    - !ifeq "{{versions.python_family}},3.14,python_{{python_version}}-packaging,"
+    - !ifeq "{{versions.python_family}},3.14,python_{{python_version}}-fonttools,"
+    - !ifeq "{{versions.python_family}},3.14,python_{{python_version}}-pillow,"
+    - !ifeq "{{versions.python_family}},3.14,python_{{python_version}}-contourpy,"
 
 # NOTES
 # import matplotlib works once all the above de[endencies are resolved.
