@@ -1,0 +1,14 @@
+!include numpy-groupies.yaml
+---
+- hash: "{{versions.numpy_groupies_hash}}"
+  fname: numpy_groupies
+  no_src_dir: True
+  extension: whl
+  suffix: py3-none-any
+  src_tarball: "{{fname}}-{{version}}-{{suffix}}.{{extension}}"
+  vendor_source: https://files.pythonhosted.org/packages/{{hash}}/{{src_tarball}}
+  build:
+    pkgmake: echo 'Using wheel distro'
+  install:
+    makeinstall: >
+      pip3 install --root $(ROOT) --no-deps {{src_tarball}}
