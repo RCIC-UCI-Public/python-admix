@@ -8,12 +8,17 @@
   python_version: "{{versions.python_version}}"
   python_major: "{{versions.python_major}}"
   python_family: "{{versions.python_family}}"
+  buildtype: "{{versions.buildtype}}"
   pymod_requires:
+  # old style install for pytthon up to 3.10.2
+  install_pip: pip install --root $(ROOT) --no-deps ../{{src_tarball}}
+  # new style install for pytohn 3.14 and above
+  install_setup: python{{python_major}} ./setup.py install --root $(ROOT)
   build:
     modules: python/{{python_version}}
-    pkgmake: echo 'Build performed in install with python setup.py'
+    pkgmake: echo 'Build performed in install with python or pip'
   install:
-    makeinstall: python{{python_major}} ./setup.py install --root $(ROOT)
+    makeinstall: !ifeq "{{buildtype}},setup,{{install_setup}},{{install_pip}}"
   requires:
     - python_{{python_version}}
     - "{{pymod_requires}}"
