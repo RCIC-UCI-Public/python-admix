@@ -1,0 +1,12 @@
+!include common.yaml
+---
+- package: ipython-pygments-lexers
+  name: ipython-pygments-lexers
+  fname: ipython_pygments_lexers
+  version: "{{versions.ipython_pygments_lexers}}"
+  hash: "{{versions.ipython_pygments_lexers_hash}}"
+  src_dir: "{{fname}}-{{version}}"
+  vendor_source: 
+    https://files.pythonhosted.org/packages/{{hash}}/{{fname}}-{{version}}.{{extension}}
+  description: |
+    Defines a variety of Pygments lexers for highlighting IPython code.
