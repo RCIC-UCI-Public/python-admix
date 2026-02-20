@@ -1,0 +1,5 @@
+!include pox.yaml
+---
+- 
+  src_dir: "{{name}}-{{version}}"
+  vendor_source: https://github.com/uqfoundation/pox/archive/refs/tags/{{version}}.{{extension}}
