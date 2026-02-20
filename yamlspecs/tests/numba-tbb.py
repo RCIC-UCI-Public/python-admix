@@ -6,9 +6,10 @@
 
 import numpy as np
 import numba
-numba.config.THREADING_LAYER = 'safe'
 
-@numba.jit(nopython=True, parallel=True)
+numba.config.THREADING_LAYER = 'safe'
+numba.jit(nopython=True, parallel=True)
+
 def add(a, b):
     for i in numba.prange(len(a)):
         a[i] += b[i]
