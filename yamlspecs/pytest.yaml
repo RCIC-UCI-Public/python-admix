@@ -12,5 +12,5 @@
     - python_{{python_version}}-iniconfig
     - python_{{python_version}}-packaging
     - python_{{python_version}}-pluggy
-    - python_{{python_version}}-py
+    - !ifeq "{{versions.python_family}},3.14,,python_{{python_version}}-py"
     - python_{{python_version}}-tomli
