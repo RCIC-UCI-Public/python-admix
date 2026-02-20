@@ -1,0 +1,6 @@
+!include numpy.yaml
+---
+- release: 1
+  install:
+    makeinstall: >
+      pip install --root $(ROOT) .
