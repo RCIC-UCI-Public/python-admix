@@ -1,0 +1,4 @@
+!include distlib.yaml
+---
+- extension: "tar.gz"
+  vendor_source: https://github.com/pypa/distlib/archive/refs/tags/{{version}}.{{extension}}
