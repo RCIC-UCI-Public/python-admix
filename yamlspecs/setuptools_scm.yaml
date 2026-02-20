@@ -9,5 +9,7 @@
     Setuptools_scm {{version}} handles managing your Python {{python_version}} package
     versions in SCM metadata instead of declaring them as the version
     argument or in a SCM managed file.
+  pkgmake_type: "{{versions.setuptools_scm_pkgmake}}"
+  oldpkgmake: python{{python_major}} bootstrap.py --root $(ROOT)
   build:
-    pkgmake: python{{python_major}} bootstrap.py --root $(ROOT)
+    pkgmake: !ifeq "{{pkgmake_type}},bootstrap,{{oldpkgmake}},"
