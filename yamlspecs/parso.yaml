@@ -1,0 +1,9 @@
+!include common_wheel.yaml
+---
+- package: parso
+  name: parso
+  version: "{{versions.parso}}"
+  hash: "{{versions.parso_hash}}"
+  suffix: py2.py3-none-any
+  description: |
+    A Python parser
