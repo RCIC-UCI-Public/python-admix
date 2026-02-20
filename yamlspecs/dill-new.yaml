@@ -1,0 +1,4 @@
+!include dill.yaml
+---
+- src_dir: "{{name}}-{{version}}"
+  vendor_source: https://github.com/uqfoundation/dill/archive/refs/tags/{{version}}.{{extension}}
