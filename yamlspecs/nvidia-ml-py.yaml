@@ -1,0 +1,9 @@
+!include common_wheel.yaml
+---
+- package: nvidia-ml-py
+  name: nvidia-ml-py
+  version: "{{versions.nvidia_ml_py}}"
+  hash: "{{versions.nvidia_ml_py_hash}}"
+  src_tarball: "nvidia_ml_py-{{version}}-{{suffix}}.{{extension}}"
+  description: |
+      Python Bindings for the NVIDIA Management Library
