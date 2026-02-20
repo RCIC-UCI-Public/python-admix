@@ -1,0 +1,6 @@
+!include scipy.yaml
+---
+- release: 1
+  install:
+    makeinstall: >
+      pip install --root $(ROOT) .
