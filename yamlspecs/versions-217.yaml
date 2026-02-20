@@ -1,5 +1,6 @@
 !include versions.yaml
 ---
+buildtype: setup
 release: 6
 unique_opts: --enable-unicode=ucs4
 python_version: "2.7.17"
@@ -11,6 +12,7 @@ scipy: "1.1.0"
 pandas: "0.24.2"
 setuptools_scm: "5.0.2"
 setuptools_scm_hash: "56/c9/09f4a531720b1bf54f316fdff926fbb937c59a9c4a34e3a533b26e501898"
+setuptools_scm_pkgmake: bootstrap
 pip: "20.0.2"
 cython: "0.29.15"
 pybind11: "2.4.3"
@@ -25,6 +27,7 @@ dateutil_hash: "be/ed/5bbc91f03fa4c839c4c7360375da77f9659af5f7086b7a7bdda65771c8
 six: "1.14.0"
 graphviz: "0.13.2"
 future: "0.18.2"
+future_hash: "45/0b/38b06fd9b92dc2b68d58b75f900e97884c45bedd2ff83203d933cf5851c9"
 pyparsing: "2.4.6"
 cffi: "1.14.0"
 cffi_hash: "05/54/3324b0c46340c31b909fcec598696aaec7ddc8c18a63f2db352562d3354c"
