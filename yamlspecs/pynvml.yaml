@@ -2,10 +2,11 @@
 ---
 - package: pynvml
   name: pynvml
-  longname: nvidia-ml-py
   src_dir: "{{longname}}-{{version}}"
   version: "{{versions.pynvml}}"
-  vendor_source: https://files.pythonhosted.org/packages/{{versions.pynvml_hash}}/{{longname}}-{{version}}.{{extension}}
+  hash: "{{versions.pynvml_hash}}"
+  longname: "{{versions.pynvml_longname}}"
+  vendor_source: https://files.pythonhosted.org/packages/{{hash}}/{{longname}}-{{version}}.{{extension}}
   description: |
       Pynvml {{version}} provides Python Bindings for the NVIDIA Management Library
 
