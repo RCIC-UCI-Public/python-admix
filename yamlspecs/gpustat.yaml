@@ -8,4 +8,4 @@
       Gpustat {{version}} is a utility to monitor NVIDIA GPU status and usage
   pymod_requires:
     - python_{{python_version}}-blessed
-    - python_{{python_version}}-pynvml
+    - !ifeq "{{versions.python_family}},3.10,python_{{python_version}}-pynvml,python_{{python_version}}-nvidia-ml-py"
