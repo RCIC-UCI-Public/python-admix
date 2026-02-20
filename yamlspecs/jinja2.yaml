@@ -6,3 +6,5 @@
   hash: "{{versions.jinja2_hash}}"
   description: |
     Jinja2 {{version}} is a very fast and expressive template engine
+  pymod_requires:
+    - !ifeq "{{versions.python_family}},3.14,python_{{python_version}}-markupsafe,"
