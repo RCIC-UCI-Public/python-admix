@@ -1,6 +1,12 @@
 !include scipy.yaml
 ---
 - release: 1
+  addfile:
+    - "filter-requires-{{name}}.sh"
+
   install:
     makeinstall: >
       pip install --root $(ROOT) .
+
+  rpmFilters: *filterRequires
+
