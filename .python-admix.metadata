@@ -285,3 +285,5 @@ c205cdcc47c6af15f1898f9e4fcbadd36faa60c2  sources/boto3-1.42.49-py3-none-any.whl
 55d78c9e3ab7ffc7a3f5c0417d730f7cc8974dd9  sources/parso-0.8.6-py2.py3-none-any.whl
 28aba3d6a15bc65dec8bc91261efc118cf848afc  sources/markupsafe-3.0.3.tar.gz
 7a42c1c4a841678771b44003e35c20d8cad1237c  sources/scipy-1.17.0.tar.gz
+08593f9490b9be070aa2337e7311a392d33944dd  sources/markupsafe-2.1.5.tar.gz
+c9233c46918ea4259fae943f1f24ef4430a4e3f0  sources/typing_extensions-4.3.0.tar.gz

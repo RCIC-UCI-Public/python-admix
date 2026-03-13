@@ -112,6 +112,7 @@ build:
   - astunparse
   - expecttest
   - optree
+  - markupsafe
   - jinja2
   - fsspec
   - lark

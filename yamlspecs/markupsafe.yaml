@@ -2,8 +2,10 @@
 ---
 - package: markupsafe
   name: markupsafe
+  fname: !ifeq "{{versions.python_family}},3.10,MarkupSafe,markupsafe"
   version: "{{versions.markupsafe}}"
   hash: "{{versions.markupsafe_hash}}"
-  vendor_source: https://files.pythonhosted.org/packages/{{hash}}/{{name}}-{{version}}.{{extension}}
+  src_dir: "{{fname}}-{{version}}"
+  vendor_source: https://files.pythonhosted.org/packages/{{hash}}/{{fname}}-{{version}}.{{extension}}
   description: |
     Safely add untrusted strings to HTML/XML markup

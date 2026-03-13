@@ -77,6 +77,7 @@
 200100          python_3.10.2-lark-1.1.9-1.x86_64.rpm
 65000           python_3.10.2-line_profiler-3.4.0-1.x86_64.rpm
 20443300        python_3.10.2-llvmlite-0.38.1-1.x86_64.rpm
+25800           python_3.10.2-markupsafe-2.1.5-1.x86_64.rpm
 6496700         python_3.10.2-matplotlib-3.5.1-1.x86_64.rpm
 58300           python_3.10.2-memory_profiler-0.60.0-1.x86_64.rpm
 7700            python_3.10.2-module-3.10.2-5.x86_64.rpm
@@ -141,7 +142,7 @@
 196700          python_3.10.2-traitlets-5.1.1-1.x86_64.rpm
 203200          python_3.10.2-typed_ast-1.5.2-1.x86_64.rpm
 10000           python_3.10.2-types-dataclasses-0.6.6-1.x86_64.rpm
-52900           python_3.10.2-typing_extensions-4.1.1-1.x86_64.rpm
+46600           python_3.10.2-typing_extensions-4.3.0-1.x86_64.rpm
 198700          python_3.10.2-urllib3-1.26.8-1.x86_64.rpm
 5472600         python_3.10.2-virtualenv-20.13.2-1.x86_64.rpm
 38500           python_3.10.2-wcwidth-0.2.5-1.x86_64.rpm
