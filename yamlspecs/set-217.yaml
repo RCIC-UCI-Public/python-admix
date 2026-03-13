@@ -11,7 +11,7 @@ bootstrap:
   - numpy-python2
   - pybind11
 build:
-  - virtualenv
+# - virtualenv
   - pyyaml
   - sqlalchemy
   - pytz
