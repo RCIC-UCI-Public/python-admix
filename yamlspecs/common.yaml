@@ -10,9 +10,9 @@
   python_family: "{{versions.python_family}}"
   buildtype: "{{versions.buildtype}}"
   pymod_requires:
-  # old style install for pytthon up to 3.10.2
-  install_pip: pip install --root $(ROOT) --no-deps ../{{src_tarball}}
   # new style install for pytohn 3.14 and above
+  install_pip: pip install --root $(ROOT) --no-deps ../{{src_tarball}}
+  # old style install for python up to 3.10.2
   install_setup: python{{python_major}} ./setup.py install --root $(ROOT)
   build:
     modules: python/{{python_version}}
