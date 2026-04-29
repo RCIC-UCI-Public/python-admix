@@ -42,3 +42,6 @@ sets:
   - "380"
   - "310"
   - "314"
+
+# leave develext variable as an example for a possible use
+# of variables in site.yaml
