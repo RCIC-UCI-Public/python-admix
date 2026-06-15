@@ -15,9 +15,11 @@
   vendor_source: https://www.python.org/ftp/python/{{version}}/Python-{{version}}.tgz
   description: |
     Python Programming Language version {{version}}.
+  opts10: !OScmp ">=,10,{{versions.opts10}},"
   build:
+    patchfile: !OScmp ">=,10,Python-{{version}}.patch,"
     configure: ./configure
-    configure_args: --prefix={{root}} --enable-shared --enable-optimizations --with-lto --enable-ipv6 {{unique_opts}}
+    configure_args: --prefix={{root}} --enable-shared --enable-optimizations --with-lto --enable-ipv6 {{unique_opts}} {{opts10}}
     pkgmake: make -j 8
   install:
     makeinstall: $(MAKE) DESTDIR=$(ROOT) altinstall

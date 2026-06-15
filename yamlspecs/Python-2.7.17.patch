@@ -1,0 +1,11 @@
+--- Python-2.7.17/Modules/_tkinter.c	2019-10-19 11:38:44.000000000 -0700
++++ Python-2.7.17/Modules/_tkinter.c.new	2026-06-12 13:49:28.108081561 -0700
+@@ -1175,7 +1175,7 @@
+             return NULL;
+         }
+         if (sizeof(Py_UNICODE) == sizeof(Tcl_UniChar))
+-            return Tcl_NewUnicodeObj(inbuf, size);
++            return Tcl_NewUnicodeObj((const Tcl_UniChar *)inbuf, size);
+         allocsize = ((size_t)size) * sizeof(Tcl_UniChar);
+         if (allocsize >= size)
+             outbuf = (Tcl_UniChar*)attemptckalloc(allocsize);
