@@ -30,7 +30,7 @@ build:
   - ruamel_yaml_clib
   - ruamel_yaml
   - scipy-python2
-  - pandas
+  - pandas-python2
   - appdirs
   - distlib 
   - filelock

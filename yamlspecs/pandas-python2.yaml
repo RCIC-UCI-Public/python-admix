@@ -1,0 +1,9 @@
+!include pandas.yaml
+---
+- opts10: !OScmp ">=,10,1,0"
+  install:
+    makeinstall: >
+      if [ {{opts10}} == 1 ]; then \
+          export CFLAGS='-Wno-error=incompatible-pointer-types -Wno-error=implicit-function-declaration'; \
+      fi; 
+      python{{python_major}} ./setup.py install --root $(ROOT)
