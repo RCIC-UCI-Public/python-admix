@@ -11,11 +11,15 @@
     The SciPy library depends on NumPy, which provides convenient
     and fast N-dimensional array manipulation, and for python3 on
     pybind11 which provides headers
+  opts10: !OScmp ">=,10,1,0"
   build:
     modules: python/{{python_version}} OpenBLAS/{{versions.OpenBLAS}}
   install:
-     makeinstall: >
-      sed -e "s%&PREFIX&%$$OpenBLAS__PREFIX%g" ../site.cfg.template > site.cfg;
+    makeinstall: >
+      if [ {{opts10}} == 1 ]; then \
+          {{versions.scipy_opts10}}; \
+      fi;
+      sed -e 's%&PREFIX&%$$OpenBLAS__PREFIX%g' ../site.cfg.template > site.cfg;
       python{{python_major}} ./setup.py install --root $(ROOT)
   pymod_requires:
     - python_{{python_version}}-numpy

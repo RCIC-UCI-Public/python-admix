@@ -9,9 +9,14 @@
     The SciPy library depends on NumPy, which provides convenient
     and fast N-dimensional array manipulation, and for python3 on
     pybind11 which provides headers
+  opts10: !OScmp ">=,10,1,0"
   install:
-    fortranflag: export FFLAGS='-std=legacy -fPIC';
-    makeinstall: "{{install.fortranflag}} python{{python_major}} ./setup.py install --root $(ROOT)"
+    makeinstall: >
+      if [ {{opts10}} == 1 ]; then \
+          export CFLAGS='-Wno-error=incompatible-pointer-types -Wno-error=implicit-function-declaration -Wno-error=implicit-int'; \
+      fi;
+      export FFLAGS='-std=legacy -fPIC';
+      python{{python_major}} ./setup.py install --root $(ROOT)
   pymod_requires:
     - python_{{python_version}}-numpy
     - python_{{python_version}}-pybind11
