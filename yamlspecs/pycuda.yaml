@@ -10,10 +10,12 @@
   compiler_version: "{{versions.compiler.version}}"
   pypiurl: https://files.pythonhosted.org/packages/{{versions.pycuda_hash}}
   vendor_source:  "{{pypiurl}}/{{src_tarball}}"
+  # use system boost when indicated
+  opts10: ">=,10,{{versions.boost_opts10}},"
   description: |
      PyCUDA {{version}} lets you access Nvidia’s CUDA parallel computation API from Python.
   build:
-    configure: ./configure.py
+    configure: ./configure.py {{opts10}}
     configure_args:
     modules:
       - "python/{{python_version}}"

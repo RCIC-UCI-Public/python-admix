@@ -23,6 +23,8 @@ system:
   - libtiff-devel
   - lcms2-devel
   - libwebp-devel
+  - boost-devel
+  - boost-python3
 bootstrap:
 build:
 manifest:
