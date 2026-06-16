@@ -16,3 +16,5 @@
     - python_{{python_version}}-gast
     - python_{{python_version}}-numpy
     - python_{{python_version}}-beniget
+  build:
+    patchfile: !OScmp ">=,10,{{name}}-{{version}}.patch,"
