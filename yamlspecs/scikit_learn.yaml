@@ -15,3 +15,11 @@
     - python_{{python_version}}-numpy
     - python_{{python_version}}-scipy
     - python_{{python_version}}-{{pkgadd}}
+  opts10: !OScmp ">=,10,1,0"
+  runcommand: !ifeq "{{buildtype}},setup,{{install_setup}},{{install_pip}}"
+  install:
+    makeinstall: >
+      if [ {{opts10}} == 1 ]; then \
+        {{versions.scikit_learn_opts10}}; \
+      fi;
+      {{runcommand}}
