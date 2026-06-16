@@ -7,8 +7,13 @@
   description: |
      {{name}} {{version}} is the C based reader/scanner and emitter for ruamel.yaml
      source code: {{vendor_source}}
+  opts10: !OScmp ">=,10,1,0"
   build:
-    pkgmake: python{{python_major}} ./setup.py build
+    pkgmake: >
+      if [ {{opts10}} == 1 ]; then \
+          {{versions.ruamel_yaml_clib_opts10}}; \
+      fi;
+      python{{python_major}} ./setup.py build
   install:
     makeinstall: python{{python_major}} ./setup.py install --root=$(ROOT)
 
