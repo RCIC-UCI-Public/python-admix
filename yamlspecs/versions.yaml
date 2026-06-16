@@ -2,3 +2,13 @@
 ---
 admix: python-admix
 unique_opts: --enable-loadable-sqlite-extensions --without-ensurepip
+
+# These are defaults for Rocky 10. Result is "change nothing"
+# in whatever action they are applied to.  They either propagate to
+# a version file for a given set or are overwritten there as needed.
+opts10:
+ruamel_yaml_clib_opts10: echo
+scipy_opts10: echo
+scikit_learn_opts10: echo
+h5py_opts10: echo
+boost_opts10:

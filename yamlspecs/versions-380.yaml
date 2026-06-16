@@ -6,7 +6,7 @@ python_version: "3.8.0"
 python_family: "3.8"
 python_major: "3"
 pip: "20.0.2"
-cython: "0.29.15"
+cython: "0.29.18"
 pybind11: "2.4.3"
 virtualenv: "20.0.10"
 pyyaml: "5.3"
@@ -104,3 +104,19 @@ gast: "0.5.3"
 ply: "3.11"
 hdf5: "1.10.5"
 
+# options for Rocky 10
+ruamel_yaml_clib_opts10: export CFLAGS='-Wno-error=incompatible-pointer-types'
+scipy_opts10: export CFLAGS='-Wno-error=incompatible-pointer-types'
+scikit_learn_opts10: export CXXFLAGS='-include stdint.h'; export CFLAGS='-Wno-error=incompatible-pointer-types -Wno-error=maybe-uninitialized'; export OPT='-Wno-error=incompatible-pointer-types'
+h5py_opts10: export CFLAGS='-Wno-error=incompatible-pointer-types -Wno-error=int-conversion -Wno-int-conversion'
+
+# The following two options are for compiling pycuda 
+# use exact cuda version that was used on OS 9
+# this overrides newer setting that comes from site.yaml
+cuda:
+  version:  "11.7.1"
+
+# For using system provided boost in place of distro included (does not work).
+# Note 312 in library name. This is the only *.so in system RPM boost-python3.
+# If  this changes library name has to be updated accordningly
+boost_opts10: --boost-inc-dir=/usr/include --boost-lib-dir=/usr/lib64 --boost-python-libname=boost_python312 --no-use-shipped-boost

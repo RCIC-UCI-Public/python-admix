@@ -188,3 +188,9 @@ s3transfer: "0.10.3"
 s3transfer_hash: "e5/c0/b0fba8259b61c938c9733da9346b9f93e00881a9db22aafdd72f6ae0ec05"
 markupsafe: "2.1.5"
 markupsafe_hash: "87/5b/aae44c6655f3801e81aa3eef09dbbf012431987ba564d7231722f68df02d"
+
+# extra options for compiliong on Rocky 10
+ruamel_yaml_clib_opts10: export CFLAGS='-Wno-error=incompatible-pointer-types'
+scipy_opts10: export CXXFLAGS='-include stdint.h'; export CFLAGS='-Wno-error=incompatible-pointer-types'
+scikit_learn_opts10: export CXXFLAGS='-include stdint.h'; export CFLAGS='-Wno-error=incompatible-pointer-types -Wno-error=maybe-uninitialized'; export OPT='-Wno-error=incompatible-pointer-types'
+h5py_opts10: export CFLAGS='-Wno-error=incompatible-pointer-types'
