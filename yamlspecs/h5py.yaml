@@ -23,3 +23,11 @@
     - hdf5_{{hdf5}}_{{compiler}}_{{compiler_version}}
     - python_{{python_version}}-six
     - python_{{python_version}}-pkgconfig
+  opts10: !OScmp ">=,10,1,0"
+  comm: !ifeq "{{buildtype}},setup,{{install_setup}},{{install_pip}}"
+  install:
+    makeinstall: >
+      if [ {{opts10}} == 1 ]; then \
+        {{versions.h5py_opts10}}; \
+      fi;
+      {{comm}}
